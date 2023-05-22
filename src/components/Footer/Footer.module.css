@@ -1,0 +1,36 @@
+.footer {
+	width: 100%;
+    height: 137px;
+    background-color: var(--teal);
+}
+
+.container {
+	max-width: 1350px;
+    max-height: 100%;
+    padding: 0 10px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 21px;
+    padding: 25px 0;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: right;
+    letter-spacing: 0.01em;
+    color: var(--white);
+    max-height: 137px;
+}
+
+
+/* @media all and (max-width: 420px) {
+	
+} */

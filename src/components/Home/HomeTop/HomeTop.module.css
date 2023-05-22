@@ -1,0 +1,47 @@
+.homeTop {
+    display: flex;
+    min-height: 644px;
+}
+
+.homeTopLeft {
+    padding-top: 69px;
+    max-width: 743px;
+    background-color: transparent;
+}
+
+.homeTopRight {
+    background-image: url(../../../assets/images/main-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 620px;
+    width: 629px;
+    background-position: left 51px;
+    position: relative;
+    margin-left: -52px;
+}
+
+.homeTopHeading {
+    font-family: 'Ferry', sans-serif;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 72px;
+    letter-spacing: 0.01em;
+    color: var(--black);
+    text-transform: uppercase;
+    width: 100%;
+    white-space: pre-wrap;
+    position: relative;
+    z-index: 10;
+}
+
+.homeTopDescription {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: var(--black);
+    max-width: 534px;
+    padding-top: 20px;
+}

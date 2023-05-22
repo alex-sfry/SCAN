@@ -1,0 +1,75 @@
+.restorePwd {
+    display: flex;
+    justify-content: center;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: inherit;
+    text-decoration-line: underline;
+    color: #5970FF;
+    padding-top: 16px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.formBottom {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 30px;
+    padding-bottom: 39px;
+}
+
+.loginIcons {
+    display: flex;
+    gap: 10px;
+}
+
+.imgIcons {
+    background-color: var(--white);
+    border-radius: 3px;
+    width: 96px;
+    height: 31px;
+}
+
+.form .isGray {
+    padding-bottom: 15px;
+}
+
+.form .isGray:last-of-type {
+    margin-top: -3px;
+}
+
+.isGray {
+    color: #949494;
+}
+
+.isInvisible {
+    opacity: 0;
+}
+
+.alert,
+.isInvisible {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.01em;
+    color: #FF5959;
+    text-align: center;
+    padding-top: 6px;
+}
+
+.btnDiv {
+    width: 100%;
+    height: calc(59px + 30px);
+    padding-top: 30px;
+}
+
+.imgIcons {
+    cursor: pointer;
+}
+

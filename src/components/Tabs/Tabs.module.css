@@ -1,0 +1,56 @@
+.tab {
+    color: #C7C7C7;
+    height: 29px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.tab:hover {
+    color: var(--teal);
+}
+
+.tab:hover > span {
+    background-color: var(--teal);
+}
+
+.tabBtn {
+    padding: 0;
+    margin: 0;
+	width: 100%;
+    height: 100%;
+	border: none;
+	background-color: transparent;
+	font-family: inherit;
+	font-weight: inherit;
+    color: inherit;
+}
+
+.tab,
+.tabBtn,
+.tab > span {
+    width: 100%;
+}
+
+.tab > span {
+    display: inline-block;
+    min-height: 2px;
+    max-height: 2px;
+    background-color:#C7C7C7;
+    
+}
+
+.isActive {
+    color: var(--teal);
+}
+
+.tab.isActive > span {
+    background-color: var(--teal);
+}
+
+
+
+/* .container {
+	
+} */

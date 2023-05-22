@@ -1,0 +1,9 @@
+.homeSlider .slick-slide > div {
+    margin: 0 15px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.homeSlider .slick-list {
+     margin-left: 15px;
+  }

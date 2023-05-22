@@ -1,0 +1,45 @@
+.homeSliderHeading {
+    font-family: 'Ferry';
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 54px;
+    letter-spacing: 0.01em;
+    color: var(--black);
+    margin: 105px 0 50px 0;
+    text-transform: uppercase;
+}
+
+.homeSliderBottom {
+    height: 576px;
+    width: 100%;
+    background-image: url('../../../assets/images/middle-bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    margin: 50px 0 107px 0;
+}
+
+.homeSliderTop {
+    width: 100%;
+}
+
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    padding: 30px 20px 20px 20px;
+}
+
+.cardContainer img {
+    width: 64px;
+    height: 64px;
+}
+
+.cardContainer p {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    color: var(--black);
+}
