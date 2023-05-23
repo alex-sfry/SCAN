@@ -46,7 +46,6 @@ const Search = () => {
                             </div>
                         </div>
                     </div>
-
                 </form>
             </div>
             <div className={css.searchRight}></div>
