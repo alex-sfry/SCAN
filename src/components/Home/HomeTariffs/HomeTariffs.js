@@ -28,7 +28,10 @@ const HomeTariffs = () => {
                                     content={item}
                                     icon={item.icon}
                                     bgColor={bgColor[index][0]}
-                                    border={index === active - 1 ? `2px solid ${bgColor[index][1]}` : 'none' }
+                                    border={index === active - 1 ? `2px solid ${bgColor[index][1]}` : 'none'}
+                                    btnBgColor={index === active - 1 ? 'bgGray' : 'bgBlue'}
+                                    fontColor={index === active - 1 ? 'black' : 'white'}
+                                    text={index === active - 1 ? 'Перейти в личный кабинет' : 'Подробнее'}
                                 />
                             </li>
                         })

@@ -1,7 +1,20 @@
-import { legacy_createStore as createStore } from 'redux';
-import loginReducer from './reducers/loginReducer';
+import { legacy_createStore as createStore, combineReducers } from 'redux';
+import { persistStore, persistReducer } from 'redux-persist'
+import storage from 'redux-persist/lib/storage'
+import loginReducer from './reducers/loginReducer.js';
+import queryReducer from './reducers/queryReducer.js';
 
-const store = createStore(loginReducer);
-console.log('store', store.getState())
+const persistConfig = {
+    key: 'root',
+    storage,
+}
 
-export default store;
+const rootReducer = combineReducers({login: loginReducer, query: queryReducer})
+
+const persistedReducer = persistReducer(persistConfig, rootReducer)
+
+export const store = createStore(persistedReducer);
+export const persistor = persistStore(store)
+
+
+//export default store;

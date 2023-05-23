@@ -1,30 +1,45 @@
 import { React } from 'react';
-import { shallowEqual, useSelector, useDispatch } from 'react-redux';
 import css from './Header.module.css';
+import { shallowEqual, useSelector } from 'react-redux';
+import { Link, useLocation } from 'react-router-dom';
+import { persistor } from '../../store/store.js';
 import logo from '../../assets/images/headerLogo.png';
 import user from '../../assets/images/user.png';
-import { Link, useLocation } from 'react-router-dom';
+
+import spinner from '../../assets/images/spinnerHeader.svg';
 
 const Header = () => {
     const location = useLocation();
     const selectedData = useSelector((state) => state, shallowEqual);
-    const dispatch = useDispatch();
     //console.log('useSelector', selectedData);
-
+    const date = new Date();
+    if (Object.hasOwn(selectedData.login, 'token')) {
+        Date.parse(selectedData.login.token.expire) - Date.parse(date) < 0 && persistor.purge();
+    }
     const renderConditions = () => {
-        if (Object.hasOwn(selectedData, 'token')) {
-            if (Object.hasOwn(selectedData.token, 'accessToken')) {
+        if (Object.hasOwn(selectedData.login, 'token')) {
+            if (Object.hasOwn(selectedData.login.token, 'accessToken')) {
                 return (
                     <>
                         <div className={`${css.headerStats} ${css.flexAlignCenter}`}>
-                            <div className={`${css.headerStatsText} ${css.flexCol}`}>
-                                <p className={css.label}>Использовано компаний</p>
-                                <p className={css.label}>Лимит по компаниям</p>
-                            </div>
-                            <div className={`${css.headerStatsQty} ${css.flexCol}`}>
-                                <span className={css.qty}>34</span>
-                                <span className={css.qty}>100</span>
-                            </div>
+                            {!selectedData.login.isLoading ?
+                                (
+                                    <>
+                                        <div className={`${css.headerStatsText} ${css.flexCol}`}>
+                                            <p className={css.label}>Использовано компаний</p>
+                                            <p className={css.label}>Лимит по компаниям</p>
+                                        </div>
+                                        <div className={`${css.headerStatsQty} ${css.flexCol}`}>
+                                            <span className={css.qty}>
+                                                {Object.hasOwn(selectedData.login, 'info') && selectedData.login.info.usedCompanyCount}
+                                            </span>
+                                            <span className={css.qty}>
+                                                {Object.hasOwn(selectedData.login, 'info') && selectedData.login.info.companyLimit}
+                                            </span>
+                                        </div>
+                                    </>
+                                ) : (<img className={css.spinner} src={spinner} alt="loading..." />)}
+                            
                         </div>
                         <div className={`${css.user} ${css.flexAlignCenter}`}>
                             <div className={`${css.userText} ${css.flexCol}`}>
@@ -46,7 +61,7 @@ const Header = () => {
                             </div>
                         </div>
                         <div className={css.login}>
-                            <Link to="/authorization"><div
+                            <Link to="authorization"><div
                                 className={location.pathname === '/authorization' ? `${css.loginBtn} ${css.isActive}` :
                                     `${css.loginBtn}`}>
                                 Войти

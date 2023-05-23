@@ -1,4 +1,4 @@
-import { React, useEffect, useState } from 'react';
+import { React, useEffect } from 'react';
 import css from './SignIn.module.css';
 import { useForm } from "react-hook-form";
 import Button from '../../Button';
@@ -10,21 +10,12 @@ import useAxios from '../../../hooks/useAxios.js';
 import { useDispatch, useSelector, shallowEqual } from 'react-redux';
 import { Navigate } from "react-router-dom";
 
-
 const SingIn = () => {
-    const [signIn, setSignIn] = useState({
-        req: null,
-        token: null,
-        method: null,
-        url: null,
-        isLoading: true // useless
-    });
-    const { status } = useAxios(signIn.url, signIn.req, signIn.token, signIn.method);
+    const { status, fetch } = useAxios();
     const dispatch = useDispatch();
     const selectedData = useSelector((state) => state, shallowEqual);
-    let loginInfo;
-
-    if (Object.hasOwn(selectedData, 'token')) loginInfo = selectedData.token
+    //console.log(fetch)
+    console.log(status.data)
 
     useEffect(() => {
         if (status.data) {
@@ -34,21 +25,16 @@ const SingIn = () => {
                 dispatch({ type: 'ADD_INFO', payload: [status.data.data.eventFiltersInfo, status.isLoading] })
         }
     }, [status.data, dispatch])
-
+    
     useEffect(() => {
         console.log('info')
-        if (Object.hasOwn(selectedData, 'token')) {
-            console.log('info')
-            setSignIn({
-                req: null,
-                token: selectedData.token.accessToken,
-                method: 'GET',
-                url: '/api/v1/account/info'
-            })
+        if (Object.hasOwn(selectedData.login, 'token') && !Object.hasOwn(selectedData.login, 'info')) {
+            console.log('fetch info')
+            dispatch({ type: 'ADD_LOADING_STATUS', payload: true })
+            fetch('/api/v1/account/info', null , "GET", selectedData.login.token.accessToken)
         }
-    }, [loginInfo])
+    }, [selectedData.login.token, dispatch])
 
-    //if(status.data) console.log(status.data.data);
     if (selectedData) console.log(selectedData)
 
     const { register, formState: { errors, isValid }, handleSubmit } = useForm({ mode: 'onChange' });
@@ -56,15 +42,7 @@ const SingIn = () => {
     //console.log(errors);
 
     const onSubmit = (data) => {
-        if (!Object.hasOwn(selectedData, 'token')) {
-            console.log('login')
-            dispatch({ type: 'ADD_LOADING_STATUS', payload: true })
-            setSignIn({
-                req: { login: data.login, password: data.password },
-                method: 'POST',
-                url: '/api/v1/account/login'
-            })
-        }
+        fetch('/api/v1/account/login', { login: data.login, password: data.password })
     }
 
     const renderAlert = (name) => {
@@ -77,7 +55,7 @@ const SingIn = () => {
 
     return (
         <>
-            {Object.hasOwn(selectedData, 'token') ? <Navigate to="/" replace={true} /> :
+            {Object.hasOwn(selectedData.login, 'info') ? <Navigate to="/" replace={true} /> :
                 <form className={css.form} onSubmit={handleSubmit(onSubmit)}>
                     <label htmlFor="login" className={css.isGray}>Логин или номер телефона:</label>
                     <Input
