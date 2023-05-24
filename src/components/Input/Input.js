@@ -1,7 +1,7 @@
 import React from 'react';
 import css from './Input.module.css';
 
-const Input = ({ type, name, register, required }) => {
+const Input = ({ type, name, register, required, placeholder }) => {
     return (
         <>
             <input
@@ -9,6 +9,7 @@ const Input = ({ type, name, register, required }) => {
                 className={css.input}
                 type={type}
                 name={name}
+                placeholder={placeholder}
             />
         </>
     )

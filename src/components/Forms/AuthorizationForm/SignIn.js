@@ -63,6 +63,7 @@ const SingIn = () => {
                         register={register}
                         required
                         type="text"
+                        placeholder={""}
                     />
                     {renderAlert('login')}
                     <label htmlFor="password" className={css.isGray}>Пароль:</label>
@@ -71,6 +72,7 @@ const SingIn = () => {
                         register={register}
                         required
                         type="password"
+                        placeholder={""}
                     />
                     {renderAlert('password')}
                     <div className={css.btnDiv}>

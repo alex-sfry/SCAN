@@ -45,6 +45,10 @@
     margin-top: -3px;
 }
 
+.form input {
+    padding-left: 19px;
+}
+
 .isGray {
     color: #949494;
 }

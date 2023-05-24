@@ -6,12 +6,18 @@
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
     border-radius: 5px;
     outline: none;
-    font-family: inherit;
+    font-family: 'Inter';
     font-weight: inherit;
     font-size: inherit;
 }
 
-
-
-
-
+.input::placeholder {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.03em;
+    color: #949494;
+    opacity: 0.4;
+    text-align: center;
+}
