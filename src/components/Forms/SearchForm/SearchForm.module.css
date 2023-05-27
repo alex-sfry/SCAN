@@ -62,13 +62,17 @@
 }
 
 .selectLbl {
-    padding-top: 30px;
+    padding-top: 11px;
 }
 
-.qtyLbl,
-.formLeftBottom {
-    padding-top: 30px;
+.formLeftBottom,
+.selectLbl {
+    padding-top: 11px;
     width: 100%;
+}
+
+.qtyLbl {
+    padding-top: 30px;
 }
 
 .formLeftdate {
@@ -77,6 +81,7 @@
     gap: 20px;
     flex-wrap: wrap;
     padding-top: 20px;
+    max-height: 43px;
 }
 
 .date {
@@ -129,7 +134,7 @@
 }
 
 .btnDiv {
-    margin-top: 136px;
+    margin-top: 137px;
     width: 305px;
     height: 59px;
     letter-spacing: 0.03em;

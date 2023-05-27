@@ -23,23 +23,22 @@ const Header = () => {
                     <>
                         <div className={`${css.headerStats} ${css.flexAlignCenter}`}>
                             {!selectedData.login.isLoading ?
-                                (
-                                    <>
-                                        <div className={`${css.headerStatsText} ${css.flexCol}`}>
-                                            <p className={css.label}>Использовано компаний</p>
-                                            <p className={css.label}>Лимит по компаниям</p>
-                                        </div>
-                                        <div className={`${css.headerStatsQty} ${css.flexCol}`}>
-                                            <span className={css.qty}>
-                                                {Object.hasOwn(selectedData.login, 'info') && selectedData.login.info.usedCompanyCount}
-                                            </span>
-                                            <span className={css.qty}>
-                                                {Object.hasOwn(selectedData.login, 'info') && selectedData.login.info.companyLimit}
-                                            </span>
-                                        </div>
-                                    </>
-                                ) : (<img className={css.spinner} src={spinner} alt="loading..." />)}
-                            
+                                <>
+                                    <div className={`${css.headerStatsText} ${css.flexCol}`}>
+                                        <p className={css.label}>Использовано компаний</p>
+                                        <p className={css.label}>Лимит по компаниям</p>
+                                    </div>
+                                    <div className={`${css.headerStatsQty} ${css.flexCol}`}>
+                                        <span className={css.qty}>
+                                            {Object.hasOwn(selectedData.login, 'info') && selectedData.login.info.usedCompanyCount}
+                                        </span>
+                                        <span className={css.qty}>
+                                            {Object.hasOwn(selectedData.login, 'info') && selectedData.login.info.companyLimit}
+                                        </span>
+                                    </div>
+                                </>
+                                : (<img className={css.spinner} src={spinner} alt="loading..." />)}
+
                         </div>
                         <div className={`${css.user} ${css.flexAlignCenter}`}>
                             <div className={`${css.userText} ${css.flexCol}`}>

@@ -16,8 +16,6 @@ const loginReducer = (state = {}, action) => {
                 ...state,
                 isLoading: action.payload
             }
-
-            
         default: {
             return state;
         }

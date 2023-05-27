@@ -1,5 +1,59 @@
-.container {
-	
+.result {
+    min-height: 400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.resultCard {
+    display: flex;
+    flex-direction: column;
+    height: calc(158px - 34px);
+    width: 100%;
+    max-width: 141px;
+    border-right: 2px solid var(--teal);
+    margin: 17px 0;
+    background-color: aquamarine;
+    padding: 1px 18px 0 20px;
+}
+
+.resultCard p {
+    text-align: center;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: var(--black);
+    padding-bottom: 22px;
+}
+
+.cardDate {
+    padding-bottom: 29px;
+}
+
+.slider {
+    width: calc(1285px - 133px);
+    margin: 0 auto;
+    border: 2px solid var(--teal);
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    position: relative;
+    background-color: aquamarine;
+    margin-left: 160px;
+    max-height: 162px;
+    
+}
+
+.leftHeader {
+    height: 162px;
+    width: 133px;
+    background-color: blue;
+    position: absolute;
+    z-index: 3;
+    left: -133px;
+    top: -2px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 

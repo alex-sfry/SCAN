@@ -2,11 +2,14 @@
     max-width: 1364px;
     padding: 0 10px;
     height: calc(100vh - 137px - 93px);
-    min-height: calc(892px + 25px + 47px);
+    min-height: calc(892px + 25px + 47px + 400px);
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     max-height: 100%;
+    flex-direction: column;
+    gap: 50px;
+    width: 100%;
 }
 
 .heading {
@@ -41,5 +44,22 @@
     background-position: 11px 131px;
     background-size: contain;
     width: 460px;
+}
 
+
+@media all and (max-width: 1359px) {
+	/* .slider {
+        width: calc(980px - 133px);
+        margin-left: 176px;
+        border: 2px solid var(--teal);
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+        position: relative;
+    } */
+
+    .searchRight {
+        background-position: 11px bottom;
+        width: 100%;
+        
+    }
 }

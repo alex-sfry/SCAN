@@ -3,7 +3,7 @@ import css from './TariffCard.module.css';
 import Button from '../../Button';
 import checkMark from '../../../assets/images/checkmark-green.svg';
 
-const TariffCard = ({ content, border, btnBgColor, fontColor, text }) => {
+const TariffCard = ({ content, border, btnBgColor, fontColor, text, display }) => {
     return (
         <div className={css.card} style={{ border: border }}>
             <div className={`${css.cardHeader} ${css[content.bgColor]} ${css[content.headerFontColor]}`}>
@@ -21,7 +21,9 @@ const TariffCard = ({ content, border, btnBgColor, fontColor, text }) => {
             </div>
             <div className={css.cardMain}>
                 <div className={css.cardContent}>
+                <div className={css.activeTariff} style={{ display: display }}>Текущий тариф</div> 
                     <div className={css.priceContainer}>
+                    
                         <div className={css.price}>
                             <span className={css.promoPrice}>{content.regularPrice}</span>
                             <span className={css.regularPrice}>{content.promoPrice}</span>

@@ -31,14 +31,13 @@ const SingIn = () => {
         if (Object.hasOwn(selectedData.login, 'token') && !Object.hasOwn(selectedData.login, 'info')) {
             console.log('fetch info')
             dispatch({ type: 'ADD_LOADING_STATUS', payload: true })
-            fetch('/api/v1/account/info', null , "GET", selectedData.login.token.accessToken)
+            fetch('/api/v1/account/info', null , "GET", selectedData.login.token.accessToken, )
         }
     }, [selectedData.login.token, dispatch])
 
     if (selectedData) console.log(selectedData)
 
     const { register, formState: { errors, isValid }, handleSubmit } = useForm({ mode: 'onChange' });
-    //const onSubmit = data => console.log(data);
     //console.log(errors);
 
     const onSubmit = (data) => {

@@ -80,12 +80,36 @@
     display: flex;
     flex-direction: column;
     gap: 59px;
+    position: relative;
+}
+
+.activeTariff {
+    position: absolute;
+    width: 134px;
+    height: 24px;
+    background: #3BA5E0;
+    border-radius: 10px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.01em;
+    color: var(--white);
+    top: 12px;
+    right: 10px;
+    text-align: center;
+    padding: 3px 0;
 }
 
 .priceContainer {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    
+}
+
+.visibility {
+    display: none;
 }
 
 .price {

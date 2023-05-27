@@ -25,7 +25,7 @@ const useAxios = (url, req = null, token = null, method = null) => {
     })
 
     useEffect(() => {
-        console.log('useEffect Login')
+        //console.log('useEffect Login')
         fetch(url, req, token)
     }, [])
 
@@ -51,7 +51,6 @@ const useAxios = (url, req = null, token = null, method = null) => {
         if (req) {
             loginInstance({ url: url, data: req })
                 .then(function (response) {
-                    console.log('ok')
                     setStatus({ data: response, isLoading: false })
                 })
                 .catch(function (error) {

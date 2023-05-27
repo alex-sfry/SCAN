@@ -1,36 +1,41 @@
-import React from 'react';
+import { React , useEffect } from 'react';
 import css from './HomeTop.module.css';
 import Button from '../../Button';
-import { shallowEqual, useSelector } from 'react-redux';
+import { shallowEqual, useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
+import { persistor } from '../../../store/store.js';
 
 
 const HomeTop = () => {
     const selectedData = useSelector((state) => state, shallowEqual);
+    const dispatch = useDispatch();
+    
+    useEffect(() => {
+     dispatch({ type: 'CLEAR_QUERY_REDUCER' })
+    //  dispatch({ type: 'CLEAR_QUERY_REDUCER', payload: false })
+    }, [])
 
-    const handleClick = () => {
-
+    const date = new Date();
+    if (Object.hasOwn(selectedData.login, 'token')) {
+        Date.parse(selectedData.login.token.expire) - Date.parse(date) < 0 && persistor.purge();
     }
 
-    const renderConditions = () => {
+    const renderCondition = () => {
         if (Object.hasOwn(selectedData.login, 'token')) {
             if (Object.hasOwn(selectedData.login.token, 'accessToken')) {
-                return (
-                    <div className={css.btnDiv}>
-                        <Link to="search">
-                            <Button
-                                btnClass='btn22'
-                                bgColor='bgBlue'
-                                fontColor='white'
-                                type='button'
-                                disabled={false}
-                                handleClick={handleClick}
-                            >
+                return <div className={css.btnDiv}>
+                    <Link to="search">
+                        <Button
+                            btnClass='btn22'
+                            bgColor='bgBlue'
+                            fontColor='white'
+                            type='button'
+                            disabled={false}
+                        >
                             Запросить данные
-                            </Button>
-                        </Link>
-                    </div>
-                )
+                        </Button>
+                    </Link>
+                </div>
             }
         }
     }
@@ -44,7 +49,7 @@ const HomeTop = () => {
                 <p className={css.homeTopDescription}>
                     Комплексный анализ публикаций, получение данных в формате PDF на электронную почту.
                 </p>
-                {renderConditions()}
+                {renderCondition()}
             </div>
             <div className={css.homeTopRight}></div>
         </section>

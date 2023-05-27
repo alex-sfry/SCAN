@@ -1,9 +1,34 @@
-.homeSlider .slick-slide > div {
+.homeSlider .slick-slide>div {
     margin: 0 15px;
     width: 100%;
     max-width: 400px;
 }
 
 .homeSlider .slick-list {
-     margin-left: 15px;
-  }
+    margin-left: 15px;
+}
+
+.resultSlider {
+    width: 100%;
+}
+
+.resultSlider .slick-slide>div {
+    width: 100%;
+    max-width: 141px;
+    padding-right: 1px;
+}
+
+.resultSlider .slick-slide {
+    max-width: 141px;
+}
+
+.resultSlider .slick-list {
+    margin-left: 0;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
+
+.resultSlider .slick-slider {
+    padding-right: 26px;
+}

@@ -1,33 +1,51 @@
-import React from 'react';
+import { React, useEffect } from 'react';
 import css from './SearchForm.module.css';
 import Input from '../../Input';
-import { useForm } from "react-hook-form";
+import { useForm, Controller } from "react-hook-form";
 import Button from '../../Button';
-import useAxios from '../../../hooks/useAxios.js';
 import { useDispatch, useSelector, shallowEqual } from 'react-redux';
-
+import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
+import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
+import { DatePicker } from '@mui/x-date-pickers/DatePicker';
+import dayjs from 'dayjs';
+import histogrReq from '../../../utils/histogramsRequest';
+import useFetchData from '../../../hooks/useFetchData.js';
 
 const SearchForm = () => {
-    //const { status, fetch } = useAxios();
-    const dispatch = useDispatch();
-    //const selectedData = useSelector((state) => state, shallowEqual);
-    const date = new Date();
-    const day = date.getDate();
-    const month = date.getMonth() + 1;
-    const year = date.getFullYear();
+    //TODO: validation, check different library for date picker and select
 
-    const { register, formState: { errors, isValid }, handleSubmit } = useForm({ mode: 'onChange' });
-    const onSubmit = data => console.log(data);
-    //const onChange = data => { console.log(data)} 
+    const {idList, histoGram, docs, isLoading, fetch} = useFetchData();
+    const selectedData = useSelector((state) => state, shallowEqual);
+    const dispatch = useDispatch();
+    const token = selectedData.login.token.accessToken;
+    //console.log(selectedData.query)
+    useEffect(() => {
+        histoGram && dispatch({ type: 'ADD_HISTOGRAM', payload: [histoGram, isLoading] })
+        idList && dispatch({ type: 'ADD_DOC_IDS', payload: idList.items })
+    }, [idList, histoGram, dispatch])
+
+    const { register, formState: { errors, isValid }, handleSubmit, control, setError } = useForm({ mode: 'onChange' });
+    const onSubmit = data => {
+        if (data.dateFrom.$d.getTime() - data.dateTo.$d.getTime() > 0) {
+            setError("dateFrom", { type: "required" }, { required: true });
+            return;
+        }
+
+        dispatch({ type: 'IS_LOADING', payload: true })
+        const req = histogrReq(data)
+        fetch('/api/v1/objectsearch/histograms', req, token, 'searchInstance', 'histoGram');
+        fetch('/api/v1/objectsearch', req, token, 'searchInstance', 'idList');
+    }
+    //console.log(new Date().toISOString().slice(0, 10))
     //console.log(errors);
 
-    // const renderAlert = (name) => {
-    //     return (
-    //         errors[name]?.type === 'required' ?
-    //             <p className={css.alert} role="alert">Введите корректные данные</p> :
-    //             <p className={css.isInvisible}>Введите корректные данные</p>
-    //     )
-    // }
+    const renderAlert = (name) => {
+        return (
+            errors[name]?.type === 'required' ?
+                <p className={css.alert} role="alert">Введите корректные данные</p> :
+                <p className={css.isInvisible}>Введите корректные данные</p>
+        )
+    }
 
     return (
         <>
@@ -42,19 +60,17 @@ const SearchForm = () => {
                             type="text"
                             placeholder={'10 цифр'}
                         />
-                        {/* {renderAlert('inn')} */}
+                        {renderAlert('dateFrom')}
                         <label className={css.selectLbl} htmlFor="tone">Тональность</label>
                         <select
                             {...register("tone", { required: false })}
                             className={css.select}
                             name="tone"
-                        >   
+                        >
                             <option value="Любая">Любая</option>
                             <option value="Позитивная">Позитивная</option>
                             <option value="Негативная">Негативная</option>
-                            
                         </select>
-
                         <label className={css.qtyLbl} htmlFor="qty">Количество документов в выдаче*</label>
                         <Input
                             register={register}
@@ -63,23 +79,58 @@ const SearchForm = () => {
                             type="text"
                             placeholder={'От 1 до 1000'}
                         />
+                        {renderAlert('dateFrom')}
                     </div>
                     <div className={css.formLeftBottom}>
                         <label htmlFor="cb1">Диапазон поиска*</label>
                         <div className={css.formLeftdate}>
-                            <input
-                                {...register("dateFrom", { required: true })}
-                                className={css.date}
-                                id="dateFrom"
+                            <Controller
+                                control={control}
                                 name="dateFrom"
-                                type="date"
+                                rules={{ required: true }}
+                                render={({ field }) => (
+                                    <LocalizationProvider dateAdapter={AdapterDayjs}>
+                                        <DatePicker
+                                            sx={{
+                                                width: 174,
+                                                height: 43,
+                                                '& .css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root': {
+                                                    height: 43
+                                                },
+                                                '& .css-nxo287-MuiInputBase-input-MuiOutlinedInput-input': {
+                                                    paddingLeft: 5
+                                                }
+                                            }}
+                                            onChange={(e) => { field.onChange(e) }} // send value to hook form
+                                            selected={field.value}
+                                            maxDate={dayjs()}
+                                            placeholder=""
+                                            slotProps={{ textField: { placeholder: "Дата конца" } }}
+                                        />
+                                    </LocalizationProvider>
+                                )}
                             />
-                            <input
-                                {...register("dateTo", { required: true })}
-                                className={css.date}
-                                id="dateTo"
+                            <Controller
+                                control={control}
                                 name="dateTo"
-                                type="date"
+                                rules={{ required: true }}
+                                render={({ field }) => (
+                                    <LocalizationProvider dateAdapter={AdapterDayjs}>
+                                        <DatePicker
+                                            sx={{
+                                                width: 174,
+                                                height: 43,
+                                                '& .css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root': {
+                                                    height: 43
+                                                }
+                                            }}
+                                            onChange={(e) => { field.onChange(e) }} // send value to hook form
+                                            selected={field.value}
+                                            maxDate={dayjs()}
+                                            slotProps={{ textField: { placeholder: "Дата начала" } }}
+                                        />
+                                    </LocalizationProvider>
+                                )}
                             />
                         </div>
 

@@ -11,7 +11,7 @@ export const Carousel = ({ sliderClass, slides, sliderSettings }) => {
     const sliderRef = useRef();
 
     const slideList = slides.map(item => {
-        return <div key={uniqid()} className={css.intSlide}>
+        return <div key={uniqid()} className={css.intSlide} >
             {item}
         </div>
     })
