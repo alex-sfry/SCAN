@@ -2,21 +2,25 @@ import { React } from 'react';
 import css from './Header.module.css';
 import { shallowEqual, useSelector } from 'react-redux';
 import { Link, useLocation } from 'react-router-dom';
-import { persistor } from '../../store/store.js';
 import logo from '../../assets/images/headerLogo.png';
 import user from '../../assets/images/user.png';
-
 import spinner from '../../assets/images/spinnerHeader.svg';
+import { persistor } from '../../store/store.js';
 
 const Header = () => {
+    console.log('header')
     const location = useLocation();
     const selectedData = useSelector((state) => state, shallowEqual);
     //console.log('useSelector', selectedData);
     const date = new Date();
-    if (Object.hasOwn(selectedData.login, 'token')) {
-        Date.parse(selectedData.login.token.expire) - Date.parse(date) < 0 && persistor.purge();
-    }
+    // if (Object.hasOwn(selectedData.login, 'token')) {
+    //     Date.parse(selectedData.login.token.expire) - Date.parse(date) < 0 && persistor.purge();
+    // }
+    
     const renderConditions = () => {
+        if (Object.hasOwn(selectedData.login, 'token')) {
+            Date.parse(selectedData.login.token.expire) - Date.parse(date) < 0 && persistor.purge();
+        }
         if (Object.hasOwn(selectedData.login, 'token')) {
             if (Object.hasOwn(selectedData.login.token, 'accessToken')) {
                 return (

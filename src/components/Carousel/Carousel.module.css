@@ -18,11 +18,9 @@
 
 .resultSlider {
     width: calc(1281px - 133px);
-    background-color: aquamarine;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
     padding-right: 21px;
-    margin-right: 21px;
 }
 
 
@@ -30,9 +28,7 @@
     height: calc(158px - 34px);
     width: 100%;
     max-width: 141px;
-    background-color: aquamarine;
 }
 
 .resultSlider .intSlide {
-    background-color: aquamarine;
 }

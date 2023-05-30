@@ -1,0 +1,37 @@
+.resultTop {
+    width: 100%;
+    display: flex;
+    gap: 210px;
+    flex-wrap: wrap;
+}
+
+.resultHeading {
+    font-family: 'Ferry';
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    color: var(--black);
+    text-transform: uppercase;
+    width: 510px;
+    padding: 67px 0 36px 0;
+}
+
+.resultTopText {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: var(--black);
+    padding-bottom: 129px;
+    width: 448px;
+}
+
+.resultTopRight {
+    width: 553px;
+    height: 369px;
+    background-image: url(../../../assets/images/result-bg.svg);
+    background-repeat: no-repeat;
+    background-position: 0 18px;
+}

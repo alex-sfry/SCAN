@@ -57,9 +57,9 @@ const histogrReq = (config) => {
             "excludedSourceGroups": []
         },
         "attributeFilters": {
-            "excludeTechNews": !config.cb5,
-            "excludeAnnouncements": !config.cb6,
-            "excludeDigests": !config.cb7
+            "excludeTechNews": config.cb5,
+            "excludeAnnouncements": config.cb6,
+            "excludeDigests": config.cb7
         },
         "similarMode": "duplicates",
         "limit": +config.qty,

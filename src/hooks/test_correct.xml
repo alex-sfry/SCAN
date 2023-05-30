@@ -1,0 +1,159 @@
+"<?xml version=\"1.0\" encoding=\"utf-8\"?>
+<scandoc>
+    <sentence>Обратите внимание на обложку к статье. </sentence>
+    <sentence>Одна часть нарисована дизайнером, вторая – сгенерирована        <entity type=\"company\" local-id=\"2\">нейросетью </entity>Midjourney. &lt;br&gt;\r\n&lt;br&gt;\r\n</sentence>
+    <sentence>Сейчас многие восхищаются качеством иллюстраций от нейронок, и мы решили провести эксперимент. </sentence>
+    <sentence>Сможет ли        <entity type=\"company\" local-id=\"2\">нейросеть </entity>проиллюстрировать тексты на уровне дизайнеров? 
+    </sentence>
+    <sentence>Может, мы сможем сэкономить их время?&lt;br&gt;\r\n&lt;br&gt;\r\n</sentence>
+    <sentence>Результаты теста и ответ на загадку обложки – под катом. &lt;br&gt;\r\n&lt;a name=\"habracut\"&gt;&lt;/a&gt;&lt;br&gt;\r\n&lt;font color=\"#EB4247\"&gt;&lt;h2&gt;</sentence>
+    <sentence>
+        <entity type=\"company\" local-id=\"2\">Нейросеть </entity>для художников&lt;/h2&gt;&lt;/font&gt;&lt;br&gt;\r\n</sentence>
+    <sentence>Поэкспериментировать с Midjourney может каждый, без ожидания доступа к сервису. </sentence>
+    <sentence>
+        <entity type=\"theme\" local-id=\"7\">Достаточно подключиться к            <entity type=\"company\" local-id=\"3\">discord-каналу </entity>проекта. 
+        </entity>
+    </sentence>
+    <sentence>Каждому пользователю доступны бесплатные 25 запросов. &lt;br&gt;\r\n&lt;br&gt;\r\n</sentence>
+    <sentence>Обратная политика у конкурентного проекта – DALL-E: перед использованием нужно отправить заявку и ждать фидбэка от разработчиков. </sentence>
+    <sentence>Ожидание может длиться больше месяца. </sentence>
+    <sentence>Зато DALL-E полностью бесплатный.&lt;br&gt;\r\n&lt;br&gt;\r\n&lt;div style=\"text-align:center\"&gt;&lt;/div&gt;&lt;br&gt;\r\n&lt;i&gt;</sentence>
+    <sentence>Сравнение иллюстраций DALL-E 2 и Midjourney. </sentence>
+    <sentence>Источник &lt;/i&gt;&lt;br&gt;\r\n &lt;br&gt;\r\n</sentence>
+    <sentence>Сложно сказать, какая        <entity type=\"company\" local-id=\"2\">нейросеть </entity>показывает лучшие результаты. 
+    </sentence>
+    <sentence>Как и DALL-E, Midjourney умеет рисовать не только потрясающие, но и непонятные и даже пугающие изображения. &lt;br&gt;\r\n&lt;br&gt;\r\n&lt;font color=\"#EB4247\"&gt;&lt;h2&gt;</sentence>
+    <sentence>Как сформировать запрос для найросети&lt;/h2&gt;&lt;/font&gt;&lt;br&gt;\r\n</sentence>
+    <sentence>При создании иллюстрации дизайнер думает о том, как лучше объединить разные элементы, которые прописаны автором в техническом задании.&lt;br&gt;\r\n&lt;br&gt;\r\n</sentence>
+    <sentence>Аналогичным образом работает Midjourney. </sentence>
+    <sentence>Чтобы получить желаемый результат от нейронной сети, нужно корректно сформировать для нее запрос. </sentence>
+    <sentence>Разработчики Midourney опубликовали советы, как правильно общаться с <entity type=\"company\" local-id=\"2\">нейросетью</entity>. 
+    </sentence>
+    <sentence>Выделим основные из них. &lt;br&gt;\r\n&lt;br&gt;\r\n&lt;h3&gt;</sentence>
+    <sentence>Пишите как для ребенка&lt;/h3&gt;&lt;br&gt;\r\n</sentence>
+    <sentence>Формулировки должны быть буквальными: без метафор, эвфемизмов, словесных каламбуров и прочего.&lt;br&gt;\r\n&lt;br&gt;\r\n&lt;b&gt;</sentence>
+    <sentence>Неправильно:&lt;/b&gt; \"Обезьяны занимаются бизнесом\" &lt;br&gt;\r\n&lt;b&gt;</sentence>
+    <sentence>Правильно:&lt;/b&gt; \"Обезьяны сидят в деловых костюмах\" &lt;br&gt;\r\n &lt;br&gt;\r\n</sentence>
+    <sentence>Запросы лучше формировать на английском. </sentence>
+    <sentence>Другие языки Midjourney понимает хуже.&lt;br&gt;\r\n&lt;br&gt;\r\n&lt;h3&gt;</sentence>
+    <sentence>Избегайте отрицаний&lt;/h3&gt;&lt;br&gt;\r\n</sentence>
+    <sentence>Представьте, что вам нужно выбрать одну дверь из тысячи – за ней будет сундук с золотом. </sentence>
+    <sentence>Рядом стоит \"помощник\", который знает наверняка, где спрятаны богатства. </sentence>
+    <sentence>Вы его спрашиваете, какую дверь нужно открыть, чтобы обогатиться. </sentence>
+    <sentence>А помощник отвечает: \"Точно не 178\". </sentence>
+    <sentence>Стала ли задача проще от его подсказки?&lt;br&gt;\r\n&lt;br&gt;\r\n</sentence>
+    <sentence>Если нужно, чтобы Midjourney нарисовала зонтик любого цвета, но не красного, – &lt;u&gt;попробуйте&lt;/u&gt; использовать отрицание. </sentence>
+    <sentence>Но разработчики утверждают, что языковые модели часто игнорируют отрицательные частицы, союзы и предлоги (\"не\", \"но\", \"кроме\", \"без\"). </sentence>
+    <sentence>Если нужен синий зонтик, напишите об этом прямо. &lt;br&gt;\r\n&lt;br&gt;\r\n&lt;h3&gt;</sentence>
+    <sentence>Забудьте про мелкие детали&lt;/h3&gt;&lt;br&gt;\r\n</sentence>
+    <sentence>Они могут перегрузить систему. </sentence>
+    <sentence>Не нужно описывать количество морщин на морде обезьяны. </sentence>
+    <sentence>Попробуйте описать ее черты одним словом. &lt;br&gt;\r\n&lt;br&gt;\r\n&lt;blockquote&gt;&lt;b&gt;</sentence>
+    <sentence>Возможно, эти тексты тоже вас заинтересуют: &lt;/b&gt;&lt;br&gt;\r\n &lt;br&gt;\r\n→ Подбираем скины в Counter-Strike: Global Offensive в цвет сумочки &lt;br&gt;\r\n→ Обзор на разработчика и преимущества заикания: как айтишники попробовали себя в стендапе &lt;br&gt;\r\n→ Как быстро реализовать поиск на корпоративном портале&lt;br&gt;\r\n&lt;/blockquote&gt;&lt;br&gt;\r\n&lt;font color=\"#EB4247\"&gt;&lt;h2&gt;</sentence>
+    <sentence>Пример генерации изображения&lt;/h2&gt;&lt;/font&gt;&lt;br&gt;\r\n</sentence>
+    <sentence>Чтобы сгенерировать изображение, нужно подключиться к        <entity type=\"company\" local-id=\"1\">каналу Discord</entity>, перейти в комнату newbies, ввести команду /imagine и написать свой запрос. </sentence>
+    <sentence>В течение 10- 30 секунд будет готова подборка из изображений. &lt;br&gt;\r\n&lt;br&gt;\r\n&lt;div style=\"text-align:center\"&gt;&lt;/div&gt;&lt;br&gt;\r\n&lt;i&gt;</sentence>
+    <sentence>Процесс генерации изображения по запросу \"dinosaur\"&lt;/i&gt;  &lt;br&gt;\r\n &lt;br&gt;\r\n</sentence>
+    <sentence>Когда загрузка достигнет 100%, под коллажем появятся кнопки \"U1, U2, U3, U4\" и \"V1, V2, V3, V4\". </sentence>
+    <sentence>Кнопки из первого ряда нужны для апскейла – улучшения качества выбранных изображений. </sentence>
+    <sentence>А кнопки из второго ряда – для генерации картинок, \"похожих\" на выбранное изображение из подборки. &lt;br&gt;\r\n&lt;br&gt;\r\n&lt;div style=\"text-align:center\"&gt;&lt;/div&gt;&lt;br&gt;\r\n&lt;i&gt;</sentence>
+    <sentence>Апскейлинг четвертого изображения &lt;/i&gt;&lt;br&gt;\r\n &lt;br&gt;\r\n &lt;div style=\"text-align:center\"&gt;&lt;/div&gt;&lt;br&gt;\r\n&lt;i&gt;</sentence>
+    <sentence>Вариации четвертого изображения&lt;/i&gt;&lt;br&gt;\r\n&lt;br&gt;\r\n&lt;font color=\"#EB4247\"&gt;&lt;h2&gt;</sentence>
+    <sentence>Тестирование Midjourney&lt;/h2&gt;&lt;/font&gt;&lt;br&gt;\r\n</sentence>
+    <sentence>Мы решили проверить, как к решению задач дизайнеров-иллюстраторов подойдет нейронная сеть. </sentence>
+    <sentence>Похожий эксперимент провели ребята из        <entity type=\"company\" local-id=\"4\">SkillFactory</entity>: они проверили, может ли DALL-E помочь избавиться от дорогих стоковых иллюстраций. &lt;br&gt;\r\n&lt;br&gt;\r\n</sentence>
+    <sentence>Нам был важен не стиль рисовки, а композиция, которую может придумать Midjourney. </sentence>
+    <sentence>Для этого выбрали три статьи из нашего блога, которые рисовали дизайнеры, и сформулировали запросы для обложек. </sentence>
+    <sentence>Посмотрим, что получилось. &lt;br&gt;\r\n&lt;br&gt;\r\n&lt;h3&gt;</sentence>
+    <sentence>Кроличья нора&lt;/h3&gt;&lt;br&gt;\r\n&lt;div style=\"text-align:center\"&gt;&lt;/div&gt;&lt;br&gt;\r\n</sentence>
+    <sentence>Недавно выпустили статью про долгий поиск и дебаг ошибки в мониторинге объектного хранилища. </sentence>
+    <sentence>На обложке метафорично изображена кроличья нора с уходящими вглубь строчками кода, алертами и разными пиктограммами. </sentence>
+    <sentence>Разработчик конкретно закопался в абстракциях, и дизайнер это изобразил. &lt;br&gt;\r\n&lt;br&gt;\r\n</sentence>
+    <sentence>Мы протестировали несколько вариантов запросов.&lt;br&gt;\r\n&lt;br&gt;\r\n&lt;b&gt;</sentence>
+    <sentence>Первый запрос &lt;/b&gt;&lt;br&gt;\r\n &lt;br&gt;\r\n&lt;font color=\"#0B4A77\"&gt;&lt;i&gt;</sentence>
+    <sentence>Rabbit hole with Python program code (\"кроличья нора с Python-кодом\") &lt;/i&gt;&lt;/font&gt;&lt;br&gt;\r\n &lt;br&gt;\r\n</sentence>
+    <sentence>Cначала мы попробовали описать для <entity type=\"company\" local-id=\"2\">нейросети </entity>общую концепцию. &lt;br&gt;\r\n&lt;br&gt;\r\n&lt;div style=\"text-align:center\"&gt;&lt;/div&gt;&lt;br&gt;\r\n</sentence>
+    <sentence>Midjourney удалось повторить перспективу норы и даже нарисовать кролика. </sentence>
+    <sentence>Но больше ничего общего с оригинальной обложкой нет. &lt;br&gt;\r\n&lt;br&gt;\r\n</sentence>
+    <sentence>Также        <entity type=\"company\" local-id=\"2\">нейросеть </entity>забавно интерпретировала упоминание языка программирования Python. </sentence>
+    <sentence>На иллюстрациях встречаются текстуры, напоминающие чешую, и даже змеиные яйца. &lt;br&gt;\r\n&lt;br&gt;\r\n&lt;b&gt;</sentence>
+    <sentence>Второй запрос &lt;/b&gt;&lt;br&gt;\r\n &lt;br&gt;\r\n&lt;font color=\"#0B4A77\"&gt;&lt;i&gt;</sentence>
+    <sentence>Python code in the rabbit hole and rabbit &lt;/i&gt;&lt;/font&gt;&lt;br&gt;\r\n &lt;br&gt;\r\n</sentence>
+    <sentence>Добавили отдельно кролика. </sentence>
+    <sentence>Но        <entity type=\"company\" local-id=\"2\">нейросеть </entity>пошла дальше и нарисовала жуткого \"лунтика\", который вылупился из змеиного яйца. &lt;br&gt;\r\n&lt;br&gt;\r\n&lt;div style=\"text-align:center\"&gt;&lt;/div&gt;&lt;br&gt;\r\n&lt;b&gt;</sentence>
+    <sentence>Третий запрос&lt;/b&gt;  &lt;br&gt;\r\n &lt;br&gt;\r\n&lt;font color=\"#0B4A77\"&gt;&lt;i&gt;</sentence>
+    <sentence>Program code in the rabbit hole and rabbit&lt;/i&gt;&lt;/font&gt;  &lt;br&gt;\r\n &lt;br&gt;\r\n</sentence>
+    <sentence>Чтобы Midjourney не генерировала больше змееподобных кроликов, решили вычеркнуть упоминание Python. </sentence>
+    <sentence>Написали проще: \"программный код\".&lt;br&gt;\r\n&lt;br&gt;\r\n&lt;div style=\"text-align:center\"&gt;&lt;/div&gt;&lt;br&gt;\r\n</sentence>
+    <sentence>
+        <entity type=\"company\" local-id=\"2\">Нейросеть </entity>сгенерировала старые ЭЛТ-мониторы (первая и третья картинки). 
+    </sentence>
+    <sentence>И если на второй картинке изображено что-то абстрактное, то на четвертой – чисто клон кролика из \"Алисы в стране чудес\". &lt;br&gt;\r\n&lt;br&gt;\r\n&lt;blockquote&gt;</sentence>
+    <sentence>Но откуда на первом изображении яйцо? </sentence>
+    <sentence>Может, есть предположения? </sentence>
+    <sentence>Делитесь идеями в комментариях. &lt;/blockquote&gt;&lt;br&gt;\r\n&lt;h3&gt;</sentence>
+    <sentence>Коробка с котиками&lt;/h3&gt;&lt;br&gt;\r\n</sentence>
+    <sentence>Следующий этап тестирования – генерация обложки для статьи про машинное обучение на GPU в Managed Kubernetes. &lt;br&gt;\r\n&lt;br&gt;\r\n&lt;div style=\"text-align:center\"&gt;&lt;/div&gt;&lt;br&gt;\r\n</sentence>
+    <sentence>Идея дизайнера: из коробки, символизирующей контейнер Kubernetes, вылетают картинки с котиками, которые сгенерированы в <entity type=\"company\" local-id=\"2\">нейросети </entity>на GPU. &lt;br&gt;\r\n&lt;br&gt;\r\n&lt;b&gt;</sentence>
+    <sentence>Первый запрос &lt;/b&gt;&lt;br&gt;\r\n &lt;br&gt;\r\n&lt;font color=\"#0B4A77\"&gt;&lt;i&gt;</sentence>
+    <sentence>Kubernetes container, photos with cats, machine learning, graphic processing unit&lt;/i&gt;&lt;/font&gt;  &lt;br&gt;\r\n &lt;br&gt;\r\n</sentence>
+    <sentence>Сначала решили посмотреть, что придумает Midjourney, если просто перечислить ключевые элементы через запятую. &lt;br&gt;\r\n&lt;br&gt;\r\n&lt;div style=\"text-align:center\"&gt;&lt;/div&gt;&lt;br&gt;\r\n</sentence>
+    <sentence>Что и следовало ожидать:        <entity type=\"company\" local-id=\"2\">нейросеть </entity>не знает, что такое Kubernetes и тем более не слышала про контейнеры в IT. </sentence>
+    <sentence>Итог – картинка с контейнеровозом, контейнерный терминал, какие-то полки и фотография Мурзика. &lt;br&gt;\r\n&lt;br&gt;\r\n&lt;b&gt;</sentence>
+    <sentence>Второй запрос &lt;/b&gt;&lt;br&gt;\r\n &lt;br&gt;\r\n&lt;font color=\"#0B4A77\"&gt;&lt;i&gt;</sentence>
+    <sentence>Box of pictures with cats&lt;/i&gt;&lt;/font&gt;  &lt;br&gt;\r\n &lt;br&gt;\r\n</sentence>
+    <sentence>Когда поняли, что Midjourney не сумеет придумать композицию, решили составить простой запрос: \"коробка с изображениями котов\". </sentence>
+    <sentence>На этот раз проблем не было, если не обращать внимание на странных котов.&lt;br&gt;\r\n&lt;br&gt;\r\n&lt;div style=\"text-align:center\"&gt;&lt;/div&gt;&lt;br&gt;\r\n&lt;blockquote&gt;</sentence>
+    <sentence>Забавно, что во время работы над статьей автор предложил добавить кошачьим артефакты – лишние ноги, странные хвосты и так далее. </sentence>
+    <sentence>Дизайнер усомнилась в идее, решив, что современные нейронные сети так не ошибаются. </sentence>
+    <sentence>Оказалось, это не так: Midjourney вот нарисовала котов без глаз. &lt;br&gt;\r\n&lt;/blockquote&gt;&lt;br&gt;\r\n&lt;h3&gt;</sentence>
+    <sentence>Облако на тарелке&lt;/h3&gt;&lt;br&gt;\r\n</sentence>
+    <sentence>Казалось, ничего лучше        <entity type=\"company\" local-id=\"2\">нейросеть </entity>уже не покажет. 
+    </sentence>
+    <sentence>К тому же, нужно было сгенерировать иллюстрацию по сложному концепту – разделение мощности виртуального процессора. &lt;br&gt;\r\n&lt;br&gt;\r\n&lt;div style=\"text-align:center\"&gt;&lt;/div&gt;&lt;br&gt;\r\n</sentence>
+    <sentence>Дизайнеры подошли к вопросу творчески – нарисовали нарезанное облако на тарелке. </sentence>
+    <sentence>Но что придумает        <entity type=\"company\" local-id=\"2\">нейросеть</entity>? &lt;br&gt;\r\n&lt;br&gt;\r\n&lt;b&gt;</sentence>
+    <sentence>Запрос &lt;/b&gt;&lt;br&gt;\r\n &lt;br&gt;\r\n&lt;font color=\"#0B4A77\"&gt;&lt;i&gt;</sentence>
+    <sentence>Virtual CPU, power sharing, cloud operations, shared line &lt;/i&gt;&lt;/font&gt;&lt;br&gt;\r\n &lt;br&gt;\r\n</sentence>
+    <sentence>Расписывать всю идею натюрморта было бессмысленно. </sentence>
+    <sentence>Запрос получился бы расплывчатым и слишком длинным. </sentence>
+    <sentence>Поэтому \"скормили\"        <entity type=\"company\" local-id=\"2\">нейросети </entity>обычную последовательность из ключевых элементов.&lt;br&gt;\r\n&lt;br&gt;\r\n&lt;div style=\"text-align:center\"&gt;&lt;/div&gt;&lt;br&gt;\r\n</sentence>
+    <sentence>Результат нас удивил. </sentence>
+    <sentence>Палитра и зернистость некоторых изображений очень напомнили картинки, которые рисуют дизайнеры        <entity type=\"company\" local-id=\"5\">Selectel</entity>. &lt;br&gt;\r\n&lt;br&gt;\r\n</sentence>
+    <sentence>Правда осмысленная композиция есть только на первой иллюстрации. </sentence>
+    <sentence>Кажется, что облако лежит на квадратной тарелке, которую мы даже не упоминали в запросе. &lt;br&gt;\r\n&lt;br&gt;\r\n&lt;b&gt;</sentence>
+    <sentence>Результат &lt;/b&gt;&lt;br&gt;\r\n &lt;br&gt;\r\n</sentence>
+    <sentence>Нам стало интересно, что будет, если мы сгенерируем дополнительные варианты первой картинки. </sentence>
+    <sentence>Для этого нажали на кнопку V1.&lt;br&gt;\r\n&lt;br&gt;\r\n&lt;div style=\"text-align:center\"&gt;&lt;/div&gt;&lt;br&gt;\r\n&lt;br&gt;\r\n</sentence>
+    <sentence>Особенно точно идея с нарезанным облаком передана на первой иллюстрации. </sentence>
+    <sentence>После апскейлинга получили иллюстрацию с еще большим градусом точности. &lt;br&gt;\r\n&lt;br&gt;\r\n&lt;div style=\"text-align:center\"&gt;&lt;/div&gt;&lt;br&gt;\r\n</sentence>
+    <sentence>Результат так нас впечатлил, что мы решили поиграть с вами в интерактив в заглавной картинке. </sentence>
+    <sentence>Вот и ответ – левая часть сгенерирована Midjourney, а правую дорисовал дизайнер. &lt;br&gt;\r\n&lt;br&gt;\r\n&lt;div style=\"text-align:center\"&gt;&lt;/div&gt;&lt;br&gt;\r\n&lt;font color=\"#EB4247\"&gt;&lt;h2&gt;</sentence>
+    <sentence>
+        <entity type=\"company\" local-id=\"2\">Нейросеть </entity>– конкурент? 
+    </sentence>
+    <sentence>Мнение ведущего дизайнера&lt;/h2&gt;&lt;/font&gt;&lt;br&gt;\r\n&lt;blockquote&gt;&lt;i&gt;</sentence>
+    <sentence>Нейронная сеть способна помочь в поиске концепций – подсказать вариант, который может направить мысль дизайнера в нетривиальное русло. &lt;br&gt;\r\n&lt;br&gt;\r\n</sentence>
+    <sentence>Но иллюстрации все равно нужно создавать дизайнерам. </sentence>
+    <sentence>Ведь в работу человека вложено больше, чем в рандомный машинный рисунок. </sentence>
+    <sentence>Мы продумываем целые сюжеты и метафоры, которые могут подкрепить блог компании смыслом и красотой. </sentence>
+    <sentence>Пока только дизайнеры могут привлекательно отразить айдентику бренда,&lt;/i&gt; – <entity type=\"person\" local-id=\"0\">Алина Экизашвили</entity>, руководитель        <entity type=\"company\" local-id=\"5\">отдела дизайна Selectel</entity>.&lt;/blockquote&gt;&lt;br&gt;\r\n</sentence>
+    <sentence>Заменят ли        <entity type=\"company\" local-id=\"2\">нейросети </entity>дизайнеров – пока сказать сложно. 
+    </sentence>
+    <sentence>Можно научить Midjourney и DALL-E делать иллюстрации в стилистике компании. </sentence>
+    <sentence>Но если брендбук будет меняться,        <entity type=\"company\" local-id=\"2\">нейросети </entity>придется переобучать. 
+    </sentence>
+    <sentence>Для этого нужен датасет из примеров, которые нужно кому-то отрисовать. </sentence>
+    <sentence>Появится ли профессия на стыке дизайна и DataScience – открытый вопрос.&lt;br&gt;\r\n&lt;br&gt;\r\n</sentence>
+    <sentence>Но сейчас, как и в обозримом будущем, кажется, фрилансер Midjourney в <entity type=\"company\" local-id=\"5\">Selectel </entity>не понадобится. 
+    </sentence>
+    <sentence>Но если сервис нужен вам, а бесплатный лимит превышен, пишите в комментариях запрос – поможем.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt; &lt;div&gt;&lt;/div&gt;&lt;/div&gt;  &lt;div&gt;&lt;div&gt; &lt;div&gt; &lt;div data-test-id=\"notice-content\"&gt;&lt;span&gt;</sentence>
+    <sentence>Только зарегистрированные пользователи могут участвовать в опросе. </sentence>
+    <sentence>Войдите, пожалуйста.&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt; &lt;div&gt;</sentence>
+    <sentence>Как думаете, заменит ли когда-нибудь        <entity type=\"company\" local-id=\"2\">нейросеть </entity>иллюстраторов?&lt;/div&gt; &lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;span&gt;\r\n            </sentence>
+    <sentence>0%\r\n          &lt;/span&gt; &lt;span&gt;Нет, машине все смыслы в иллюстрации не отразить&lt;/span&gt; &lt;span&gt;\r\n            0\r\n          &lt;/span&gt;&lt;/div&gt; &lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;span&gt;\r\n            0%\r\n          &lt;/span&gt; &lt;span&gt;С какими-то картинками <entity type=\"company\" local-id=\"2\">нейросеть </entity>справляется хорошо, но для некоторых – только человек&lt;/span&gt; &lt;span&gt;\r\n            0\r\n          &lt;/span&gt;&lt;/div&gt; &lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;span&gt;\r\n            0%\r\n          &lt;/span&gt; &lt;span&gt;Конечно! </sentence>
+    <sentence>В скором будущем. </sentence>
+    <sentence>Мне уже нравятся результаты&lt;/span&gt; &lt;span&gt;\r\n            0\r\n          &lt;/span&gt;&lt;/div&gt; &lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;span&gt;\r\n            0%\r\n          &lt;/span&gt; &lt;span&gt;Когда-нибудь точно заменят. </sentence>
+    <sentence>Как и в других профессиях&lt;/span&gt; &lt;span&gt;\r\n            0\r\n          &lt;/span&gt;&lt;/div&gt; &lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;span&gt;\r\n            0%\r\n          &lt;/span&gt; &lt;span&gt;Другое мнение, напишу в комментариях&lt;/span&gt; &lt;span&gt;\r\n            0\r\n          &lt;/span&gt;&lt;/div&gt; &lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt; &lt;div&gt;\r\n       Никто еще не голосовал. \r\n\r\n       </sentence>
+    <sentence>Воздержавшихся нет. \r\n    &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;\r\n&lt;/data&gt;\r\n\r\n</sentence>
+</scandoc>"

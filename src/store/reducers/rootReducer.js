@@ -1,14 +1,1 @@
-const rootReducer = (state = [], action) => {
-    switch (action.type) {
-        case 'WRITE': 
-            return [
-                ...state, action.payload
-            ]
-        default: {
-            return state;
-        }
-    }
-    
-}
-
-export default rootReducer
+"{\"issueDateInterval\":{\"startDate\":\"2007-12-31T21:00:00.000Z\",\"endDate\":\"2023-05-28T21:00:00.000Z\"},\"searchContext\":{\"targetSearchEntitiesContext\":{\"targetSearchEntities\":[{\"type\":\"company\",\"sparkId\":null,\"entityId\":null,\"inn\":7726381870,\"maxFullness\":false,\"inBusinessNews\":false}],\"onlyMainRole\":false,\"tonality\":\"any\",\"onlyWithRiskFactors\":false,\"riskFactors\":{\"and\":[],\"or\":[],\"not\":[]},\"themes\":{\"and\":[],\"or\":[],\"not\":[]}},\"themesFilter\":{\"and\":[],\"or\":[],\"not\":[]}},\"searchArea\":{\"includedSources\":[],\"excludedSources\":[],\"includedSourceGroups\":[],\"excludedSourceGroups\":[]},\"attributeFilters\":{\"excludeTechNews\":false,\"excludeAnnouncements\":false,\"excludeDigests\":true},\"similarMode\":\"duplicates\",\"limit\":1000,\"sortType\":\"issueDate\",\"sortDirectionType\":\"asc\",\"intervalType\":\"month\",\"histogramTypes\":[\"totalDocuments\",\"riskFactors\"]}"

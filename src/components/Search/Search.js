@@ -6,13 +6,12 @@ import Result from '../Result';
 
 const Search = () => {
     const selectedData = useSelector((state) => state, shallowEqual);
-    console.log('selectedData', selectedData)
+    //console.log('selectedData', selectedData)
 
     const renderConditions = () => {
-        if (Object.hasOwn(selectedData.query, 'docIDs') &&
-            Object.hasOwn(selectedData.query, 'histogram')) {
+        if (Object.hasOwn(selectedData.query, 'histIsLoading')) {
             return <Result />
-        } else return <>
+        } else return <div className={css.container}>
             <div className={css.searchLeft}>
                 <h1 className={css.heading}>Найдите необходимые данные в пару кликов.</h1>
                 <div className={css.text}>
@@ -22,13 +21,17 @@ const Search = () => {
                 <SearchForm />
             </div>
             <div className={css.searchRight}></div>
-        </>
+        </div>
+            
+        
     }
 
     return (
-        <div className={css.container}>
+        <> 
             {renderConditions()}
-        </div>
+        </>
+            
+        
     )
 }
 

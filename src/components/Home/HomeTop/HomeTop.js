@@ -15,11 +15,6 @@ const HomeTop = () => {
     //  dispatch({ type: 'CLEAR_QUERY_REDUCER', payload: false })
     }, [])
 
-    const date = new Date();
-    if (Object.hasOwn(selectedData.login, 'token')) {
-        Date.parse(selectedData.login.token.expire) - Date.parse(date) < 0 && persistor.purge();
-    }
-
     const renderCondition = () => {
         if (Object.hasOwn(selectedData.login, 'token')) {
             if (Object.hasOwn(selectedData.login.token, 'accessToken')) {

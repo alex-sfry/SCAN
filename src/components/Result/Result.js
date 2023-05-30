@@ -1,86 +1,118 @@
 import { React, useEffect, useState, useRef } from 'react';
 import css from './Result.module.css';
-import Arrow from '../Arrow/Arrow';
-import Carousel from '../Carousel/Carousel.js';
 import { useDispatch, useSelector, shallowEqual } from 'react-redux';
 import moment from "moment";
 import useFetchData from '../../hooks/useFetchData.js';
-
+import ResultSlider from './ResultSlider';
+import ResultTop from './ResultTop';
+import ResultDocuments from './ResultDocuments';
 
 const Result = () => {
     const selectedData = useSelector((state) => state, shallowEqual);
     //const dispatch = useDispatch();
     const { fetch } = useFetchData();
     const [loadedQty, setLoadedQty] = useState(0)
+    const [slides, setSlides] = useState([])
+    const [slidesToShow, setSlidesToShow] = useState(1)
+    const [docsToShow, setDocsToShow] = useState(0)
     const token = selectedData.login.token.accessToken;
     const req = { ids: [] };
 
-    for (let i = 0; i < 2; i++) {
-        req.ids.push(selectedData.query.docIDs[i].encodedId)
-    }
-
-    let shouldFetch = useRef(true);
+    console.log(selectedData)
     useEffect(() => {
-        if (shouldFetch.current) {
-            shouldFetch = false;
-            fetch('/api/v1/documents', req, token, 'searchInstance', 'docs')
-            setLoadedQty(2)
+        if (Object.hasOwn(selectedData.query, 'docIDs')) {
+            selectedData.query.docIDs.length > 10 ? setDocsToShow(10) : setDocsToShow(selectedData.query.docIDs.length)
         }
-    }, [])
+    }, [selectedData.query])
 
-    const totalDocsQty = selectedData.query.histogram.totalDocuments;
-    const riskFactorsQty = selectedData.query.histogram.riskFactors;
+    useEffect(() => {
+        if (Object.hasOwn(selectedData.query, 'histogram') && loadedQty === 0) handleResult()
+    }, [selectedData.query])
 
-    //sorting by date
-    const sortedTotalDocsQty = totalDocsQty.sort((a, b) => moment(a.date).diff(b.date))
-    const sortedRiskFactorsQty = riskFactorsQty.sort((a, b) => moment(a.date).diff(b.date))
-    const slidesToShow = sortedTotalDocsQty.length >= 8 ? 8 : sortedTotalDocsQty.length
-    const formatDate = (date) => {
-        return moment(date).utc().format('DD-MM-YYYY')
+    //let ignoreFetch = true
+    let shouldFetch = useRef(true);
+
+    useEffect(() => {
+        if (Object.hasOwn(selectedData.query, 'docIDs') && docsToShow > 0) {
+            if (selectedData.query.docs.length === 0) {
+                for (let i = 0; i < docsToShow; i++) {
+                    req.ids.push(selectedData.query.docIDs[i].encodedId)
+                }
+
+                if (shouldFetch.current) {
+                    shouldFetch = false;
+                    fetch('/api/v1/documents', req, token, 'searchInstance', 'docs')
+                    setLoadedQty(docsToShow)
+                }
+            }
+        }
+    }, [docsToShow])
+
+    console.log('docsToShow', docsToShow)
+
+    const handleResult = () => {
+        console.log('handleResult')
+        if (Object.hasOwn(selectedData.query.histogram, 'totalDocuments')) {
+            const totalDocsQty = selectedData.query.histogram.totalDocuments;
+            const riskFactorsQty = selectedData.query.histogram.riskFactors;
+
+            //sorting by date
+            const sortedTotalDocsQty = totalDocsQty.sort((a, b) => moment(a.date).diff(b.date))
+            const sortedRiskFactorsQty = riskFactorsQty.sort((a, b) => moment(a.date).diff(b.date))
+
+            setSlidesToShow(sortedTotalDocsQty.length >= 8 ? 8 : sortedTotalDocsQty.length)
+
+            const formatDate = (date) => {
+                return moment(date).utc().format('DD-MM-YYYY')
+            }
+
+            setSlides(sortedTotalDocsQty.map((item, index) => {
+                return <div className={css.resultCard}>
+                    <p className={css.cardDate}>{formatDate(item.date)}</p>
+                    <p>{item.value}</p>
+                    <p>{sortedRiskFactorsQty[index].value}</p>
+                </div>
+            }))
+        } else {
+            setSlidesToShow(1)
+            setSlides([<div className={css.resultCard}>0 document found</div>])
+        }
+
     }
-
-    const slides = sortedTotalDocsQty.map((item, index) => {
-        return <div className={css.resultCard}>
-            <p className={css.cardDate}>{formatDate(item.date)}</p>
-            <p>{item.value}</p>
-            <p>{sortedRiskFactorsQty[index].value}</p>
-        </div>
-    })
 
     const handleClick = () => {
-        if (loadedQty === 17) return
+        console.log('loadedQty', loadedQty)
+        let toLoadQty;
+
+        if (loadedQty >= selectedData.query.docIDs.length) return
         const req = { ids: [] };
 
-        for (let i = loadedQty; i < loadedQty + 2; i++) {
+        if (selectedData.query.docIDs.length - loadedQty < 10) {
+            toLoadQty = selectedData.query.docIDs.length
+        } else toLoadQty = loadedQty + 10
+
+        for (let i = loadedQty; i < toLoadQty; i++) {
             req.ids.push(selectedData.query.docIDs[i].encodedId)
         }
-
-        setLoadedQty(loadedQty + 2)
+        setLoadedQty(toLoadQty)
         fetch('/api/v1/documents', req, token, 'searchInstance', 'docs')
     }
 
     return (
         <div className={css.result}>
-            <div className={css.slider}>
-                <div className={css.leftHeader}>
-                </div>
-                <Carousel
-                    sliderClass={'resultSlider'}
-                    slides={slides}
-                    sliderSettings={{
-                        className: 'resultSlider',
-                        dots: false,
-                        infinite: true,
-                        speed: 500,
-                        slidesToShow: slidesToShow,
-                        slidesToScroll: 1,
-                        arrows: true,
-                        nextArrow: <Arrow direction={'arrowRight'} parentSlider={'resultSlider'} />,
-                        prevArrow: <Arrow direction={'arrowLeft'} parentSlider={'resultSlider'} />
-                    }}
-                />
+            <ResultTop />
+            <div className={css.sliderContainer}>
+                {
+                    // Object.hasOwn(selectedData.query, 'histogram') &&
+                    <ResultSlider slides={slides} slidesToShow={slidesToShow} />
+                }
             </div>
-            <button onClick={handleClick} >Load more</button>
+            {
+             !selectedData.query.histIsLoading ? 
+                <ResultDocuments handleClick={handleClick} /> : 
+                    null
+            }
+            
         </div>
     )
 }

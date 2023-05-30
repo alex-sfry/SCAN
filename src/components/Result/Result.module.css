@@ -1,7 +1,13 @@
 .result {
-    min-height: 400px;
-    width: 100%;
+    max-width: 1340px;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
+    sdsdheight: calc(100vh - 137px - 93px);
+    sdmin-height: 100%;
+    min-height: 100%;
+    
 }
 
 .resultCard {
@@ -10,10 +16,9 @@
     height: calc(158px - 34px);
     width: 100%;
     max-width: 141px;
-    border-right: 2px solid var(--teal);
+    border-right: 2px solid rgba(148, 148, 148, 0.4);
     margin: 17px 0;
-    background-color: aquamarine;
-    padding: 1px 18px 0 20px;
+    padding: 1px 17px 0 17px;
 }
 
 .resultCard p {
@@ -24,37 +29,17 @@
     line-height: 22px;
     letter-spacing: 0.02em;
     color: var(--black);
-    padding-bottom: 22px;
+    padding-bottom: 26px;
 }
 
-.cardDate {
-    padding-bottom: 29px;
+.resultCard .cardDate {
+    padding-bottom: 27px;
 }
 
-.slider {
-    width: calc(1285px - 133px);
-    margin: 0 auto;
-    border: 2px solid var(--teal);
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
-    position: relative;
-    background-color: aquamarine;
-    margin-left: 160px;
-    max-height: 162px;
-    
+.sliderContainer {
+    min-height: 162px;
 }
 
-.leftHeader {
-    height: 162px;
-    width: 133px;
-    background-color: blue;
-    position: absolute;
-    z-index: 3;
-    left: -133px;
-    top: -2px;
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
-}
 
 
 

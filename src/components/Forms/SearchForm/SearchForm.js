@@ -14,17 +14,18 @@ import useFetchData from '../../../hooks/useFetchData.js';
 const SearchForm = () => {
     //TODO: validation, check different library for date picker and select
 
-    const {idList, histoGram, docs, isLoading, fetch} = useFetchData();
+    const {idList, histoGram, isLoading, fetch} = useFetchData();
     const selectedData = useSelector((state) => state, shallowEqual);
     const dispatch = useDispatch();
     const token = selectedData.login.token.accessToken;
-    //console.log(selectedData.query)
+    
     useEffect(() => {
-        histoGram && dispatch({ type: 'ADD_HISTOGRAM', payload: [histoGram, isLoading] })
-        idList && dispatch({ type: 'ADD_DOC_IDS', payload: idList.items })
+        // histoGram && dispatch({ type: 'ADD_HISTOGRAM', payload: [histoGram, isLoading] })
+        // idList && dispatch({ type: 'ADD_DOC_IDS', payload: idList.items })
     }, [idList, histoGram, dispatch])
 
     const { register, formState: { errors, isValid }, handleSubmit, control, setError } = useForm({ mode: 'onChange' });
+
     const onSubmit = data => {
         if (data.dateFrom.$d.getTime() - data.dateTo.$d.getTime() > 0) {
             setError("dateFrom", { type: "required" }, { required: true });
@@ -33,6 +34,7 @@ const SearchForm = () => {
 
         dispatch({ type: 'IS_LOADING', payload: true })
         const req = histogrReq(data)
+        console.log(req)
         fetch('/api/v1/objectsearch/histograms', req, token, 'searchInstance', 'histoGram');
         fetch('/api/v1/objectsearch', req, token, 'searchInstance', 'idList');
     }

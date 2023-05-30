@@ -9,13 +9,13 @@ import yandex from '../../../assets/images/yandex.svg';
 import useAxios from '../../../hooks/useAxios.js';
 import { useDispatch, useSelector, shallowEqual } from 'react-redux';
 import { Navigate } from "react-router-dom";
+import useFetchData from '../../../hooks/useFetchData.js';
 
 const SingIn = () => {
-    const { status, fetch } = useAxios();
+    //const { status, fetch } = useAxios();
+    const {status, isLoading, fetch} = useFetchData();
     const dispatch = useDispatch();
     const selectedData = useSelector((state) => state, shallowEqual);
-    //console.log(fetch)
-    console.log(status.data)
 
     useEffect(() => {
         if (status.data) {
@@ -27,21 +27,18 @@ const SingIn = () => {
     }, [status.data, dispatch])
     
     useEffect(() => {
-        console.log('info')
         if (Object.hasOwn(selectedData.login, 'token') && !Object.hasOwn(selectedData.login, 'info')) {
             console.log('fetch info')
             dispatch({ type: 'ADD_LOADING_STATUS', payload: true })
-            fetch('/api/v1/account/info', null , "GET", selectedData.login.token.accessToken, )
+            fetch('/api/v1/account/info', null, selectedData.login.token.accessToken, 'queryInstance')
         }
     }, [selectedData.login.token, dispatch])
-
-    if (selectedData) console.log(selectedData)
 
     const { register, formState: { errors, isValid }, handleSubmit } = useForm({ mode: 'onChange' });
     //console.log(errors);
 
     const onSubmit = (data) => {
-        fetch('/api/v1/account/login', { login: data.login, password: data.password })
+        fetch('/api/v1/account/login', { login: data.login, password: data.password }, null, 'loginInstance')
     }
 
     const renderAlert = (name) => {

@@ -1,23 +1,23 @@
 {
     "ok": {
         "schemaVersion": "1.2",
-        "id": "1:MtCg0IEg0L/QqNCs0ZVx0pHQpS8cKsKw0ZPQhE5ESBFLY1cSJMKwHQ3CpCYo0JvihJZAbuKAlCwQQjnRjdCzwqnSkQjQqxc=",
+        "id": "1:wrXQgeKAuWXigLAFbDI90YIAK9CJadCnF2vCmNGDNNCb0Y3Ri+KAujsaFHEiRtCRaHoU4oCgStC4asKpP0LRmtCSYuKApjUdQtCJF+KAueKAnWgh0JBu0ZHQqdCzQnF/IMKt",
         "version": 1,
-        "issueDate": "2022-10-19T20:34:42+03:00",
-        "url": "https://24seoblog.ru/ypravlenie-proektami-chto-eto-takoe-kakie-est-metody-i-stadii-ypravleniia/",
+        "issueDate": "2022-08-24T11:30:17+03:00",
+        "url": "https://habr.com/ru/company/selectel/blog/684246/",
         "source": {
-            "id": 70634,
-            "name": "24seoblog.ru",
+            "id": 37205,
+            "name": "Хабр (habr.com)",
             "categoryId": 7,
             "levelId": 1
         },
-        "dedupClusterId": "2FA09632",
+        "dedupClusterId": "2F1A1642",
         "title": {
-            "text": "Управление проектами: что это такое, какие есть методы и стадии управления",
-            "markup": "<?xml version=\"1.0\" encoding=\"utf-8\"?><scandoc><sentence>Управление проектами: что это такое, какие есть методы и стадии управления\r\n&lt;data&gt;\r\n&lt;body&gt;&lt;div&gt;&lt;div id=\"toc_container\"&gt;&lt;p&gt;</sentence></scandoc>"
+            "text": "Сможет ли Midjourney заменить дизайнеров? Тестируем нейронную сеть",
+            "markup": "<?xml version=\"1.0\" encoding=\"utf-8\"?><scandoc><sentence>Сможет ли Midjourney заменить дизайнеров? </sentence><sentence>Тестируем нейронную сеть\r\n&lt;data&gt;\r\n&lt;body&gt;&lt;div data-gallery-root=\"\" lang=\"ru\"&gt;&lt;div&gt;&lt;/div&gt; &lt;div id=\"post-content-body\"&gt;&lt;div&gt;&lt;div&gt;&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;div style=\"text-align:center\"&gt;&lt;/div&gt;&lt;br&gt;\r\n</sentence></scandoc>"
         },
         "content": {
-            "markup": "<?xml version=\"1.0\" encoding=\"utf-8\"?><scandoc><sentence>Содержание:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;span&gt;</sentence><sentence>1&lt;/span&gt; Что такое управление проектами&lt;/li&gt;&lt;li&gt;&lt;span&gt;</sentence><sentence>2&lt;/span&gt; Преимущества проектного метода управления и его недостатки&lt;/li&gt;&lt;li&gt;&lt;span&gt;</sentence><sentence>3&lt;/span&gt; Какую методологию выбрать&lt;ul&gt;&lt;li&gt;&lt;span&gt;</sentence><sentence>3.1&lt;/span&gt; Классические методы&lt;/li&gt;&lt;li&gt;&lt;span&gt;</sentence><sentence>3.2&lt;/span&gt; <entity type=\"company\" local-id=\"7\">Гибкое управление проектами </entity>( <entity type=\"company\" local-id=\"7\">Agile</entity>)&lt;/li&gt;&lt;li&gt;&lt;span&gt;</sentence><sentence>3.3&lt;/span&gt; Методы <entity type=\"company\" local-id=\"7\">управления </entity>изменениями&lt;/li&gt;&lt;li&gt;&lt;span&gt;</sentence><sentence>3.4&lt;/span&gt; Процессно-ориентированные методы&lt;/li&gt;&lt;li&gt;&lt;span&gt;</sentence><sentence>3.5&lt;/span&gt; Методы работы в сложных и объемных проектах&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;</sentence><sentence>4&lt;/span&gt; Стадии <entity type=\"company\" local-id=\"7\">управления проектом</entity>&lt;ul&gt;&lt;li&gt;&lt;span&gt;</sentence><sentence>4.1&lt;/span&gt; 1. </sentence><sentence>Инициирование&lt;/li&gt;&lt;li&gt;&lt;span&gt;</sentence><sentence>4.2&lt;/span&gt; 2. </sentence><sentence>Планирование&lt;/li&gt;&lt;li&gt;&lt;span&gt;</sentence><sentence>4.3&lt;/span&gt; 3. </sentence><sentence>Выполнение&lt;/li&gt;&lt;li&gt;&lt;span&gt;</sentence><sentence>4.4&lt;/span&gt; 4. </sentence><sentence>Мониторинг&lt;/li&gt;&lt;li&gt;&lt;span&gt;</sentence><sentence>4.5&lt;/span&gt; 5. </sentence><sentence>Завершение&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;</sentence><sentence>5&lt;/span&gt; Топ-5 систем управления проектами&lt;ul&gt;&lt;li&gt;&lt;span&gt;</sentence><sentence>5.1&lt;/span&gt; Trello&lt;/li&gt;&lt;li&gt;&lt;span&gt;</sentence><sentence>5.2&lt;/span&gt; Asana&lt;/li&gt;&lt;li&gt;&lt;span&gt;</sentence><sentence>5.3&lt;/span&gt; <entity type=\"company\" local-id=\"11\">Битрикс 24</entity>&lt;/li&gt;&lt;li&gt;&lt;span&gt;</sentence><sentence>5.4&lt;/span&gt; Jira&lt;/li&gt;&lt;li&gt;&lt;span&gt;</sentence><sentence>5.5&lt;/span&gt; GanttPro&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;</sentence><sentence>6&lt;/span&gt; Кто такой менеджер проектов: навыки, обязанности, зарплата, обучение&lt;ul&gt;&lt;li&gt;&lt;span&gt;</sentence><sentence>6.1&lt;/span&gt; Навыки проектного менеджера&lt;/li&gt;&lt;li&gt;&lt;span&gt;</sentence><sentence>6.2&lt;/span&gt; Востребованность профессии&lt;/li&gt;&lt;li&gt;&lt;span&gt;</sentence><sentence>6.3&lt;/span&gt; Зарплаты менеджеров проектов&lt;/li&gt;&lt;li&gt;&lt;span&gt;</sentence><sentence>6.4&lt;/span&gt; Как войти в профессию&lt;ul&gt;&lt;li&gt;&lt;span&gt;</sentence><sentence>6.4.1&lt;/span&gt; PMCLUB&lt;/li&gt;&lt;li&gt;&lt;span&gt;</sentence><sentence>6.4.2&lt;/span&gt; <entity type=\"company\" local-id=\"25\"><entity type=\"company\" local-id=\"8\">Школа продакт-менеджеров \"Яндекса\"</entity></entity>&lt;/li&gt;&lt;li&gt;&lt;span&gt;</sentence><sentence>6.4.3&lt;/span&gt; Management Channel&lt;/li&gt;&lt;li&gt;&lt;span&gt;</sentence><sentence>6.4.4&lt;/span&gt; Telegra-каналы и подкасты для project-проектов&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;</sentence><sentence>6.5&lt;/span&gt; Где обучиться управлению проектом&lt;ul&gt;&lt;li&gt;&lt;span&gt;</sentence><sentence>6.5.1&lt;/span&gt; Вузы&lt;/li&gt;&lt;li&gt;&lt;span&gt;</sentence><sentence>6.5.2&lt;/span&gt; Курсы&lt;/li&gt;&lt;li&gt;&lt;span&gt;</sentence><sentence>6.5.3&lt;/span&gt; Бизнес-школы&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;</sentence><sentence>7&lt;/span&gt; Книги по управлению проектами&lt;ul&gt;&lt;li&gt;&lt;span&gt;</sentence><sentence>7.1&lt;/span&gt; <entity type=\"person\" local-id=\"4\">Джозеф Хигни</entity>.</sentence><sentence>Основы проектного менеджмента. </sentence><sentence>Классическое руководство&lt;/li&gt;&lt;li&gt;&lt;span&gt;</sentence><sentence>7.2&lt;/span&gt; <entity type=\"person\" local-id=\"6\">Джеф Сазерленд</entity>. </sentence><sentence>Scrum. </sentence><sentence>Революционный метод управления проектами&lt;/li&gt;&lt;li&gt;&lt;span&gt;</sentence><sentence>7.3&lt;/span&gt; <entity type=\"person\" local-id=\"1\">Рэй Далио</entity>. </sentence><sentence>Принципы&lt;/li&gt;&lt;li&gt;&lt;span&gt;</sentence><sentence>7.4&lt;/span&gt; <entity type=\"person\" local-id=\"2\">Том ДеМарко</entity>. </sentence><sentence>Deadline. </sentence><sentence>Роман об управлении проектами&lt;/li&gt;&lt;li&gt;&lt;span&gt;</sentence><sentence>7.5&lt;/span&gt; <entity type=\"person\" local-id=\"3\">Стивен Деннинг</entity>. </sentence><sentence>Эпоха <entity type=\"company\" local-id=\"7\">Agile</entity>&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;\r\n&lt;p&gt;\r\n&lt;p&gt;</sentence><sentence>Я – главный редактор блога Kokoc.com. </sentence><sentence>У меня есть куратор, заместитель и команда авторов, с которой мы разрабатываем темы для написания. </sentence><sentence>Вся работа идет через Trello. </sentence><sentence>То, чем мы занимаемся с разной степенью доступа и уровнем ответственности, называется управлением проектами. </sentence><sentence>О нем и поговорим сегодня.&lt;/p&gt;\r\n&lt;h2&gt;&lt;span id=\"i\"&gt;</sentence><sentence>Что такое управление проектами&lt;/span&gt;&lt;/h2&gt;\r\n&lt;p&gt;</sentence><sentence>Управление проектами – это комплекс действий, связанных с планированием и распределением ресурсов (временных, трудовых, финансовых и т. д.) для решения задач в рамках определенной цели. </sentence><sentence>Это может быть продвижение сайта, запуск таргетированной рекламы, написание статей для блога, если речь идет об интернет-маркетинговых активностях.&lt;/p&gt;\r\n&lt;p&gt;</sentence><sentence>Проект – это связанные единой целью действия, которые имеют конечной целью разработку нового продукта – товара или услуги, а также достижение определенных количественных и качественных показателей.&lt;/p&gt;\r\n&lt;p&gt;\r\n&lt;h2&gt;&lt;span id=\"i-2\"&gt;</sentence><sentence>Преимущества проектного метода управления и его недостатки&lt;/span&gt;&lt;/h2&gt;\r\n&lt;p&gt;&lt;strong&gt;</sentence><sentence>Начнем с плюсов:&lt;/strong&gt;&lt;/p&gt;\r\n&lt;ol&gt;\r\n&lt;li&gt;</sentence><sentence><entity type=\"theme\" local-id=\"35\">Сбережение ресурсов и экономия бюджета.&lt;/li&gt;\r\n&lt;li&gt;</entity></sentence><sentence>Выставление приоритетов и конкретизация целей.&lt;/li&gt;\r\n&lt;li&gt;</sentence><sentence>Мониторинг каждой стадии работы.&lt;/li&gt;\r\n&lt;li&gt;</sentence><sentence>Формирование критериев оценки эффективности.&lt;/li&gt;\r\n&lt;li&gt;</sentence><sentence>Оперативное выявление рисков и их нейтрализация.&lt;/li&gt;\r\n&lt;li&gt;</sentence><sentence>Открытая система мотивации и поощрения персонала.&lt;/li&gt;\r\n&lt;li&gt;</sentence><sentence>Ускоренное принятие решений без лишних препонов. &lt;/li&gt;\r\n&lt;/ol&gt;\r\n&lt;p&gt;&lt;strong&gt;</sentence><sentence>Есть и минусы:&lt;/strong&gt;&lt;/p&gt;\r\n&lt;ol&gt;\r\n&lt;li&gt;</sentence><sentence>Возможная нехватка ресурсов у малого бизнеса на разнос денег между разными проектами.&lt;/li&gt;\r\n&lt;li&gt;</sentence><sentence>Повышенные требования к профессионализму руководителя и project-менеджерам.&lt;/li&gt;\r\n&lt;li&gt;</sentence><sentence>Сложность переходного периода от архаичной методики управления в компании к строго проектной.&lt;/li&gt;\r\n&lt;/ol&gt;\r\n&lt;h2&gt;&lt;span id=\"i-3\"&gt;</sentence><sentence>Какую методологию выбрать&lt;/span&gt;&lt;/h2&gt;\r\n&lt;p&gt;</sentence><sentence>Все подобные методы отличаются друг от друга масштабом исполнения, спецификой бизнеса и т. д. </sentence><sentence>Условно их можно разнести по пяти большим группам:&lt;/p&gt;\r\n&lt;ol&gt;\r\n&lt;li&gt;</sentence><sentence>Классические методы.&lt;/li&gt;\r\n&lt;li&gt;</sentence><sentence>Гибкие методики.&lt;/li&gt;\r\n&lt;li&gt;</sentence><sentence>Методы управления изменениям.&lt;/li&gt;\r\n&lt;li&gt;</sentence><sentence>Процессно-ориентированные методы.&lt;/li&gt;\r\n&lt;li&gt;</sentence><sentence>Методы работы в сложных и объемных проектах.&lt;/li&gt;\r\n&lt;/ol&gt;\r\n&lt;h3&gt;&lt;span id=\"i-4\"&gt;</sentence><sentence>Классические методы&lt;/span&gt;&lt;/h3&gt;\r\n&lt;p&gt;</sentence><sentence>Их базовое положение состоит в том, что все операции в рамках проекта выполняются только последовательно. </sentence><sentence>То есть пока мы не завершим одну операцию, к другой не приступаем.&lt;/p&gt;\r\n&lt;p&gt;</sentence><sentence>В этой группе можно выделить:&lt;/p&gt;\r\n&lt;ol&gt;\r\n&lt;li&gt;</sentence><sentence>Метод водопада (каскадная модель). </sentence><sentence>Оптимален для работы с объектами материального мира – одежды, обуви, недвижимости и т. п. </sentence><sentence>Плюсом метода является то, что все этапы строго запланированы. </sentence><sentence>Минус же в том, что любое отклонение от первоначальных целей рушит логическую цепочку операций.&lt;/li&gt;\r\n&lt;li&gt;</sentence><sentence>Метод критического пути ( CPM). </sentence><sentence>Оптимален для проектов, части которых взаимосвязаны. </sentence><sentence>Каждая задача получает сроки выполнения и приоритет, выделяют наиболее важные из них. </sentence><sentence>Благодаря методу можно нивелировать ошибки и повысить скорость реализации, но как и каскадный, он не адаптирован к изменениям..&lt;/li&gt;\r\n&lt;/ol&gt;\r\n&lt;h3&gt;&lt;span id=\"__Agile\"&gt;</sentence><sentence><entity type=\"company\" local-id=\"7\">Гибкое управление проектами </entity>( <entity type=\"company\" local-id=\"7\">Agile</entity>)&lt;/span&gt;&lt;/h3&gt;\r\n&lt;p&gt;</sentence><sentence>Главное преимущество этого метода – скорость реализации. </sentence><sentence>Он позволяет быстро опробовать и представлять рынку новые продукты. </sentence><sentence>Логично, что <entity type=\"company\" local-id=\"7\">Agile </entity>все больше и больше используется отечественными компаниями, не говоря уж о зарубежных.&lt;/p&gt;\r\n&lt;p&gt;</sentence><sentence>В этой группе можно выделить:&lt;/p&gt;\r\n&lt;ol&gt;\r\n&lt;li&gt;&lt;strong&gt;</sentence><sentence>Scrum.&lt;/strong&gt; </sentence><sentence>Оптимален, когда нужно разработать инновационный продукт. </sentence><sentence><entity type=\"theme\" local-id=\"31\">По этому методу формируется команда и работает короткими циклами длиной две или три недели, за которые идет выпуск, тестирование и модернизация продукта. </entity></sentence><sentence>Здесь и исполнитель, и заказчик максимально задействованы в работе. </sentence><sentence>Из преимуществ можно отметить скорость, приспособляемость и командную вовлеченность. </sentence><sentence>Недостатком является сложность в планировании затрат. </sentence><sentence>Подробнее об этой методологии мы писали в отдельной статье блога.&lt;/li&gt;\r\n&lt;li&gt;&lt;strong&gt;</sentence><sentence>Kanban&lt;/strong&gt;. </sentence><sentence>С его помощью можно адаптировать проект к новым обстоятельствам, ставить задачам новые приоритеты, загрузку участников. </sentence><sentence>Методика выделились из <entity type=\"company\" local-id=\"7\">Agile </entity>и сейчас определяется как способ улучшения бизнес-среды компании в целом, а не только методика управления единичными проектами. </sentence><sentence>О Kanban у нас тоже есть отдельная статья.&lt;/li&gt;\r\n&lt;li&gt;&lt;strong&gt;</sentence><sentence>Метод экстремального программирования&lt;/strong&gt;. </sentence><sentence>Используется исключительно в вопросах разработки программного обеспечения. </sentence><sentence>Из преимуществ – большая скорость разработки и грамотность написания кода. </sentence><sentence>Из недостатков – сложная процедура внедрения и доступность только для команды программистов с высокой квалификацией.&lt;/li&gt;\r\n&lt;/ol&gt;\r\n&lt;h3&gt;&lt;span id=\"i-5\"&gt;</sentence><sentence>Методы управления изменениями&lt;/span&gt;&lt;/h3&gt;\r\n&lt;p&gt;</sentence><sentence>Все внимание в них отдается переменам, возможным рисками и негативным сценариям развития.&lt;/p&gt;\r\n&lt;p&gt;</sentence><sentence>В этой группе можно выделить:&lt;/p&gt;\r\n&lt;ol&gt;\r\n&lt;li&gt;&lt;strong&gt;</sentence><sentence>Моделирование событий ( ЕСМ)&lt;/strong&gt;. </sentence><sentence>Здесь нужно разработать вменяемый и выполнимый сценарий и учесть внешние обстоятельства, которые так или иначе могут повлиять на реализуемость проекта и скорость выполнения.&lt;/li&gt;\r\n&lt;li&gt;&lt;strong&gt;</sentence><sentence><entity type=\"company\" local-id=\"9\">Экстремальное управление </entity>( <entity type=\"company\" local-id=\"9\">EXP</entity>)&lt;/strong&gt;. </sentence><sentence>Было разработано именно для проектов с коротким циклом разработки и интенсивными изменениями, высокой степенью неопределенности и рисками. &lt;/li&gt;\r\n&lt;/ol&gt;\r\n&lt;h3&gt;&lt;span id=\"i-6\"&gt;</sentence><sentence>Процессно-ориентированные методы&lt;/span&gt;&lt;/h3&gt;\r\n&lt;p&gt;</sentence><sentence>Используются тогда, когда проект можно \"разложить\" по конвейерной ленте. </sentence><sentence>В этом случае можно применять:&lt;/p&gt;\r\n&lt;ol&gt;\r\n&lt;li&gt;&lt;strong&gt;</sentence><sentence>Метод бережливого производства ( Lean)&lt;/strong&gt;. </sentence><sentence>Используется для минимизации и нивелирования нецелевых затрат и недостатков разрабатываемого продукта.&lt;/li&gt;\r\n&lt;li&gt;&lt;strong&gt;</sentence><sentence>Метод шести сигм ( Six Sigma)&lt;/strong&gt;. </sentence><sentence>Ориентирован на выявление и устранение потерь и повышения скорости протекания ряда бизнес-процессов.&lt;/li&gt;\r\n&lt;/ol&gt;\r\n&lt;h3&gt;&lt;span id=\"i-7\"&gt;</sentence><sentence>Методы работы в сложных и объемных проектах&lt;/span&gt;&lt;/h3&gt;\r\n&lt;p&gt;</sentence><sentence>Они имеют сертификаты и очень подробно прописанную документацию, что позволяет декомпозировать сложную задачу на ряд более простых. </sentence><sentence>В итоге для каждой устанавливаются дочерние и взаимные связи, продолжительность, приоритет и т.п.&lt;/p&gt;\r\n&lt;p&gt;</sentence><sentence>В этой группе можно выделить:&lt;/p&gt;\r\n&lt;ol&gt;\r\n&lt;li&gt;&lt;strong&gt;</sentence><sentence>PRINCE2 ( PRojects IN Controlled Environments)&lt;/strong&gt;. </sentence><sentence>Способ, ориентированный на продукт и предназначенный для реализации проектов с фиксированным набором требований. </sentence><sentence>Из характерных черт можно отметить предельно четкую документированность.&lt;/li&gt;\r\n&lt;li&gt;&lt;strong&gt;</sentence><sentence>PMBOK&lt;/strong&gt;. </sentence><sentence>Это собой свод правил и практик, лишь рекомендуемых к исполнению, содержащих 12 принципов управления в 8 областях.&lt;/li&gt;\r\n&lt;/ol&gt;\r\n&lt;h2&gt;&lt;span id=\"i-8\"&gt;</sentence><sentence>Стадии управления проектом&lt;/span&gt;&lt;/h2&gt;\r\n&lt;p&gt;</sentence><sentence>Всего их пять.&lt;/p&gt;\r\n&lt;div id=\"yandex_rtb_R-A-614052-12\"&gt;&lt;/div&gt;\r\n\r\n&lt;br&gt;\r\n&lt;h3&gt;&lt;span id=\"1\"&gt;</sentence><sentence>1. </sentence><sentence>Инициирование&lt;/span&gt;&lt;/h3&gt;\r\n&lt;p&gt;</sentence><sentence>На этом этапе идет постановка проблемы – в самых общих чертах. </sentence><sentence>Важные вопросы:&lt;/p&gt;\r\n&lt;ul&gt;\r\n&lt;li&gt;</sentence><sentence>Для кого и для чего будет вестись разработка?&lt;/li&gt;\r\n&lt;li&gt;</sentence><sentence>Кто получит выгоды от реализации?&lt;/li&gt;\r\n&lt;li&gt;</sentence><sentence>Насколько реалистичны предъявляемые требования?&lt;/li&gt;\r\n&lt;li&gt;</sentence><sentence>С какими сложностями придется столкнуться сразу, а с какими – в перспективе?&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;h3&gt;&lt;span id=\"2\"&gt;</sentence><sentence>2. </sentence><sentence>Планирование&lt;/span&gt;&lt;/h3&gt;\r\n&lt;p&gt;</sentence><sentence>Стоит отметить, что этот этап в принципе является перманентным. </sentence><sentence>Здесь обсуждается техническое задание с заказчиком, прояснить цели, разработать схему реализации, сформировать ключевые показатели эффективности, затраты материальных ресурсов и дедлайны, а также роли и уровни доступа участников команды.&lt;/p&gt;\r\n&lt;h3&gt;&lt;span id=\"3\"&gt;</sentence><sentence>3. </sentence><sentence>Выполнение&lt;/span&gt;&lt;/h3&gt;\r\n&lt;p&gt;</sentence><sentence>Собственно, представление результатов выполнения проекта заказчику.&lt;/p&gt;\r\n&lt;h3&gt;&lt;span id=\"4\"&gt;</sentence><sentence>4. </sentence><sentence>Мониторинг&lt;/span&gt;&lt;/h3&gt;\r\n&lt;p&gt;</sentence><sentence>Идет рука об руку с предыдущим этапом. </sentence><sentence>Здесь project-менеджер отслеживает дедлайны, занятость каждого члена рабочей группы и верность поставленных целей + степень отклонения от них команды.&lt;/p&gt;\r\n&lt;h3&gt;&lt;span id=\"5\"&gt;</sentence><sentence>5. </sentence><sentence>Завершение&lt;/span&gt;&lt;/h3&gt;\r\n&lt;p&gt;</sentence><sentence>Почти всегда на этом этапе продукт презентуют заказчику, разбирают эффективность рабочей группы, учитывают ошибки и принимают во внимание дельные предложения, задействуют техническую и информационную поддержку..&lt;/p&gt;\r\n&lt;p&gt;\r\n&lt;h2&gt;&lt;span id=\"-5\"&gt;</sentence><sentence>Топ-5 систем управления проектами&lt;/span&gt;&lt;/h2&gt;\r\n&lt;p&gt;</sentence><sentence><speech author-local-id=\"16\">Рассмотрим пять эффективных, по нашему мнению, профильных программных продуктов</speech>.&lt;/p&gt;\r\n&lt;h3&gt;&lt;span id=\"Trello\"&gt;</sentence><sentence>Trello&lt;/span&gt;&lt;/h3&gt;\r\n&lt;p&gt;</sentence><sentence>Сайт: https://trello.com/&lt;/p&gt;\r\n&lt;p&gt;\r\n&lt;p&gt;</sentence><sentence>Внешний вид Trello                    &lt;/p&gt;\r\n&lt;p&gt;&lt;strong&gt;</sentence><sentence>Особенности сервиса:&lt;/strong&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n&lt;li&gt;</sentence><sentence>Богатый набор фонов и обложек для кастомизации карточек.&lt;/li&gt;\r\n&lt;li&gt;</sentence><sentence>Дружественный интерфейс и широкая функциональность: Trello запросто можно можно использовать как канбан-доску, ежедневник, менеджер задач и органайзер.&lt;/li&gt;\r\n&lt;li&gt;</sentence><sentence>Возможность добавления ссылки в каждую карточку + email-адрес для комментариев непосредственно из почтового клиента.&lt;/li&gt;\r\n&lt;li&gt;</sentence><sentence>Набор расширений и интеграция с почтой <entity type=\"company\" local-id=\"26\">Google</entity>, облачными дисками Dropbox и \"Google Диском\", рабочей средой <entity type=\"company\" local-id=\"12\">Slack</entity>, календарем, сервисом заметок Evernote.&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;div&gt;&lt;/div&gt;&lt;h3&gt;&lt;span id=\"Asana\"&gt;</sentence><sentence>Asana&lt;/span&gt;&lt;/h3&gt;\r\n&lt;p&gt;</sentence><sentence>Сайт: https://asana.com/&lt;/p&gt;\r\n&lt;p&gt;\r\n&lt;p&gt;</sentence><sentence>Внешний вид Asana                    &lt;/p&gt;\r\n&lt;ul&gt;\r\n&lt;li&gt;</sentence><sentence>Набор вариантов визуализации в виде списка, календаря, таймлайна, доски и личного планировщика.&lt;/li&gt;\r\n&lt;li&gt;</sentence><sentence>Возможность взаимодействовать на уровне задачи, целого проекта и внутри команды.&lt;/li&gt;\r\n&lt;li&gt;</sentence><sentence>Отслеживание состояния любого проекта с помощью инструмента Progress.&lt;/li&gt;\r\n&lt;li&gt;</sentence><sentence>Интеграция с почтовым сервисом. </sentence><sentence>Здесь можно как смотреть новые письма из самой системы, так и отправлять их из клиента, в результате чего они преобразуются в задачи.&lt;/li&gt;\r\n&lt;li&gt;</sentence><sentence>Подробная отчетность в старших тарифах с массой аналитики и дашбордов.&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;h3&gt;&lt;span id=\"_24\"&gt;</sentence><sentence><entity type=\"company\" local-id=\"11\">Битрикс 24</entity>&lt;/span&gt;&lt;/h3&gt;\r\n&lt;p&gt;</sentence><sentence>Сайт: https://www.bitrix24.ru/&lt;/p&gt;\r\n&lt;p&gt;\r\n&lt;p&gt;</sentence><sentence>Внешний вид <entity type=\"company\" local-id=\"11\">Битрикс 24</entity>                    &lt;/p&gt;\r\n&lt;ul&gt;\r\n&lt;li&gt;</sentence><sentence>Интегрированный в систему конструктор посадочных страниц, собственная CMS и конструктор электронных сообщений.&lt;/li&gt;\r\n&lt;li&gt;</sentence><sentence>Коллтрекинг, SMS-рассылки, звонки в аудио/видео режиме. &lt;/li&gt;\r\n&lt;li&gt;</sentence><sentence>CRM + интеграция с пакетом 1С.&lt;/li&gt;\r\n&lt;li&gt;</sentence><sentence>Собственное облачное хранилище с нативным редактированием файлов и документов.&lt;/li&gt;\r\n&lt;li&gt;</sentence><sentence><entity type=\"theme\" local-id=\"32\">Создание задач и чатов, а также групп для коллаборации с коллегами и обмена информацией.&lt;/li&gt;\r\n&lt;li&gt;</entity></sentence><sentence>Наличие сквозной аналитики продаж в <entity type=\"company\" local-id=\"13\">\"Яндекс.Директе\"</entity>, <entity type=\"company\" local-id=\"14\">Google Ads</entity>, <entity type=\"company\" local-id=\"15\">\"нельзя-сетях\" </entity>и т. д.&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;h3&gt;&lt;span id=\"Jira\"&gt;</sentence><sentence>Jira&lt;/span&gt;&lt;/h3&gt;\r\n&lt;p&gt;</sentence><sentence>Сайт: https://www.atlassian.com/ru&lt;/p&gt;\r\n&lt;p&gt;\r\n&lt;p&gt;</sentence><sentence>Внешний вид Jira                    &lt;/p&gt;\r\n&lt;ul&gt;\r\n&lt;li&gt;</sentence><sentence>Максимальная ориентированность на соблюдение корпоративных стандартов управления.&lt;/li&gt;\r\n&lt;li&gt;</sentence><sentence>Формирование тикетов от технической поддержки для всех неисправностей непосредственно из чата.&lt;/li&gt;\r\n&lt;li&gt;</sentence><sentence>Отдельно модули для бизнеса и отдельно – для отдела разработки.&lt;/li&gt;\r\n&lt;li&gt;</sentence><sentence>Тонкая кастомизация сервиса за счет массы приложений Jira Software.&lt;/li&gt;\r\n&lt;li&gt;</sentence><sentence>Дружественный интерфейс для превращения броуновского движения задач в управляемый поток.&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;h3&gt;&lt;span id=\"GanttPro\"&gt;</sentence><sentence>GanttPro&lt;/span&gt;&lt;/h3&gt;\r\n&lt;p&gt;</sentence><sentence>Сайт: https://ganttpro.com/ru/&lt;/p&gt;\r\n&lt;p&gt;\r\n&lt;p&gt;</sentence><sentence>GanttPro                    &lt;/p&gt;\r\n&lt;ul&gt;\r\n&lt;li&gt;</sentence><sentence>Возможность менять уровни задач, устанавливать приоритет и взаимосвязи, мониторить прогресс и размещать задачи по на временной шкале.&lt;/li&gt;\r\n&lt;li&gt;</sentence><sentence>Экспорт диаграмм в форматы PDF, PNG, XLSX и XML.&lt;/li&gt;\r\n&lt;li&gt;</sentence><sentence>Расчет затраченных ресурсов и времени.&lt;/li&gt;\r\n&lt;li&gt;</sentence><sentence>Сортировка задач по 17 параметрам: дата создания, исполнитель, приоритет, статус, затраченное время, прогресс, стоимость и прочее.&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;h2&gt;&lt;span id=\"i-9\"&gt;</sentence><sentence>Кто такой менеджер проектов: навыки, обязанности, зарплата, обучение&lt;/span&gt;&lt;/h2&gt;\r\n&lt;p&gt;</sentence><sentence>Project-менеджер – это специалист, отвечающий за выполнение задач и выполнение целей проекта. </sentence><sentence>В его компетенции входит планирование, набор команды и распределение обязанностей между членами рабочей группы. </sentence><sentence>Он распределяет и перераспределяет ресурсы, мониторит течение работы и отслеживает дедлайны.&lt;/p&gt;\r\n&lt;h3&gt;&lt;span id=\"i-10\"&gt;</sentence><sentence>Навыки проектного менеджера&lt;/span&gt;&lt;/h3&gt;\r\n&lt;ol&gt;\r\n&lt;li&gt;</sentence><sentence>Глубочайшие познания в проектном менеджменте , значит и мышление стратега, навыки прогнозирования и планирования.&lt;/li&gt;\r\n&lt;li&gt;</sentence><sentence>Большой опыт работы. </sentence><sentence>Он, как правило, измеряется количеством успешных кейсов. </sentence><sentence>И чем их больше, тем больше у специалиста понимания экономики проекта, умения решать проблемы разной сложности и взаимодействия с рабочей группой.&lt;/li&gt;\r\n&lt;li&gt;</sentence><sentence>Подкованность в технических вопросах. </sentence><sentence>Здесь важно не только хорошо управлять, но и быть компетентным в сфере, в рамках которой выполняется проект. </sentence><sentence>Это могут быть информационные технологии, промышленность, строительство и т. д.&lt;/li&gt;\r\n&lt;li&gt;</sentence><sentence>Коммуникативные навыки. </sentence><sentence>Дорого стоит умение набрать в команду специалистов и создать из них сплоченный коллектив, который даст требуемый результат.&lt;/li&gt;\r\n&lt;li&gt;</sentence><sentence>Soft skills: ответственность за себя и команду, умение общаться и разрешать конфликты, мышление аналитика, способность преодолевать стрессовые ситуации, решать множество задач одновременно, активная и позитивная жизненная позиция.&lt;/li&gt;\r\n&lt;/ol&gt;\r\n&lt;h3&gt;&lt;span id=\"i-11\"&gt;</sentence><sentence>Востребованность профессии&lt;/span&gt;&lt;/h3&gt;\r\n&lt;p&gt;</sentence><sentence>В октябре 2022 года на сайте <entity type=\"company\" local-id=\"16\">HH.RU </entity>опубликовали 10 616 соответствующих вакансий:&lt;/p&gt;\r\n&lt;p&gt;\r\n&lt;p&gt;</sentence><sentence>Профессия весьма и весьма востребованная                    &lt;/p&gt;\r\n&lt;h3&gt;&lt;span id=\"i-12\"&gt;</sentence><sentence>Зарплаты менеджеров проектов&lt;/span&gt;&lt;/h3&gt;\r\n&lt;p&gt;</sentence><sentence>Рассмотрим размер ЗП по <entity type=\"location\" local-id=\"36\">Москве</entity>, городу-миллионнику и провинциальному городу.&lt;/p&gt;\r\n&lt;p&gt;&lt;strong&gt;</sentence><sentence><entity type=\"location\" local-id=\"36\">Москва</entity>:&lt;/strong&gt;&lt;/p&gt;\r\n&lt;p&gt;\r\n&lt;p&gt;</sentence><sentence>Для провинции очень достойная ЗП… а вот как для столицы?                    &lt;/p&gt;\r\n&lt;p&gt;&lt;strong&gt;</sentence><sentence><entity type=\"location\" local-id=\"37\">Нижний Новгород</entity>:&lt;/strong&gt;&lt;/p&gt;\r\n&lt;p&gt;\r\n&lt;p&gt;</sentence><sentence>Уровень оплаты труда ожидаемо ниже, но все равно может считаться весьма достойным                    &lt;/p&gt;\r\n&lt;p&gt;&lt;strong&gt;</sentence><sentence><entity type=\"location\" local-id=\"38\">Пенза</entity>:&lt;/strong&gt;&lt;/p&gt;\r\n&lt;p&gt;\r\n&lt;p&gt;</sentence><sentence>Зарплата оставляет желать лучшего, а уж для помощников – тем более                    &lt;/p&gt;\r\n&lt;h3&gt;&lt;span id=\"i-13\"&gt;</sentence><sentence>Как войти в профессию&lt;/span&gt;&lt;/h3&gt;\r\n&lt;p&gt;</sentence><sentence>Немного опровергну себя и скажу, что для входа в профессию устроиться помощником project-менеджера – отличный способ. </sentence><sentence>Если проработать какое-то время, хорошо себя показать, можно рассчитывать стать проджектом в перспективе.&lt;/p&gt;\r\n&lt;p&gt;</sentence><sentence>Также можно запустить свой собственный проект, который будет либо хобби, либо полноценной подработкой. </sentence><sentence>Главное, чтобы проделанную работу можно было включить в портфолио и показывать потенциальным заказчикам.&lt;/p&gt;\r\n&lt;p&gt;</sentence><sentence><entity type=\"theme\" local-id=\"33\">Также вам помогут – как минимум теоретически – профильные каналы в <entity type=\"company\" local-id=\"17\">Telegram </entity>и <entity type=\"company\" local-id=\"29\">YouTube</entity>, посещение конференций и т. д. &lt;/p&gt;\r\n&lt;p&gt;</entity></sentence><sentence>Рассмотрим полезные ресурсы для будущего и действующего специалистов.&lt;/p&gt;\r\n&lt;h4&gt;&lt;span id=\"PMCLUB\"&gt;</sentence><sentence>PMCLUB&lt;/span&gt;&lt;/h4&gt;\r\n&lt;p&gt;&lt;strong&gt;</sentence><sentence>Сайт:&lt;/strong&gt; https://pmclub.pro/&lt;/p&gt;\r\n&lt;p&gt;</sentence><sentence>Это сайт онлайн-школы для тех, кто делает проекты и продукты. </sentence><sentence>Доступно два десятка курсов.&lt;/p&gt;\r\n&lt;p&gt;\r\n&lt;p&gt;</sentence><sentence>Очень рекомендую побродить по сайту и поизучать информацию                    &lt;/p&gt;\r\n&lt;h4&gt;&lt;span id=\"_-_laquoraquo\"&gt;</sentence><sentence><entity type=\"company\" local-id=\"25\"><entity type=\"company\" local-id=\"8\">Школа продакт-менеджеров \"Яндекса\"</entity></entity>&lt;/span&gt;&lt;/h4&gt;\r\n&lt;p&gt;</sentence><sentence>Сайт: https://yandex.ru/promo/academy/productschool/&lt;/p&gt;\r\n&lt;p&gt;</sentence><sentence>Здесь можно посещать лекции и смотреть вебинары, чтобы научиться \"придумывать, создавать и продвигать успешные IT-продукты\".&lt;/p&gt;\r\n&lt;p&gt;\r\n&lt;p&gt;</sentence><sentence>Отслеживайте очередной набор. </sentence><sentence>На 06.10.2022 он закрыт                    &lt;/p&gt;\r\n&lt;h4&gt;&lt;span id=\"Management_Channel\"&gt;</sentence><sentence>Management Channel&lt;/span&gt;&lt;/h4&gt;\r\n&lt;p&gt;&lt;strong&gt;</sentence><sentence>Сайт: &lt;/strong&gt;<entity type=\"company\" local-id=\"27\">https://www.youtube.com/c/ManagementChannel</entity>&lt;/p&gt;\r\n&lt;p&gt;</sentence><sentence>Большое количество выступлений по теме. </sentence><sentence>Выбирайте \"своего\" спикера и приступайте к просмотру!&lt;/p&gt;\r\n&lt;p&gt;\r\n&lt;p&gt;</sentence><sentence>Видео много, поэтому для ориентирования по каналу рекомендуем посмотреть плейлисты                    &lt;/p&gt;\r\n&lt;p&gt;</sentence><sentence>Посмотрите одну из лекций:&lt;/p&gt;\r\n&lt;p&gt;</sentence><sentence>Как управлять креативной командой и выжить, если ты принцесса / <entity type=\"person\" local-id=\"5\">Екатерина Пуданова</entity>&lt;/p&gt;\r\n&lt;h4&gt;&lt;span id=\"Telegra-__project\"&gt;</sentence><sentence>Telegra-каналы и подкасты для project-проектов&lt;/span&gt;&lt;/h4&gt;\r\n&lt;p&gt;</sentence><sentence>Выбирайте любой или все сразу и подписывайтесь, а в процессе определитесь, что вам подходит, а что нет:&lt;/p&gt;\r\n&lt;ul&gt;\r\n&lt;li&gt;</sentence><sentence>PMCLUB – про проекты, продукты и людей&lt;/li&gt;\r\n&lt;li&gt;</sentence><sentence>Управление проектами&lt;/li&gt;\r\n&lt;li&gt;</sentence><sentence>Project management | IT&lt;/li&gt;\r\n&lt;li&gt;</sentence><sentence>Junior PM&lt;/li&gt;\r\n&lt;li&gt;</sentence><sentence>Продукты, книги и любовь&lt;/li&gt;\r\n&lt;li&gt;</sentence><sentence>Управление Проектами: <speech author-local-id=\"36\"><entity type=\"company\" local-id=\"10\">Проектная Ассоциация</entity></speech>&lt;/li&gt;\r\n&lt;li&gt;</sentence><sentence>Продукторий <entity type=\"person\" local-id=\"0\">Владимира Меркушева</entity>&lt;/li&gt;\r\n&lt;li&gt;</sentence><sentence>Менеджер от боженьки&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;h3&gt;&lt;span id=\"i-14\"&gt;</sentence><sentence>Где обучиться управлению проектом&lt;/span&gt;&lt;/h3&gt;\r\n&lt;p&gt;</sentence><sentence>Неплохой вариант – это бакалавриат, где вы будете изучать менеджмент и/или экономику. </sentence><sentence><speech author-local-id=\"38\">Что касается проектного управления, его можно неплохо освоить с помощью курса на 3- 6 месяцев или вообще на практике, о чем мы писали выше</speech>.&lt;/p&gt;\r\n&lt;p&gt;</sentence><sentence>Ниже рассматриваем источники получения знания по теме.&lt;/p&gt;\r\n&lt;h4&gt;&lt;span id=\"i-15\"&gt;</sentence><sentence>Вузы&lt;/span&gt;&lt;/h4&gt;\r\n&lt;p&gt;</sentence><sentence>Этот вариант подойдет, если вы только закончили школу и можете себе позволить очное обучение в течение 4-х лет на бакалавриате и еще 2 – в магистратуре.&lt;/p&gt;\r\n&lt;p&gt;</sentence><sentence>Степень бакалавра в по интересующей специальности можно получить в:&lt;/p&gt;\r\n&lt;ul&gt;\r\n&lt;li&gt;</sentence><sentence><entity type=\"company\" local-id=\"18\">ВШЭ </entity>( <entity type=\"location\" local-id=\"36\">Москва</entity>). </sentence><sentence>Готовит project-менеджеров в креативных индустриях, медиа и продюсировании.&lt;/li&gt;\r\n&lt;li&gt;</sentence><sentence><entity type=\"company\" local-id=\"19\">СФУ </entity>( <entity type=\"location\" local-id=\"39\">Красноярск</entity>). </sentence><sentence>Готовит специалистов по инноватике.&lt;/li&gt;\r\n&lt;li&gt;</sentence><sentence><entity type=\"company\" local-id=\"30\">ПГУПС </entity>( <entity type=\"location\" local-id=\"40\">Санкт-Петербург</entity>). </sentence><sentence>Выпуск бакалавров по специальности \"Экономика и менеджмент в строительстве\".&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;h4&gt;&lt;span id=\"i-16\"&gt;</sentence><sentence>Курсы&lt;/span&gt;&lt;/h4&gt;\r\n&lt;p&gt;</sentence><sentence>Методика обучения для тех, кто хочет буквально за квартал/полугодие/год достаточно глубоко погрузиться в профессию. </sentence><sentence>Практически любой такой курс обеспечивает обучение и базовую практику в медодиках типа <entity type=\"company\" local-id=\"7\">Agile</entity>, PMBOK и Scrum. </sentence><sentence>Это:&lt;/p&gt;\r\n&lt;ul&gt;\r\n&lt;li&gt;</sentence><sentence>Институт профессионального образования&lt;/li&gt;\r\n&lt;li&gt;</sentence><sentence><entity type=\"company\" local-id=\"20\">GeekBrains</entity>&lt;/li&gt;\r\n&lt;li&gt;</sentence><sentence><entity type=\"company\" local-id=\"28\">Skill Factory</entity>&lt;/li&gt;\r\n&lt;li&gt;</sentence><sentence>Нетология&lt;/li&gt;\r\n&lt;li&gt;</sentence><sentence>Госуслуги&lt;/li&gt;\r\n&lt;li&gt;</sentence><sentence><entity type=\"company\" local-id=\"21\">SkillBox</entity>&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;h4&gt;&lt;span id=\"i-17\"&gt;</sentence><sentence>Бизнес-школы&lt;/span&gt;&lt;/h4&gt;\r\n&lt;p&gt;</sentence><sentence><entity type=\"theme\" local-id=\"34\">Это специально заточенные за бизнес учебные заведения, с крепкой учебной программой. </entity></sentence><sentence>Среди них:&lt;/p&gt;\r\n&lt;ul&gt;\r\n&lt;li&gt;</sentence><sentence><entity type=\"company\" local-id=\"24\"><entity type=\"company\" local-id=\"18\"><entity type=\"company\" local-id=\"23\">Высшая школа бизнеса НИУ ВШЭ</entity></entity></entity>&lt;/li&gt;\r\n&lt;li&gt;</sentence><sentence>Moscow Business School&lt;/li&gt;\r\n&lt;li&gt;</sentence><sentence>МИРБИС&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;                         &lt;/p&gt;\r\n&lt;h2&gt;&lt;span id=\"i-18\"&gt;</sentence><sentence>Книги по управлению проектами&lt;/span&gt;&lt;/h2&gt;\r\n&lt;p&gt;</sentence><sentence>Традиционно порекомендую книги, которые помогут хорошо погрузиться в тему. </sentence><sentence>Это дешевле даже самого дешевого курса, а по степени воздействия может оказаться эффективнее.&lt;/p&gt;\r\n&lt;h3&gt;&lt;span id=\"i-19\"&gt;</sentence><sentence><entity type=\"person\" local-id=\"4\">Джозеф Хигни</entity>.Основы проектного менеджмента. </sentence><sentence>Классическое руководство&lt;/span&gt;&lt;/h3&gt;\r\n&lt;p&gt;</sentence><sentence>Иллюстрированное руководство, основанное на классическом своде знаний PMBOK, о котором мы говорили выше.&lt;/p&gt;\r\n&lt;p&gt;\r\n&lt;p&gt;</sentence><sentence><entity type=\"person\" local-id=\"4\">Джозеф Хигни</entity>. </sentence><sentence>Основы проектного менеджмента                    &lt;/p&gt;\r\n&lt;h3&gt;&lt;span id=\"_Scrum\"&gt;</sentence><sentence><entity type=\"person\" local-id=\"6\">Джеф Сазерленд</entity>. </sentence><sentence>Scrum. </sentence><sentence>Революционный метод управления проектами&lt;/span&gt;&lt;/h3&gt;\r\n&lt;p&gt;</sentence><sentence>Книга основателя методики Scrum, которая призвана реализовывать проекты в несколько раз быстрее и эффективнее.&lt;/p&gt;\r\n&lt;p&gt;\r\n&lt;p&gt;</sentence><sentence><entity type=\"person\" local-id=\"6\">Джеф Сазерленд</entity>. </sentence><sentence>Scrum. </sentence><sentence>Революционный метод управления проектами                    &lt;/p&gt;\r\n&lt;h3&gt;&lt;span id=\"i-20\"&gt;</sentence><sentence><entity type=\"person\" local-id=\"1\">Рэй Далио</entity>. </sentence><sentence>Принципы&lt;/span&gt;&lt;/h3&gt;\r\n&lt;p&gt;</sentence><sentence>В книге изложены жизненные и управленческие принципы <entity type=\"person\" local-id=\"1\">Рэя Далио</entity>, одного из самых влиятельных и богатых людей планеты, и история <entity type=\"person\" local-id=\"1\">его </entity>хедж-фонда Bridgewater.&lt;/p&gt;\r\n&lt;p&gt;\r\n&lt;p&gt;</sentence><sentence><entity type=\"person\" local-id=\"1\">Рэй Далио</entity>. </sentence><sentence>Принципы                    &lt;/p&gt;\r\n&lt;h3&gt;&lt;span id=\"_Deadline\"&gt;</sentence><sentence><entity type=\"person\" local-id=\"2\">Том ДеМарко</entity>. </sentence><sentence>Deadline. </sentence><sentence>Роман об управлении проектами&lt;/span&gt;&lt;/h3&gt;\r\n&lt;p&gt;</sentence><sentence>Книга выполнена как художественный роман. </sentence><sentence>Главный герой заносит в свою записную книжку выводы, с которыми наверняка согласятся руководители бизнеса. &lt;/p&gt;\r\n&lt;p&gt;\r\n&lt;p&gt;</sentence><sentence><entity type=\"person\" local-id=\"2\">Том ДеМарко</entity>. </sentence><sentence>Deadline. </sentence><sentence>Роман об управлении проектами                    &lt;/p&gt;\r\n&lt;h3&gt;&lt;span id=\"__Agile-2\"&gt;</sentence><sentence><entity type=\"person\" local-id=\"3\">Стивен Деннинг</entity>. </sentence><sentence>Эпоха <entity type=\"company\" local-id=\"7\">Agile</entity>&lt;/span&gt;&lt;/h3&gt;\r\n&lt;p&gt;</sentence><sentence>Издание подробно объясняет принцип работы <entity type=\"company\" local-id=\"22\">Agile-подхода </entity>в бизнесе, как его применяют разные команды на практике и как распространить его на всю компанию, чтобы сделать ее более гибкой и инновационной.&lt;/p&gt;\r\n&lt;p&gt;\r\n&lt;p&gt;</sentence><sentence><entity type=\"person\" local-id=\"3\">Стивен Деннинг</entity>. </sentence><sentence>Эпоха <entity type=\"company\" local-id=\"7\">Agile</entity>. </sentence><sentence>Как умные компании меняются и достигают результатов                    &lt;/p&gt;\r\n&lt;p&gt;&lt;noindex&gt;&lt;/noindex&gt;&lt;/p&gt;\r\n\r\n&lt;div id=\"yandex_rtb_R-A-614052-13\"&gt;&lt;/div&gt;\r\n\r\n&lt;br&gt;&lt;/div&gt;&lt;/body&gt;\r\n&lt;/data&gt;\r\n\r\n</sentence></scandoc>"
+            "markup": "<?xml version=\"1.0\" encoding=\"utf-8\"?><scandoc><sentence>Обратите внимание на обложку к статье. </sentence><sentence>Одна часть нарисована дизайнером, вторая – сгенерирована <entity type=\"company\" local-id=\"2\">нейросетью </entity>Midjourney. &lt;br&gt;\r\n&lt;br&gt;\r\n</sentence><sentence>Сейчас многие восхищаются качеством иллюстраций от нейронок, и мы решили провести эксперимент. </sentence><sentence>Сможет ли <entity type=\"company\" local-id=\"2\">нейросеть </entity>проиллюстрировать тексты на уровне дизайнеров? </sentence><sentence>Может, мы сможем сэкономить их время?&lt;br&gt;\r\n&lt;br&gt;\r\n</sentence><sentence>Результаты теста и ответ на загадку обложки – под катом. &lt;br&gt;\r\n&lt;a name=\"habracut\"&gt;&lt;/a&gt;&lt;br&gt;\r\n&lt;font color=\"#EB4247\"&gt;&lt;h2&gt;</sentence><sentence><entity type=\"company\" local-id=\"2\">Нейросеть </entity>для художников&lt;/h2&gt;&lt;/font&gt;&lt;br&gt;\r\n</sentence><sentence>Поэкспериментировать с Midjourney может каждый, без ожидания доступа к сервису. </sentence><sentence><entity type=\"theme\" local-id=\"7\">Достаточно подключиться к <entity type=\"company\" local-id=\"3\">discord-каналу </entity>проекта. </entity></sentence><sentence>Каждому пользователю доступны бесплатные 25 запросов. &lt;br&gt;\r\n&lt;br&gt;\r\n</sentence><sentence>Обратная политика у конкурентного проекта – DALL-E: перед использованием нужно отправить заявку и ждать фидбэка от разработчиков. </sentence><sentence>Ожидание может длиться больше месяца. </sentence><sentence>Зато DALL-E полностью бесплатный.&lt;br&gt;\r\n&lt;br&gt;\r\n&lt;div style=\"text-align:center\"&gt;&lt;/div&gt;&lt;br&gt;\r\n&lt;i&gt;</sentence><sentence>Сравнение иллюстраций DALL-E 2 и Midjourney. </sentence><sentence>Источник &lt;/i&gt;&lt;br&gt;\r\n &lt;br&gt;\r\n</sentence><sentence>Сложно сказать, какая <entity type=\"company\" local-id=\"2\">нейросеть </entity>показывает лучшие результаты. </sentence><sentence>Как и DALL-E, Midjourney умеет рисовать не только потрясающие, но и непонятные и даже пугающие изображения. &lt;br&gt;\r\n&lt;br&gt;\r\n&lt;font color=\"#EB4247\"&gt;&lt;h2&gt;</sentence><sentence>Как сформировать запрос для найросети&lt;/h2&gt;&lt;/font&gt;&lt;br&gt;\r\n</sentence><sentence>При создании иллюстрации дизайнер думает о том, как лучше объединить разные элементы, которые прописаны автором в техническом задании.&lt;br&gt;\r\n&lt;br&gt;\r\n</sentence><sentence>Аналогичным образом работает Midjourney. </sentence><sentence>Чтобы получить желаемый результат от нейронной сети, нужно корректно сформировать для нее запрос. </sentence><sentence>Разработчики Midourney опубликовали советы, как правильно общаться с <entity type=\"company\" local-id=\"2\">нейросетью</entity>. </sentence><sentence>Выделим основные из них. &lt;br&gt;\r\n&lt;br&gt;\r\n&lt;h3&gt;</sentence><sentence>Пишите как для ребенка&lt;/h3&gt;&lt;br&gt;\r\n</sentence><sentence>Формулировки должны быть буквальными: без метафор, эвфемизмов, словесных каламбуров и прочего.&lt;br&gt;\r\n&lt;br&gt;\r\n&lt;b&gt;</sentence><sentence>Неправильно:&lt;/b&gt; \"Обезьяны занимаются бизнесом\" &lt;br&gt;\r\n&lt;b&gt;</sentence><sentence>Правильно:&lt;/b&gt; \"Обезьяны сидят в деловых костюмах\" &lt;br&gt;\r\n &lt;br&gt;\r\n</sentence><sentence>Запросы лучше формировать на английском. </sentence><sentence>Другие языки Midjourney понимает хуже.&lt;br&gt;\r\n&lt;br&gt;\r\n&lt;h3&gt;</sentence><sentence>Избегайте отрицаний&lt;/h3&gt;&lt;br&gt;\r\n</sentence><sentence>Представьте, что вам нужно выбрать одну дверь из тысячи – за ней будет сундук с золотом. </sentence><sentence>Рядом стоит \"помощник\", который знает наверняка, где спрятаны богатства. </sentence><sentence>Вы его спрашиваете, какую дверь нужно открыть, чтобы обогатиться. </sentence><sentence>А помощник отвечает: \"Точно не 178\". </sentence><sentence>Стала ли задача проще от его подсказки?&lt;br&gt;\r\n&lt;br&gt;\r\n</sentence><sentence>Если нужно, чтобы Midjourney нарисовала зонтик любого цвета, но не красного, – &lt;u&gt;попробуйте&lt;/u&gt; использовать отрицание. </sentence><sentence>Но разработчики утверждают, что языковые модели часто игнорируют отрицательные частицы, союзы и предлоги (\"не\", \"но\", \"кроме\", \"без\"). </sentence><sentence>Если нужен синий зонтик, напишите об этом прямо. &lt;br&gt;\r\n&lt;br&gt;\r\n&lt;h3&gt;</sentence><sentence>Забудьте про мелкие детали&lt;/h3&gt;&lt;br&gt;\r\n</sentence><sentence>Они могут перегрузить систему. </sentence><sentence>Не нужно описывать количество морщин на морде обезьяны. </sentence><sentence>Попробуйте описать ее черты одним словом. &lt;br&gt;\r\n&lt;br&gt;\r\n&lt;blockquote&gt;&lt;b&gt;</sentence><sentence>Возможно, эти тексты тоже вас заинтересуют: &lt;/b&gt;&lt;br&gt;\r\n &lt;br&gt;\r\n→ Подбираем скины в Counter-Strike: Global Offensive в цвет сумочки &lt;br&gt;\r\n→ Обзор на разработчика и преимущества заикания: как айтишники попробовали себя в стендапе &lt;br&gt;\r\n→ Как быстро реализовать поиск на корпоративном портале&lt;br&gt;\r\n&lt;/blockquote&gt;&lt;br&gt;\r\n&lt;font color=\"#EB4247\"&gt;&lt;h2&gt;</sentence><sentence>Пример генерации изображения&lt;/h2&gt;&lt;/font&gt;&lt;br&gt;\r\n</sentence><sentence>Чтобы сгенерировать изображение, нужно подключиться к <entity type=\"company\" local-id=\"1\">каналу Discord</entity>, перейти в комнату newbies, ввести команду /imagine и написать свой запрос. </sentence><sentence>В течение 10- 30 секунд будет готова подборка из изображений. &lt;br&gt;\r\n&lt;br&gt;\r\n&lt;div style=\"text-align:center\"&gt;&lt;/div&gt;&lt;br&gt;\r\n&lt;i&gt;</sentence><sentence>Процесс генерации изображения по запросу \"dinosaur\"&lt;/i&gt;  &lt;br&gt;\r\n &lt;br&gt;\r\n</sentence><sentence>Когда загрузка достигнет 100%, под коллажем появятся кнопки \"U1, U2, U3, U4\" и \"V1, V2, V3, V4\". </sentence><sentence>Кнопки из первого ряда нужны для апскейла – улучшения качества выбранных изображений. </sentence><sentence>А кнопки из второго ряда – для генерации картинок, \"похожих\" на выбранное изображение из подборки. &lt;br&gt;\r\n&lt;br&gt;\r\n&lt;div style=\"text-align:center\"&gt;&lt;/div&gt;&lt;br&gt;\r\n&lt;i&gt;</sentence><sentence>Апскейлинг четвертого изображения &lt;/i&gt;&lt;br&gt;\r\n &lt;br&gt;\r\n &lt;div style=\"text-align:center\"&gt;&lt;/div&gt;&lt;br&gt;\r\n&lt;i&gt;</sentence><sentence>Вариации четвертого изображения&lt;/i&gt;&lt;br&gt;\r\n&lt;br&gt;\r\n&lt;font color=\"#EB4247\"&gt;&lt;h2&gt;</sentence><sentence>Тестирование Midjourney&lt;/h2&gt;&lt;/font&gt;&lt;br&gt;\r\n</sentence><sentence>Мы решили проверить, как к решению задач дизайнеров-иллюстраторов подойдет нейронная сеть. </sentence><sentence>Похожий эксперимент провели ребята из <entity type=\"company\" local-id=\"4\">SkillFactory</entity>: они проверили, может ли DALL-E помочь избавиться от дорогих стоковых иллюстраций. &lt;br&gt;\r\n&lt;br&gt;\r\n</sentence><sentence>Нам был важен не стиль рисовки, а композиция, которую может придумать Midjourney. </sentence><sentence>Для этого выбрали три статьи из нашего блога, которые рисовали дизайнеры, и сформулировали запросы для обложек. </sentence><sentence>Посмотрим, что получилось. &lt;br&gt;\r\n&lt;br&gt;\r\n&lt;h3&gt;</sentence><sentence>Кроличья нора&lt;/h3&gt;&lt;br&gt;\r\n&lt;div style=\"text-align:center\"&gt;&lt;/div&gt;&lt;br&gt;\r\n</sentence><sentence>Недавно выпустили статью про долгий поиск и дебаг ошибки в мониторинге объектного хранилища. </sentence><sentence>На обложке метафорично изображена кроличья нора с уходящими вглубь строчками кода, алертами и разными пиктограммами. </sentence><sentence>Разработчик конкретно закопался в абстракциях, и дизайнер это изобразил. &lt;br&gt;\r\n&lt;br&gt;\r\n</sentence><sentence>Мы протестировали несколько вариантов запросов.&lt;br&gt;\r\n&lt;br&gt;\r\n&lt;b&gt;</sentence><sentence>Первый запрос &lt;/b&gt;&lt;br&gt;\r\n &lt;br&gt;\r\n&lt;font color=\"#0B4A77\"&gt;&lt;i&gt;</sentence><sentence>Rabbit hole with Python program code (\"кроличья нора с Python-кодом\") &lt;/i&gt;&lt;/font&gt;&lt;br&gt;\r\n &lt;br&gt;\r\n</sentence><sentence>Cначала мы попробовали описать для <entity type=\"company\" local-id=\"2\">нейросети </entity>общую концепцию. &lt;br&gt;\r\n&lt;br&gt;\r\n&lt;div style=\"text-align:center\"&gt;&lt;/div&gt;&lt;br&gt;\r\n</sentence><sentence>Midjourney удалось повторить перспективу норы и даже нарисовать кролика. </sentence><sentence>Но больше ничего общего с оригинальной обложкой нет. &lt;br&gt;\r\n&lt;br&gt;\r\n</sentence><sentence>Также <entity type=\"company\" local-id=\"2\">нейросеть </entity>забавно интерпретировала упоминание языка программирования Python. </sentence><sentence>На иллюстрациях встречаются текстуры, напоминающие чешую, и даже змеиные яйца. &lt;br&gt;\r\n&lt;br&gt;\r\n&lt;b&gt;</sentence><sentence>Второй запрос &lt;/b&gt;&lt;br&gt;\r\n &lt;br&gt;\r\n&lt;font color=\"#0B4A77\"&gt;&lt;i&gt;</sentence><sentence>Python code in the rabbit hole and rabbit &lt;/i&gt;&lt;/font&gt;&lt;br&gt;\r\n &lt;br&gt;\r\n</sentence><sentence>Добавили отдельно кролика. </sentence><sentence>Но <entity type=\"company\" local-id=\"2\">нейросеть </entity>пошла дальше и нарисовала жуткого \"лунтика\", который вылупился из змеиного яйца. &lt;br&gt;\r\n&lt;br&gt;\r\n&lt;div style=\"text-align:center\"&gt;&lt;/div&gt;&lt;br&gt;\r\n&lt;b&gt;</sentence><sentence>Третий запрос&lt;/b&gt;  &lt;br&gt;\r\n &lt;br&gt;\r\n&lt;font color=\"#0B4A77\"&gt;&lt;i&gt;</sentence><sentence>Program code in the rabbit hole and rabbit&lt;/i&gt;&lt;/font&gt;  &lt;br&gt;\r\n &lt;br&gt;\r\n</sentence><sentence>Чтобы Midjourney не генерировала больше змееподобных кроликов, решили вычеркнуть упоминание Python. </sentence><sentence>Написали проще: \"программный код\".&lt;br&gt;\r\n&lt;br&gt;\r\n&lt;div style=\"text-align:center\"&gt;&lt;/div&gt;&lt;br&gt;\r\n</sentence><sentence><entity type=\"company\" local-id=\"2\">Нейросеть </entity>сгенерировала старые ЭЛТ-мониторы (первая и третья картинки). </sentence><sentence>И если на второй картинке изображено что-то абстрактное, то на четвертой – чисто клон кролика из \"Алисы в стране чудес\". &lt;br&gt;\r\n&lt;br&gt;\r\n&lt;blockquote&gt;</sentence><sentence>Но откуда на первом изображении яйцо? </sentence><sentence>Может, есть предположения? </sentence><sentence>Делитесь идеями в комментариях. &lt;/blockquote&gt;&lt;br&gt;\r\n&lt;h3&gt;</sentence><sentence>Коробка с котиками&lt;/h3&gt;&lt;br&gt;\r\n</sentence><sentence>Следующий этап тестирования – генерация обложки для статьи про машинное обучение на GPU в Managed Kubernetes. &lt;br&gt;\r\n&lt;br&gt;\r\n&lt;div style=\"text-align:center\"&gt;&lt;/div&gt;&lt;br&gt;\r\n</sentence><sentence>Идея дизайнера: из коробки, символизирующей контейнер Kubernetes, вылетают картинки с котиками, которые сгенерированы в <entity type=\"company\" local-id=\"2\">нейросети </entity>на GPU. &lt;br&gt;\r\n&lt;br&gt;\r\n&lt;b&gt;</sentence><sentence>Первый запрос &lt;/b&gt;&lt;br&gt;\r\n &lt;br&gt;\r\n&lt;font color=\"#0B4A77\"&gt;&lt;i&gt;</sentence><sentence>Kubernetes container, photos with cats, machine learning, graphic processing unit&lt;/i&gt;&lt;/font&gt;  &lt;br&gt;\r\n &lt;br&gt;\r\n</sentence><sentence>Сначала решили посмотреть, что придумает Midjourney, если просто перечислить ключевые элементы через запятую. &lt;br&gt;\r\n&lt;br&gt;\r\n&lt;div style=\"text-align:center\"&gt;&lt;/div&gt;&lt;br&gt;\r\n</sentence><sentence>Что и следовало ожидать: <entity type=\"company\" local-id=\"2\">нейросеть </entity>не знает, что такое Kubernetes и тем более не слышала про контейнеры в IT. </sentence><sentence>Итог – картинка с контейнеровозом, контейнерный терминал, какие-то полки и фотография Мурзика. &lt;br&gt;\r\n&lt;br&gt;\r\n&lt;b&gt;</sentence><sentence>Второй запрос &lt;/b&gt;&lt;br&gt;\r\n &lt;br&gt;\r\n&lt;font color=\"#0B4A77\"&gt;&lt;i&gt;</sentence><sentence>Box of pictures with cats&lt;/i&gt;&lt;/font&gt;  &lt;br&gt;\r\n &lt;br&gt;\r\n</sentence><sentence>Когда поняли, что Midjourney не сумеет придумать композицию, решили составить простой запрос: \"коробка с изображениями котов\". </sentence><sentence>На этот раз проблем не было, если не обращать внимание на странных котов.&lt;br&gt;\r\n&lt;br&gt;\r\n&lt;div style=\"text-align:center\"&gt;&lt;/div&gt;&lt;br&gt;\r\n&lt;blockquote&gt;</sentence><sentence>Забавно, что во время работы над статьей автор предложил добавить кошачьим артефакты – лишние ноги, странные хвосты и так далее. </sentence><sentence>Дизайнер усомнилась в идее, решив, что современные нейронные сети так не ошибаются. </sentence><sentence>Оказалось, это не так: Midjourney вот нарисовала котов без глаз. &lt;br&gt;\r\n&lt;/blockquote&gt;&lt;br&gt;\r\n&lt;h3&gt;</sentence><sentence>Облако на тарелке&lt;/h3&gt;&lt;br&gt;\r\n</sentence><sentence>Казалось, ничего лучше <entity type=\"company\" local-id=\"2\">нейросеть </entity>уже не покажет. </sentence><sentence>К тому же, нужно было сгенерировать иллюстрацию по сложному концепту – разделение мощности виртуального процессора. &lt;br&gt;\r\n&lt;br&gt;\r\n&lt;div style=\"text-align:center\"&gt;&lt;/div&gt;&lt;br&gt;\r\n</sentence><sentence>Дизайнеры подошли к вопросу творчески – нарисовали нарезанное облако на тарелке. </sentence><sentence>Но что придумает <entity type=\"company\" local-id=\"2\">нейросеть</entity>? &lt;br&gt;\r\n&lt;br&gt;\r\n&lt;b&gt;</sentence><sentence>Запрос &lt;/b&gt;&lt;br&gt;\r\n &lt;br&gt;\r\n&lt;font color=\"#0B4A77\"&gt;&lt;i&gt;</sentence><sentence>Virtual CPU, power sharing, cloud operations, shared line &lt;/i&gt;&lt;/font&gt;&lt;br&gt;\r\n &lt;br&gt;\r\n</sentence><sentence>Расписывать всю идею натюрморта было бессмысленно. </sentence><sentence>Запрос получился бы расплывчатым и слишком длинным. </sentence><sentence>Поэтому \"скормили\" <entity type=\"company\" local-id=\"2\">нейросети </entity>обычную последовательность из ключевых элементов.&lt;br&gt;\r\n&lt;br&gt;\r\n&lt;div style=\"text-align:center\"&gt;&lt;/div&gt;&lt;br&gt;\r\n</sentence><sentence>Результат нас удивил. </sentence><sentence>Палитра и зернистость некоторых изображений очень напомнили картинки, которые рисуют дизайнеры <entity type=\"company\" local-id=\"5\">Selectel</entity>. &lt;br&gt;\r\n&lt;br&gt;\r\n</sentence><sentence>Правда осмысленная композиция есть только на первой иллюстрации. </sentence><sentence>Кажется, что облако лежит на квадратной тарелке, которую мы даже не упоминали в запросе. &lt;br&gt;\r\n&lt;br&gt;\r\n&lt;b&gt;</sentence><sentence>Результат &lt;/b&gt;&lt;br&gt;\r\n &lt;br&gt;\r\n</sentence><sentence>Нам стало интересно, что будет, если мы сгенерируем дополнительные варианты первой картинки. </sentence><sentence>Для этого нажали на кнопку V1.&lt;br&gt;\r\n&lt;br&gt;\r\n&lt;div style=\"text-align:center\"&gt;&lt;/div&gt;&lt;br&gt;\r\n&lt;br&gt;\r\n</sentence><sentence>Особенно точно идея с нарезанным облаком передана на первой иллюстрации. </sentence><sentence>После апскейлинга получили иллюстрацию с еще большим градусом точности. &lt;br&gt;\r\n&lt;br&gt;\r\n&lt;div style=\"text-align:center\"&gt;&lt;/div&gt;&lt;br&gt;\r\n</sentence><sentence>Результат так нас впечатлил, что мы решили поиграть с вами в интерактив в заглавной картинке. </sentence><sentence>Вот и ответ – левая часть сгенерирована Midjourney, а правую дорисовал дизайнер. &lt;br&gt;\r\n&lt;br&gt;\r\n&lt;div style=\"text-align:center\"&gt;&lt;/div&gt;&lt;br&gt;\r\n&lt;font color=\"#EB4247\"&gt;&lt;h2&gt;</sentence><sentence><entity type=\"company\" local-id=\"2\">Нейросеть </entity>– конкурент? </sentence><sentence>Мнение ведущего дизайнера&lt;/h2&gt;&lt;/font&gt;&lt;br&gt;\r\n&lt;blockquote&gt;&lt;i&gt;</sentence><sentence>Нейронная сеть способна помочь в поиске концепций – подсказать вариант, который может направить мысль дизайнера в нетривиальное русло. &lt;br&gt;\r\n&lt;br&gt;\r\n</sentence><sentence>Но иллюстрации все равно нужно создавать дизайнерам. </sentence><sentence>Ведь в работу человека вложено больше, чем в рандомный машинный рисунок. </sentence><sentence>Мы продумываем целые сюжеты и метафоры, которые могут подкрепить блог компании смыслом и красотой. </sentence><sentence>Пока только дизайнеры могут привлекательно отразить айдентику бренда,&lt;/i&gt; – <entity type=\"person\" local-id=\"0\">Алина Экизашвили</entity>, руководитель <entity type=\"company\" local-id=\"5\">отдела дизайна Selectel</entity>.&lt;/blockquote&gt;&lt;br&gt;\r\n</sentence><sentence>Заменят ли <entity type=\"company\" local-id=\"2\">нейросети </entity>дизайнеров – пока сказать сложно. </sentence><sentence>Можно научить Midjourney и DALL-E делать иллюстрации в стилистике компании. </sentence><sentence>Но если брендбук будет меняться, <entity type=\"company\" local-id=\"2\">нейросети </entity>придется переобучать. </sentence><sentence>Для этого нужен датасет из примеров, которые нужно кому-то отрисовать. </sentence><sentence>Появится ли профессия на стыке дизайна и DataScience – открытый вопрос.&lt;br&gt;\r\n&lt;br&gt;\r\n</sentence><sentence>Но сейчас, как и в обозримом будущем, кажется, фрилансер Midjourney в <entity type=\"company\" local-id=\"5\">Selectel </entity>не понадобится. </sentence><sentence>Но если сервис нужен вам, а бесплатный лимит превышен, пишите в комментариях запрос – поможем.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt; &lt;div&gt;&lt;/div&gt;&lt;/div&gt;  &lt;div&gt;&lt;div&gt; &lt;div&gt; &lt;div data-test-id=\"notice-content\"&gt;&lt;span&gt;</sentence><sentence>Только зарегистрированные пользователи могут участвовать в опросе. </sentence><sentence>Войдите, пожалуйста.&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt; &lt;div&gt;</sentence><sentence>Как думаете, заменит ли когда-нибудь <entity type=\"company\" local-id=\"2\">нейросеть </entity>иллюстраторов?&lt;/div&gt; &lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;span&gt;\r\n            </sentence><sentence>0%\r\n          &lt;/span&gt; &lt;span&gt;Нет, машине все смыслы в иллюстрации не отразить&lt;/span&gt; &lt;span&gt;\r\n            0\r\n          &lt;/span&gt;&lt;/div&gt; &lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;span&gt;\r\n            0%\r\n          &lt;/span&gt; &lt;span&gt;С какими-то картинками <entity type=\"company\" local-id=\"2\">нейросеть </entity>справляется хорошо, но для некоторых – только человек&lt;/span&gt; &lt;span&gt;\r\n            0\r\n          &lt;/span&gt;&lt;/div&gt; &lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;span&gt;\r\n            0%\r\n          &lt;/span&gt; &lt;span&gt;Конечно! </sentence><sentence>В скором будущем. </sentence><sentence>Мне уже нравятся результаты&lt;/span&gt; &lt;span&gt;\r\n            0\r\n          &lt;/span&gt;&lt;/div&gt; &lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;span&gt;\r\n            0%\r\n          &lt;/span&gt; &lt;span&gt;Когда-нибудь точно заменят. </sentence><sentence>Как и в других профессиях&lt;/span&gt; &lt;span&gt;\r\n            0\r\n          &lt;/span&gt;&lt;/div&gt; &lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;span&gt;\r\n            0%\r\n          &lt;/span&gt; &lt;span&gt;Другое мнение, напишу в комментариях&lt;/span&gt; &lt;span&gt;\r\n            0\r\n          &lt;/span&gt;&lt;/div&gt; &lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt; &lt;div&gt;\r\n       Никто еще не голосовал. \r\n\r\n       </sentence><sentence>Воздержавшихся нет. \r\n    &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;\r\n&lt;/data&gt;\r\n\r\n</sentence></scandoc>"
         },
         "entities": {
             "companies": [
@@ -25,276 +25,26 @@
                     "suggestedCompanies": [],
                     "tags": [],
                     "isSpeechAuthor": false,
-                    "localId": 7,
-                    "name": "управление Agile",
-                    "entityId": 197426076,
+                    "localId": 1,
+                    "name": "канал Discord",
+                    "entityId": 97504709,
+                    "isMainRole": false
+                },
+                {
+                    "suggestedCompanies": [],
+                    "tags": [],
+                    "isSpeechAuthor": false,
+                    "localId": 2,
+                    "name": "нейросеть",
                     "isMainRole": true
                 },
                 {
                     "suggestedCompanies": [],
                     "tags": [],
                     "isSpeechAuthor": false,
-                    "localId": 8,
-                    "name": "Школа продакт-менеджеров Яндекс",
-                    "entityId": 219583177,
-                    "isMainRole": false
-                },
-                {
-                    "suggestedCompanies": [],
-                    "tags": [],
-                    "isSpeechAuthor": false,
-                    "localId": 9,
-                    "name": "управление EXP",
-                    "isMainRole": false
-                },
-                {
-                    "suggestedCompanies": [],
-                    "tags": [],
-                    "isSpeechAuthor": false,
-                    "localId": 10,
-                    "name": "Проектная Ассоциация",
-                    "entityId": 188108266,
-                    "isMainRole": false
-                },
-                {
-                    "suggestedCompanies": [],
-                    "tags": [],
-                    "isSpeechAuthor": false,
-                    "localId": 11,
-                    "name": "Битрикс 24",
-                    "entityId": 145200438,
-                    "isMainRole": false
-                },
-                {
-                    "suggestedCompanies": [],
-                    "tags": [],
-                    "isSpeechAuthor": false,
-                    "localId": 12,
-                    "name": "Slack",
-                    "entityId": 58202948,
-                    "isMainRole": false
-                },
-                {
-                    "suggestedCompanies": [],
-                    "tags": [
-                        "inCitation"
-                    ],
-                    "isSpeechAuthor": false,
-                    "localId": 13,
-                    "name": "Яндекс. директу",
-                    "entityId": 7978760,
-                    "isMainRole": false
-                },
-                {
-                    "suggestedCompanies": [],
-                    "tags": [
-                        "inCitation"
-                    ],
-                    "isSpeechAuthor": false,
-                    "localId": 14,
-                    "name": "Google Ads",
-                    "entityId": 8727572,
-                    "isMainRole": false
-                },
-                {
-                    "suggestedCompanies": [],
-                    "tags": [],
-                    "isSpeechAuthor": false,
-                    "localId": 15,
-                    "name": "нельзя-сети",
-                    "isMainRole": false
-                },
-                {
-                    "suggestedCompanies": [
-                        {
-                            "sparkId": 5949764,
-                            "inn": "7718620740",
-                            "ogrn": "1067761906805",
-                            "searchPrecision": "maxPrecision"
-                        }
-                    ],
-                    "resolveInfo": {
-                        "resolveApproaches": [
-                            "activeVerified"
-                        ]
-                    },
-                    "tags": [],
-                    "isSpeechAuthor": true,
-                    "localId": 16,
-                    "name": "HH.RU",
-                    "entityId": 6858112,
-                    "isMainRole": false
-                },
-                {
-                    "suggestedCompanies": [],
-                    "tags": [],
-                    "isSpeechAuthor": false,
-                    "localId": 17,
-                    "name": "Telegram",
-                    "entityId": 78197213,
-                    "isMainRole": false
-                },
-                {
-                    "suggestedCompanies": [
-                        {
-                            "sparkId": 1148042,
-                            "inn": "7714030726",
-                            "ogrn": "1027739630401",
-                            "searchPrecision": "maxPrecision"
-                        }
-                    ],
-                    "resolveInfo": {
-                        "resolveApproaches": [
-                            "activeVerified"
-                        ]
-                    },
-                    "tags": [],
-                    "isSpeechAuthor": false,
-                    "localId": 18,
-                    "name": "ВШЭ",
-                    "entityId": 6828194,
-                    "isMainRole": false
-                },
-                {
-                    "suggestedCompanies": [
-                        {
-                            "sparkId": 1149470,
-                            "inn": "2463011853",
-                            "ogrn": "1022402137460",
-                            "searchPrecision": "maxPrecision"
-                        }
-                    ],
-                    "resolveInfo": {
-                        "resolveApproaches": [
-                            "activeVerified"
-                        ]
-                    },
-                    "tags": [],
-                    "isSpeechAuthor": false,
-                    "localId": 19,
-                    "name": "СФУ",
-                    "entityId": 596797,
-                    "isMainRole": false
-                },
-                {
-                    "suggestedCompanies": [
-                        {
-                            "sparkId": 10671006,
-                            "inn": "7726381870",
-                            "ogrn": "1167746654569",
-                            "searchPrecision": "maxPrecision"
-                        }
-                    ],
-                    "resolveInfo": {
-                        "resolveApproaches": [
-                            "activeVerified"
-                        ]
-                    },
-                    "tags": [],
-                    "isSpeechAuthor": false,
-                    "localId": 20,
-                    "name": "geekbrains",
-                    "entityId": 180910714,
-                    "isMainRole": false
-                },
-                {
-                    "suggestedCompanies": [
-                        {
-                            "sparkId": 11529680,
-                            "inn": "9701078611",
-                            "ogrn": "1177746566140",
-                            "searchPrecision": "maxPrecision"
-                        }
-                    ],
-                    "resolveInfo": {
-                        "resolveApproaches": [
-                            "activeVerified"
-                        ]
-                    },
-                    "tags": [],
-                    "isSpeechAuthor": false,
-                    "localId": 21,
-                    "name": "skillbox",
-                    "entityId": 113463816,
-                    "isMainRole": false
-                },
-                {
-                    "suggestedCompanies": [],
-                    "tags": [],
-                    "isSpeechAuthor": false,
-                    "localId": 22,
-                    "name": "Agile-подход",
-                    "isMainRole": false
-                },
-                {
-                    "suggestedCompanies": [],
-                    "tags": [],
-                    "isSpeechAuthor": false,
-                    "localId": 23,
-                    "name": "Высшая школа бизнеса НИУ ВШЭ",
-                    "entityId": 142945053,
-                    "isMainRole": false
-                },
-                {
-                    "suggestedCompanies": [
-                        {
-                            "sparkId": 1148042,
-                            "inn": "7714030726",
-                            "ogrn": "1027739630401",
-                            "searchPrecision": "maxPrecision"
-                        }
-                    ],
-                    "resolveInfo": {
-                        "resolveApproaches": [
-                            "activeVerified"
-                        ]
-                    },
-                    "tags": [],
-                    "isSpeechAuthor": false,
-                    "localId": 24,
-                    "name": "НИУ ВШЭ",
-                    "entityId": 6828194,
-                    "isMainRole": false
-                },
-                {
-                    "suggestedCompanies": [
-                        {
-                            "sparkId": 1310139,
-                            "inn": "7736207543",
-                            "ogrn": "1027700229193",
-                            "searchPrecision": "maxPrecision"
-                        }
-                    ],
-                    "resolveInfo": {
-                        "resolveApproaches": [
-                            "activeVerified"
-                        ]
-                    },
-                    "tags": [],
-                    "isSpeechAuthor": false,
-                    "localId": 25,
-                    "name": "Яндекс",
-                    "entityId": 509307,
-                    "isMainRole": false
-                },
-                {
-                    "suggestedCompanies": [],
-                    "tags": [],
-                    "isSpeechAuthor": false,
-                    "localId": 26,
-                    "name": "Google",
-                    "entityId": 7614717,
-                    "isMainRole": false
-                },
-                {
-                    "suggestedCompanies": [],
-                    "tags": [
-                        "inCitation"
-                    ],
-                    "isSpeechAuthor": false,
-                    "localId": 27,
-                    "name": "youtube.com",
-                    "entityId": 8401433,
+                    "localId": 3,
+                    "name": "discord-канал",
+                    "entityId": 97504709,
                     "isMainRole": false
                 },
                 {
@@ -313,28 +63,17 @@
                     },
                     "tags": [],
                     "isSpeechAuthor": false,
-                    "localId": 28,
-                    "name": "Skill Factory",
+                    "localId": 4,
+                    "name": "Skillfactory",
                     "entityId": 156147450,
-                    "isMainRole": false
-                },
-                {
-                    "suggestedCompanies": [],
-                    "tags": [
-                        "inCitation"
-                    ],
-                    "isSpeechAuthor": false,
-                    "localId": 29,
-                    "name": "YouTube",
-                    "entityId": 8401433,
                     "isMainRole": false
                 },
                 {
                     "suggestedCompanies": [
                         {
-                            "sparkId": 1148297,
-                            "inn": "7812009592",
-                            "ogrn": "1027810241502",
+                            "sparkId": 6631689,
+                            "inn": "7842393933",
+                            "ogrn": "1089847357126",
                             "searchPrecision": "maxPrecision"
                         }
                     ],
@@ -345,161 +84,52 @@
                     },
                     "tags": [],
                     "isSpeechAuthor": false,
-                    "localId": 30,
-                    "name": "ПГУПС",
-                    "entityId": 6908167,
+                    "localId": 5,
+                    "name": "Selectel",
+                    "entityId": 8770437,
+                    "isMainRole": true
+                },
+                {
+                    "suggestedCompanies": [],
+                    "tags": [],
+                    "isSpeechAuthor": false,
+                    "localId": 6,
+                    "name": "отдел дизайна Selectel",
                     "isMainRole": false
                 }
             ],
             "people": [
                 {
-                    "rotatedName": "Меркушев Владимир",
-                    "tags": [],
+                    "rotatedName": "Экизашвили Алина",
+                    "tags": [
+                        "probablyNotIndividualEntrepreneur",
+                        "inBusinessNews"
+                    ],
                     "isSpeechAuthor": false,
                     "localId": 0,
-                    "name": "Владимир Меркушев",
+                    "name": "Экизашвили Алина",
                     "isMainRole": false
-                },
-                {
-                    "rotatedName": "Далио Рэй",
-                    "tags": [],
-                    "isSpeechAuthor": false,
-                    "localId": 1,
-                    "name": "Рэй Далио",
-                    "isMainRole": true
-                },
-                {
-                    "rotatedName": "ДеМарко Том",
-                    "tags": [],
-                    "isSpeechAuthor": false,
-                    "localId": 2,
-                    "name": "Том ДеМарко",
-                    "entityId": 193850401,
-                    "isMainRole": true
-                },
-                {
-                    "rotatedName": "Деннинг Стивен",
-                    "tags": [],
-                    "isSpeechAuthor": false,
-                    "localId": 3,
-                    "name": "Стивен Деннинг",
-                    "isMainRole": true
-                },
-                {
-                    "rotatedName": "Хигни Джозеф",
-                    "tags": [],
-                    "isSpeechAuthor": false,
-                    "localId": 4,
-                    "name": "Джозеф Хигни",
-                    "entityId": 189942532,
-                    "isMainRole": true
-                },
-                {
-                    "rotatedName": "Пуданова Екатерина",
-                    "tags": [],
-                    "isSpeechAuthor": false,
-                    "localId": 5,
-                    "name": "Екатерина Пуданова",
-                    "isMainRole": false
-                },
-                {
-                    "rotatedName": "Сазерленд Джеф",
-                    "tags": [],
-                    "isSpeechAuthor": false,
-                    "localId": 6,
-                    "name": "Джеф Сазерленд",
-                    "isMainRole": true
                 }
             ],
             "themes": [
                 {
-                    "localId": 31,
-                    "name": "Выпуск товаров",
-                    "entityId": 8543462,
-                    "tonality": "positive"
-                },
-                {
-                    "localId": 32,
-                    "name": "Открытие предприятия, начало производства",
-                    "entityId": 8543400,
-                    "tonality": "positive"
-                },
-                {
-                    "localId": 33,
-                    "name": "Форумы и конференции",
-                    "entityId": 14215647,
-                    "tonality": "neutral"
-                },
-                {
-                    "localId": 34,
-                    "name": "Образование",
-                    "entityId": 8543392,
-                    "tonality": "neutral"
-                },
-                {
-                    "localId": 35,
-                    "name": "Бюджет",
-                    "entityId": 8543366,
+                    "localId": 7,
+                    "name": "Проекты",
+                    "entityId": 14217078,
                     "tonality": "neutral"
                 }
             ],
-            "locations": [
-                {
-                    "code": {
-                        "countryCode": "RUS",
-                        "regionCode": "45"
-                    },
-                    "localId": 36,
-                    "name": "Москва",
-                    "isMainRole": false
-                },
-                {
-                    "code": {
-                        "countryCode": "RUS",
-                        "regionCode": "22"
-                    },
-                    "localId": 37,
-                    "name": "Нижний Новгород",
-                    "isMainRole": false
-                },
-                {
-                    "code": {
-                        "countryCode": "RUS",
-                        "regionCode": "56"
-                    },
-                    "localId": 38,
-                    "name": "Пенза",
-                    "isMainRole": false
-                },
-                {
-                    "code": {
-                        "countryCode": "RUS",
-                        "regionCode": "04"
-                    },
-                    "localId": 39,
-                    "name": "Красноярск",
-                    "isMainRole": false
-                },
-                {
-                    "code": {
-                        "countryCode": "RUS",
-                        "regionCode": "40"
-                    },
-                    "localId": 40,
-                    "name": "Санкт-Петербург",
-                    "isMainRole": false
-                }
-            ]
+            "locations": []
         },
         "attributes": {
             "isTechNews": false,
             "isAnnouncement": false,
             "isDigest": false,
             "isSpeechRecognition": false,
-            "influence": 1,
-            "wordCount": 2257,
+            "influence": 17,
+            "wordCount": 1270,
             "coverage": {
-                "value": 4,
+                "value": 560605,
                 "state": "hasData"
             }
         },
