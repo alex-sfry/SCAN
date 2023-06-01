@@ -10,7 +10,7 @@ const histogrReq = (config) => {
         case 'Негативная':
             tonality = 'negative';
             break;
-        default: tonality = 'Any'
+        default: tonality = 'any'
     }
 
     return {

@@ -16,6 +16,10 @@ const loginReducer = (state = {}, action) => {
                 ...state,
                 isLoading: action.payload
             }
+        case 'CLEAR_LOGIN_STATE' :
+            return {
+                
+            }
         default: {
             return state;
         }

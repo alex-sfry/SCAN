@@ -6,6 +6,10 @@
 
 
 
-/* @media all and (max-width: 420px) {
-	
-} */
+@media all and (max-width: 768px) {
+    .container {
+        max-width: 375px;
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+}

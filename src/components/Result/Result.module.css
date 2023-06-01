@@ -1,48 +1,69 @@
 .result {
     max-width: 1340px;
     padding: 0 10px;
-    display: flex;
-    flex-direction: column;
     margin: 0 auto;
-    sdsdheight: calc(100vh - 137px - 93px);
-    sdmin-height: 100%;
     min-height: 100%;
-    
 }
 
-.resultCard {
+ .resultCard {
     display: flex;
     flex-direction: column;
     height: calc(158px - 34px);
+    max-width: 137px;
     width: 100%;
-    max-width: 141px;
     border-right: 2px solid rgba(148, 148, 148, 0.4);
     margin: 17px 0;
-    padding: 1px 17px 0 17px;
+    padding: 1px 16px 0 16px;
+    align-items: center;
 }
 
-.resultCard p {
-    text-align: center;
+ .resultCard p {
     font-family: 'Inter';
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
     letter-spacing: 0.02em;
     color: var(--black);
-    padding-bottom: 26px;
+    padding-bottom: 27px;
 }
 
 .resultCard .cardDate {
     padding-bottom: 27px;
 }
 
-.sliderContainer {
+/*.sliderContainer {
     min-height: 162px;
-}
-
-
-
-
-/* @media all and (max-width: 420px) {
-	
+    max-width: 1320px;
 } */
+
+
+ @media all and (max-width: 768px) {
+	/* .result {
+        sdsdmax-width: 750px;
+        padding: 0 10px;
+        
+        dfdfmargin: 0 auto;
+        sdsdheight: calc(100vh - 137px - 93px);
+        sdmin-height: 100%;
+        min-height: 100%;
+        
+    } */
+
+    /* .sliderContainer {
+        min-height: 162px;
+        max-width: 298px;
+        width: 100%;
+        min-width: 298px;
+    } */
+
+    .resultCard {
+
+        height: 100%;      
+        padding: 0 42px 8px 9px;
+        flex-direction: row;
+        justify-content: space-between;
+        border-right: none;
+        width: 100%;
+        max-width: 298px;
+    }
+} 

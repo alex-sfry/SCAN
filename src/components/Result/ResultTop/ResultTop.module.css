@@ -33,5 +33,6 @@
     height: 369px;
     background-image: url(../../../assets/images/result-bg.svg);
     background-repeat: no-repeat;
-    background-position: 0 18px;
+    background-position: 0 0px;
+    margin-top: 18px;
 }

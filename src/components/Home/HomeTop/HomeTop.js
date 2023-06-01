@@ -9,10 +9,10 @@ import { persistor } from '../../../store/store.js';
 const HomeTop = () => {
     const selectedData = useSelector((state) => state, shallowEqual);
     const dispatch = useDispatch();
-    
+    console.log(selectedData)
     useEffect(() => {
-     dispatch({ type: 'CLEAR_QUERY_REDUCER' })
-    //  dispatch({ type: 'CLEAR_QUERY_REDUCER', payload: false })
+        dispatch({ type: 'CLEAR_QUERY_REDUCER' })
+        dispatch({ type: 'CLEAR_RESULT_REDUCER' })
     }, [])
 
     const renderCondition = () => {

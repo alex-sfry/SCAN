@@ -1,6 +1,6 @@
 import { React } from 'react';
 import css from './Header.module.css';
-import { shallowEqual, useSelector } from 'react-redux';
+import { useDispatch, shallowEqual, useSelector } from 'react-redux';
 import { Link, useLocation } from 'react-router-dom';
 import logo from '../../assets/images/headerLogo.png';
 import user from '../../assets/images/user.png';
@@ -11,6 +11,7 @@ const Header = () => {
     console.log('header')
     const location = useLocation();
     const selectedData = useSelector((state) => state, shallowEqual);
+    const dispatch = useDispatch();
     //console.log('useSelector', selectedData);
     const date = new Date();
     // if (Object.hasOwn(selectedData.login, 'token')) {
@@ -19,7 +20,10 @@ const Header = () => {
     
     const renderConditions = () => {
         if (Object.hasOwn(selectedData.login, 'token')) {
-            Date.parse(selectedData.login.token.expire) - Date.parse(date) < 0 && persistor.purge();
+            if (Date.parse(selectedData.login.token.expire) - Date.parse(date) < 0){
+                dispatch({ type: 'CLEAR_LOGIN_STATE' })   
+                persistor.purge();
+            } 
         }
         if (Object.hasOwn(selectedData.login, 'token')) {
             if (Object.hasOwn(selectedData.login.token, 'accessToken')) {

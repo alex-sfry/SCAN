@@ -8,7 +8,8 @@
     margin-left: 15px;
 }
 
-.resultSlider {
+
+/* .resultSlider {
     width: 100%;
 }
 
@@ -31,4 +32,23 @@
 
 .resultSlider .slick-slider {
     padding-right: 26px;
+} */
+
+
+@media all and (max-width: 768px) {
+    .homeSlider .slick-slide>div {
+        margin-left: 18px;
+        width: 100%;
+        max-width: 375px;
+    }
+    
+    .homeSlider .slick-slide {
+        width: 100%;
+        max-width: 375px;
+    }
+
+    .homeSlider .slick-list {
+        margin-left: 0px;
+    }
 }
+

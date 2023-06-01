@@ -1,9 +1,13 @@
-const queryReducer = (state = {}, action) => {
-    console.log('queryReducer', action.payload)
+const queryReducer = (state = {loadedDocsQty: 0}, action) => {
+    //console.log('queryReducer', action.payload)
     switch (action.type) {
         case 'ADD_HISTOGRAM':
             if (action.payload[0].length === 0) {
-                return { ...state, histogram: {} };
+                return {
+                    ...state,
+                    histogram: {},
+                    histIsLoading: action.payload[1]
+                };
             }
             return {
                 ...state,
@@ -27,9 +31,19 @@ const queryReducer = (state = {}, action) => {
             return {
                 ...state, docs: [...state.docs, ...action.payload]
             } 
-                 
+        case 'SHOW_SLIDER':
+            return {
+                ...state, docs: [...state.docs, ...action.payload]
+            }
+        case 'ADD_LOADED_DOCS_QTY':
+            return { 
+                    ...state,
+                    loadedDocsQty: action.payload
+            }
         case 'CLEAR_QUERY_REDUCER':
-            return {docs: []}
+            return {docs: [],
+                loadedDocsQty: 0
+            }
 
         default: {
             return state;

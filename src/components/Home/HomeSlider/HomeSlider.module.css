@@ -43,3 +43,10 @@
     letter-spacing: 0.01em;
     color: var(--black);
 }
+
+@media all and (max-width: 768px) {
+    .cardContainer{
+        width: 100%;
+        padding: 30px 17px 20px 17px;
+    }
+}
