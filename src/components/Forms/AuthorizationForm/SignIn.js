@@ -6,14 +6,12 @@ import Input from '../../Input';
 import google from '../../../assets/images/google.svg';
 import facebook from '../../../assets/images/facebook.svg';
 import yandex from '../../../assets/images/yandex.svg';
-import useAxios from '../../../hooks/useAxios.js';
 import { useDispatch, useSelector, shallowEqual } from 'react-redux';
 import { Navigate } from "react-router-dom";
 import useFetchData from '../../../hooks/useFetchData.js';
 
 const SingIn = () => {
-    //const { status, fetch } = useAxios();
-    const {status, isLoading, fetch} = useFetchData();
+    const {error, status, fetch} = useFetchData();
     const dispatch = useDispatch();
     const selectedData = useSelector((state) => state, shallowEqual);
 
@@ -24,7 +22,7 @@ const SingIn = () => {
             status.data.data.eventFiltersInfo &&
                 dispatch({ type: 'ADD_INFO', payload: [status.data.data.eventFiltersInfo, status.isLoading] })
         }
-    }, [status.data, dispatch])
+    }, [error, status.data, dispatch])
     
     useEffect(() => {
         if (Object.hasOwn(selectedData.login, 'token') && !Object.hasOwn(selectedData.login, 'info')) {
@@ -35,7 +33,7 @@ const SingIn = () => {
     }, [selectedData.login.token, dispatch])
 
     const { register, formState: { errors, isValid }, handleSubmit } = useForm({ mode: 'onChange' });
-    //console.log(errors);
+
 
     const onSubmit = (data) => {
         fetch('/api/v1/account/login', { login: data.login, password: data.password }, null, 'loginInstance')
@@ -43,9 +41,15 @@ const SingIn = () => {
 
     const renderAlert = (name) => {
         return (
-            errors[name]?.type === 'required' ?
-                <p className={css.alert} role="alert">Введите корректные данные</p> :
-                <p className={css.isInvisible}>Введите корректные данные</p>
+            error && error.response.status === 401 ?
+                <>
+                    <p className={css.alert} role="alert">{error.response.data.message}</p>
+                    <p className={css.isInvisible}>{error.response.data.message}</p>
+                </>
+                :
+                errors[name]?.type === 'required' ?
+                    <p className={css.alert} role="alert">Введите корректные данные</p> :
+                    <p className={css.isInvisible}>Введите корректные данные</p>
         )
     }
 
@@ -75,7 +79,6 @@ const SingIn = () => {
                         <Button
                             type={'submit'}
                             disabled={!isValid}
-                            btnClass={'btn22'}
                             fontColor={'white'}
                             bgColor={'bgBlue'}
                         >

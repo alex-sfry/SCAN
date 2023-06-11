@@ -3,6 +3,7 @@ import css from './Header.module.css';
 import { useDispatch, shallowEqual, useSelector } from 'react-redux';
 import { Link, useLocation } from 'react-router-dom';
 import logo from '../../assets/images/headerLogo.png';
+import logoMobile from '../../assets/images/headerLogo-mobile.png';
 import user from '../../assets/images/user.png';
 import spinner from '../../assets/images/spinnerHeader.svg';
 import { persistor } from '../../store/store.js';
@@ -12,17 +13,17 @@ const Header = () => {
     const location = useLocation();
     const selectedData = useSelector((state) => state, shallowEqual);
     const dispatch = useDispatch();
-    //console.log('useSelector', selectedData);
     const date = new Date();
-    // if (Object.hasOwn(selectedData.login, 'token')) {
-    //     Date.parse(selectedData.login.token.expire) - Date.parse(date) < 0 && persistor.purge();
-    // }
+
+    const logOut = () => {
+        dispatch({ type: 'CLEAR_LOGIN_STATE' });
+        persistor.purge();
+    }
     
     const renderConditions = () => {
         if (Object.hasOwn(selectedData.login, 'token')) {
             if (Date.parse(selectedData.login.token.expire) - Date.parse(date) < 0){
-                dispatch({ type: 'CLEAR_LOGIN_STATE' })   
-                persistor.purge();
+                logOut();
             } 
         }
         if (Object.hasOwn(selectedData.login, 'token')) {
@@ -34,7 +35,13 @@ const Header = () => {
                                 <>
                                     <div className={`${css.headerStatsText} ${css.flexCol}`}>
                                         <p className={css.label}>Использовано компаний</p>
+                                        <span className={css.qtyMobile}>
+                                            {Object.hasOwn(selectedData.login, 'info') && selectedData.login.info.usedCompanyCount}
+                                        </span>
                                         <p className={css.label}>Лимит по компаниям</p>
+                                        <span className={css.qtyMobile}>
+                                            {Object.hasOwn(selectedData.login, 'info') && selectedData.login.info.companyLimit}
+                                        </span>
                                     </div>
                                     <div className={`${css.headerStatsQty} ${css.flexCol}`}>
                                         <span className={css.qty}>
@@ -48,10 +55,17 @@ const Header = () => {
                                 : (<img className={css.spinner} src={spinner} alt="loading..." />)}
 
                         </div>
+                        <div className={css.burger}>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
                         <div className={`${css.user} ${css.flexAlignCenter}`}>
                             <div className={`${css.userText} ${css.flexCol}`}>
                                 <span className={css.userName}>Алексей А.</span>
-                                <a href="http://" className={css.userBtn}>Выйти</a>
+                                <div className={css.userBtn}>
+                                    <button onClick={logOut}>Выйти</button>
+                                </div>
                             </div>
                             <img src={user} alt="фотография" className={css.userImg} width={32} height={32} />
                         </div>
@@ -75,6 +89,11 @@ const Header = () => {
                             </div></Link>
                         </div>
                     </div>
+                    <div className={css.burger}>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </>
             )
         }
@@ -84,6 +103,7 @@ const Header = () => {
             <div className={`${css.container} ${css.flexAlignCenter}`}>
                 <div className={css.headerLogo}>
                     <img src={logo} alt="логотип" className={css.logoImg} width={141} height={91} />
+                    <img src={logoMobile} alt="логотип" className={css.logoImgMobile} width={111} height={93} />
                 </div>
                 <div className={`${css.headerMain} ${css.flexAlignCenter}`}>
                     <nav>

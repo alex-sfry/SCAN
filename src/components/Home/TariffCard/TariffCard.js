@@ -13,9 +13,9 @@ const TariffCard = ({ content, border, btnBgColor, fontColor, text, display }) =
                 </div>
                 <div className={css.cardHeaderIcon}>
                     <img
+                        className={css[content.cls]}
                         src={content.icon}
                         alt={content.iconAlt}
-                        style={content.iconPosition}
                     />
                 </div>
             </div>
@@ -52,16 +52,13 @@ const TariffCard = ({ content, border, btnBgColor, fontColor, text, display }) =
                 </div>
                 <div className={css.cardBtn}>
                     <Button
-                        btnClass="btn20"
                         fontColor={fontColor}
                         bgColor={btnBgColor}
                     >
                         {text}
                     </Button>
-
                 </div>
             </div>
-
         </div>
     )
 }

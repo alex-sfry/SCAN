@@ -31,30 +31,12 @@
     padding-bottom: 27px;
 }
 
-/*.sliderContainer {
-    min-height: 162px;
-    max-width: 1320px;
-} */
-
 
  @media all and (max-width: 768px) {
-	/* .result {
-        sdsdmax-width: 750px;
-        padding: 0 10px;
-        
-        dfdfmargin: 0 auto;
-        sdsdheight: calc(100vh - 137px - 93px);
-        sdmin-height: 100%;
-        min-height: 100%;
-        
-    } */
-
-    /* .sliderContainer {
-        min-height: 162px;
-        max-width: 298px;
-        width: 100%;
-        min-width: 298px;
-    } */
+	.result {
+        max-width: 355px;
+        margin: 0 auto;       
+    }
 
     .resultCard {
 

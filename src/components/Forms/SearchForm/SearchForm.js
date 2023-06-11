@@ -39,13 +39,66 @@ const SearchForm = () => {
         fetch('/api/v1/objectsearch', req, token, 'searchInstance', 'idList');
     }
     //console.log(new Date().toISOString().slice(0, 10))
-    //console.log(errors);
+
+    //validate inn
+    function validate(inn, error) {
+        var result = false;
+        if (typeof inn === 'number') {
+            inn = inn.toString();
+        } else if (typeof inn !== 'string') {
+            inn = '';
+        }
+        if (!inn.length) {
+            error.code = 1;
+            error.message = 'ИНН пуст';
+        } else if (/[^0-9]/.test(inn)) {
+            error.code = 2;
+            error.message = 'ИНН может состоять только из цифр';
+        } else if ([10, 12].indexOf(inn.length) === -1) {
+            error.code = 3;
+            error.message = 'ИНН может состоять только из 10 или 12 цифр';
+        } else {
+            var checkDigit = function (inn, coefficients) {
+                var n = 0;
+                for (var i in coefficients) {
+                    n += coefficients[i] * inn[i];
+                }
+                return parseInt(n % 11 % 10);
+            };
+            switch (inn.length) {
+                case 10:
+                    var n10 = checkDigit(inn, [2, 4, 10, 3, 5, 9, 4, 6, 8]);
+                    if (n10 === parseInt(inn[9])) {
+                        result = true;
+                    }
+                    break;
+                case 12:
+                    var n11 = checkDigit(inn, [7, 2, 4, 10, 3, 5, 9, 4, 6, 8]);
+                    var n12 = checkDigit(inn, [3, 7, 2, 4, 10, 3, 5, 9, 4, 6, 8]);
+                    if ((n11 === parseInt(inn[10])) && (n12 === parseInt(inn[11]))) {
+                        result = true;
+                    }
+                    break;
+                default: result = false;
+            }
+            if (!result) {
+                error.code = 4;
+                error.message = 'Неправильное контрольное число';
+            }
+        }
+        if(!result) {
+            return error.message
+        } else return result;
+        
+    }
 
     const renderAlert = (name) => {
         return (
-            errors[name]?.type === 'required' ?
-                <p className={css.alert} role="alert">Введите корректные данные</p> :
-                <p className={css.isInvisible}>Введите корректные данные</p>
+            errors[name]?.type === 'required' ||  errors[name]?.type === 'validate' ?
+                errors[name]?.message !== '' ?
+                    <p className={css.alert} role="alert">{errors[name]?.message}</p> : 
+                        <p className={css.alert} role="alert">Введите корректные данные</p> :
+                            <p className={css.isInvisible}>Введите корректные данные</p>
         )
     }
 
@@ -61,8 +114,9 @@ const SearchForm = () => {
                             required
                             type="text"
                             placeholder={'10 цифр'}
+                            validate={validate}
                         />
-                        {renderAlert('dateFrom')}
+                        {renderAlert('inn')}
                         <label className={css.selectLbl} htmlFor="tone">Тональность</label>
                         <select
                             {...register("tone", { required: false })}
@@ -81,7 +135,7 @@ const SearchForm = () => {
                             type="text"
                             placeholder={'От 1 до 1000'}
                         />
-                        {renderAlert('dateFrom')}
+                        {renderAlert('qty')}
                     </div>
                     <div className={css.formLeftBottom}>
                         <label htmlFor="cb1">Диапазон поиска*</label>
@@ -112,6 +166,7 @@ const SearchForm = () => {
                                     </LocalizationProvider>
                                 )}
                             />
+                            
                             <Controller
                                 control={control}
                                 name="dateTo"

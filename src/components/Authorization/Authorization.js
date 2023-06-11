@@ -35,6 +35,7 @@ const Authorization = () => {
                 </div>
                 { activeSignIn ? <SignIn /> : <SignUp />}
             </div>
+            <div className={css.bgImageMobile}></div>
         </div>
     )
 }

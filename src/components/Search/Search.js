@@ -2,13 +2,17 @@ import React from 'react';
 import css from './Search.module.css';
 import SearchForm from '../Forms/SearchForm';
 import { useSelector, shallowEqual } from 'react-redux';
+import { Navigate } from 'react-router-dom';
 import Result from '../Result';
 
 const Search = () => {
     const selectedData = useSelector((state) => state, shallowEqual);
-    //console.log('selectedData', selectedData)
 
     const renderConditions = () => {
+        if(!Object.hasOwn(selectedData.login, 'token')) {
+            return <Navigate to="/" replace={true} />
+        } 
+        
         if (Object.hasOwn(selectedData.query, 'histIsLoading')) {
             return <Result />
         } else return <div className={css.container}>
@@ -22,8 +26,6 @@ const Search = () => {
             </div>
             <div className={css.searchRight}></div>
         </div>
-            
-        
     }
 
     return (

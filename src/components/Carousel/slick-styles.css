@@ -9,32 +9,6 @@
 }
 
 
-/* .resultSlider {
-    width: 100%;
-}
-
-.resultSlider .slick-slide>div {
-    width: 100%;
-    max-width: 141px;
-    padding-right: 1px;
-}
-
-.resultSlider .slick-slide {
-    max-width: 141px;
-}
-
-.resultSlider .slick-list {
-    margin-left: 0;
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
-    
-}
-
-.resultSlider .slick-slider {
-    padding-right: 26px;
-} */
-
-
 @media all and (max-width: 768px) {
     .homeSlider .slick-slide>div {
         margin-left: 18px;

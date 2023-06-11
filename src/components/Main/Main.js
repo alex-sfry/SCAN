@@ -4,7 +4,6 @@ import css from './Main.module.css';
 import Home from '../Home';
 import Authorization from '../Authorization';
 import Search from '../Search/Search';
-import Result from '../Result';
 import NotFound from '../NotFound/NotFound';
 
 const Main = () => {

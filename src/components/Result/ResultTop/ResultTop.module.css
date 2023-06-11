@@ -6,7 +6,7 @@
 }
 
 .resultHeading {
-    font-family: 'Ferry';
+    font-family: 'Ferry', sans-serif;
     font-weight: 900;
     font-size: 40px;
     line-height: 48px;
@@ -14,11 +14,11 @@
     color: var(--black);
     text-transform: uppercase;
     width: 510px;
-    padding: 67px 0 36px 0;
+    padding: 69px 0 36px 0;
 }
 
 .resultTopText {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
@@ -35,4 +35,34 @@
     background-repeat: no-repeat;
     background-position: 0 0px;
     margin-top: 18px;
+}
+
+@media all and (max-width: 768px) {
+    .resultTop {
+        gap: 0px;
+        height: 100%;
+    }
+
+    .resultHeading {
+        font-size: 28px;
+        line-height: 34px;
+        letter-spacing: 0.01em;
+        width: 344px;
+        padding: 11px 0 21px 0;
+    }
+
+    .resultTopText {
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: normal;
+        padding-bottom: 21px;
+        width: 100%;
+    }
+
+    .resultTopRight {
+        width: 100%;
+        max-height: 234px;
+        background-image: url(../../../assets/images/result-bg-mobile.svg);
+        background-size: contain;
+    }
 }

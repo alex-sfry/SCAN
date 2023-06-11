@@ -50,19 +50,10 @@ const ResultSlider = ({ slides, slidesToShow }) => {
                                     nextArrow: <Arrow direction={'arrowRight'} parentSlider={'resultSlider'} />,
                                     prevArrow: <Arrow direction={'arrowLeft'} parentSlider={'resultSlider'} />,
                                     responsive: [
-                                        // {
-                                        //     breakpoint: 1200,
-                                        //     settings: {
-                                        //         slidesToShow: 5,
-                                        //         slidesToScroll: 1,
-                                        //         infinite: true,
-                                        //         dots: true
-                                        //     }
-                                        // },
                                         {
                                             breakpoint: 1024,
                                             settings: {
-                                                slidesToShow: slidesToShow < 5 ? slidesToShow: 5,
+                                                slidesToShow: slidesToShow < 5 ? slidesToShow : 5,
                                                 slidesToScroll: 1,
                                                 variableWidth: true
                                             }

@@ -11,11 +11,12 @@ const Result = () => {
     const selectedData = useSelector((state) => state, shallowEqual);
     const dispatch = useDispatch();
     const { fetch } = useFetchData();
-    //const [loadedQty, setLoadedQty] = useState(0)
     const [slides, setSlides] = useState([])
     const [slidesToShow, setSlidesToShow] = useState(1)
     const [docsToShow, setDocsToShow] = useState(0)
-    const token = selectedData.login.token.accessToken;
+
+    const token = Object.hasOwn(selectedData.login, 'token') ? selectedData.login.token.accessToken : null
+
     const req = { ids: [] };
 
     console.log(selectedData)
@@ -26,10 +27,9 @@ const Result = () => {
     }, [selectedData.query])
 
     useEffect(() => {
-        if (Object.hasOwn(selectedData.query, 'histogram') /* && selectedData.query.loadedDocsQty === 0 */) handleResult()
+        if (Object.hasOwn(selectedData.query, 'histogram')) handleResult()
     }, [selectedData.query])
 
-    //let ignoreFetch = true
     let shouldFetch = useRef(true);
 
     useEffect(() => {
@@ -43,7 +43,6 @@ const Result = () => {
                     shouldFetch = false;
                     fetch('/api/v1/documents', req, token, 'searchInstance', 'docs')
                     slides.length > 0 && dispatch({ type: 'ADD_LOADED_DOCS_QTY', payload: docsToShow })
-                    //setLoadedQty(docsToShow)
                 }
             }
         }
@@ -57,7 +56,7 @@ const Result = () => {
             const totalDocsQty = selectedData.query.histogram.totalDocuments;
             const riskFactorsQty = selectedData.query.histogram.riskFactors;
 
-            //sorting by date
+            //sort by date
             const sortedTotalDocsQty = totalDocsQty.sort((b, a) => moment(a.date).diff(b.date))
             const sortedRiskFactorsQty = riskFactorsQty.sort((b, a) => moment(a.date).diff(b.date))
             console.log('sortedTotalDocsQty', sortedTotalDocsQty)
@@ -95,7 +94,7 @@ const Result = () => {
             req.ids.push(selectedData.query.docIDs[i].encodedId)
         }
         dispatch({ type: 'ADD_LOADED_DOCS_QTY', payload: toLoadQty })
-        //setLoadedQty(toLoadQty)
+
         fetch('/api/v1/documents', req, token, 'searchInstance', 'docs')
     }
 
@@ -103,12 +102,11 @@ const Result = () => {
         <div className={css.result}>
             <ResultTop />
             {
-                // Object.hasOwn(selectedData.query, 'histogram') &&
                 <ResultSlider slides={slides} slidesToShow={slidesToShow} />
             }
             {
                 !selectedData.query.histIsLoading && selectedData.query.docIDs ?
-                    <ResultDocuments /* loadedQty={loadedQty} */ handleClick={handleClick} /> :
+                    <ResultDocuments handleClick={handleClick} /> :
                     null
             }
         </div>

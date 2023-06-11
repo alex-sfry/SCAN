@@ -1,13 +1,12 @@
 import { useState } from 'react';
 import axios from 'axios';
-import { useDispatch, useSelector, shallowEqual } from 'react-redux';
+import { useDispatch } from 'react-redux';
+
 
 const useFetchData = (url, req, token) => {
-    //const selectedData = useSelector((state) => state, shallowEqual);
     const dispatch = useDispatch();
-    const [idList, setIdList] = useState(null)
-    const [histoGram, setHistoGram] = useState(null)
     const [isLoading, setIsLoading] = useState(false)
+    const [error, setError] = useState(null)
     const [status, setStatus] = useState({
         data: null,
         isLoading: true
@@ -18,7 +17,7 @@ const useFetchData = (url, req, token) => {
 
         const searchInstance = axios.create({
             baseURL: 'https://gateway.scan-interfax.ru',
-            timeout: 5000,
+            timeout: 10000,
             headers: {
                 Accept: 'application/json',
             }
@@ -27,7 +26,7 @@ const useFetchData = (url, req, token) => {
         const loginInstance = axios.create({
             baseURL: 'https://gateway.scan-interfax.ru',
             method: "POST",
-            timeout: 5000,
+            timeout: 10000,
             headers: {
                 Accept: 'application/json',
             }
@@ -36,7 +35,7 @@ const useFetchData = (url, req, token) => {
         const queryInstance = axios.create({
             baseURL: 'https://gateway.scan-interfax.ru',
             method: "GET",
-            timeout: 5000,
+            timeout: 10000,
             headers: {
                 Accept: 'application/json',
             }
@@ -50,7 +49,7 @@ const useFetchData = (url, req, token) => {
                 return config;
             },
             (error) => {
-                Promise.reject(error);
+                setError(error);
             }
         );
 
@@ -62,24 +61,22 @@ const useFetchData = (url, req, token) => {
                 return config;
             },
             (error) => {
-                Promise.reject(error);
+                setError(error);
             }
         );
 
         searchInstance.interceptors.response.use(function (response) {
             console.log('response', response)
-            type === 'histoGram' && /* setHistoGram(response.data.data) */ 
+            type === 'histoGram' && 
                 dispatch({ type: 'ADD_HISTOGRAM', payload: [response.data.data, isLoading] })
-            type === 'idList' && /* setIdList(response.data) */
+            type === 'idList' && 
                 dispatch({ type: 'ADD_DOC_IDS', payload: response.data.items })
             type === 'docs' && dispatch({ type: 'ADD_DOCUMENTS', payload: response.data })
 
             return response;
             
           }, function (error) {
-            // Any status codes that falls outside the range of 2xx cause this function to trigger
-            // Do something with response error
-            return Promise.reject(error);
+            setError(error);
           });
         
         if (instance === 'searchInstance') {
@@ -94,6 +91,7 @@ const useFetchData = (url, req, token) => {
                 })
                 .catch(function (error) {
                     console.log(error);
+                    setError(error);
                     setIsLoading(false)
                 })
         }
@@ -108,6 +106,7 @@ const useFetchData = (url, req, token) => {
                 })
                 .catch(function (error) {
                     console.log(error);
+                    setError(error);
                 })
         }
 
@@ -120,12 +119,13 @@ const useFetchData = (url, req, token) => {
                 })
                 .catch(function (error) {
                     console.log(error);
+                    setError(error);
                 })
         }
 
     }
 
-    return {idList, histoGram, isLoading, status, fetch}
+    return {error, status, fetch}
 }
 
 export default useFetchData;

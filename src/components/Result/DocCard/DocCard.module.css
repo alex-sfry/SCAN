@@ -15,23 +15,27 @@
 }
 
 .cardHeader > span:nth-child(2) {
-    sdsdtext-decoration: underline;
     border-bottom: 1px solid #949494;
-    
 }
 
 .cardHeader,
 .cardStats {
-    font-family: 'Inter';
+    color: #949494;
+}
+
+.cardHeader,
+.cardStats,
+.cardBtn,
+.cardText {
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     letter-spacing: 0.02em;
-    color: #949494;
 }
 
 .cardTitle {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-weight: 500;
     font-size: 26px;
     line-height: 31px;
@@ -46,7 +50,7 @@
     background-color: #FFB64F;
     border-radius: 5px;
     margin: 14px 0;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 12px;
     line-height: 15px;
@@ -68,13 +72,7 @@
 }
 
 .cardText {
-    asdaswidth: 581px;
     height: 228px;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 0.02em;
     color: var(--black);
     opacity: 0.5;
     overflow: hidden;
@@ -94,4 +92,68 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+}
+
+
+@media all and (max-width: 768px) {
+    .docCard {
+        width: 336px;
+        padding: 18px 14px 18px 24px;
+        margin: 0 auto;
+    }
+
+    .cardHeader {
+        gap: 9px;
+    }
+
+    .cardHeader,
+    .cardStats {
+        color: #949494;
+    }
+
+    .cardTitle {
+        font-size: 19px;
+        line-height: 23px;
+        letter-spacing: 0.01em;
+        padding-top: 21px;
+    }
+
+    .cardBadge {
+        width: 132px;
+        height: 20px;
+        margin: 20px 0 13px 0;
+        font-size: 10px;
+        line-height: 12px;
+        letter-spacing: 0.01em;
+        padding: 4px 5px 4px 5px;
+    }
+
+    .cardStats {
+        letter-spacing: normal;
+    }
+
+    .cardHeader,
+    .cardStats,
+    .cardBtn {
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.01em;
+    }
+
+    .cardText {
+        height: 255px;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 0.01em;
+        padding: 18px 0 25px 0;
+    }
+
+    .cardBtn {
+        width: 195px;
+        height: 41px;
+        background-color: var(--aqua);
+        padding: 12px 5px;
+        text-align: center;
+        border-radius: 5px;
+    }
 }

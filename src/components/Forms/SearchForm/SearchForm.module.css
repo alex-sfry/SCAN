@@ -23,7 +23,6 @@
     width: 242px;
     display: flex;
     flex-direction: column;
-
 }
 
 .formLeftMain input {
@@ -79,7 +78,7 @@
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     padding-top: 20px;
     max-height: 43px;
 }
@@ -138,6 +137,10 @@
     width: 305px;
     height: 59px;
     letter-spacing: 0.03em;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27px;
 }
 
 .comment {
@@ -158,3 +161,80 @@
     opacity: 1;
     color: red;
 }
+
+.btnDivMobile { 
+    display: none;
+}
+
+
+@media all and (max-width: 768px) {
+    .formRight {
+        display: none;
+    }
+
+    .form {
+        width: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        min-height: 688px;
+
+    }
+
+    .formLeft {
+        padding: 32px 26px 0 14px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .formLeftdate {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 20px;
+        flex-wrap: nowrap;
+        padding-top: 0px;
+        max-height: 100%;
+        width: 100%; 
+    }
+
+    .formLeftMain {
+        width: 100%;
+        height: 100%;
+    }
+
+    .formLeft label,
+    .select,
+    .date,
+    input {
+        letter-spacing: 0.02em;
+    }
+
+    .formLeft label:nth-child(4) {
+        padding-top: 11px;
+    }
+
+    .formLeftBottom > label {
+        padding-top: 11px;
+    }
+
+    .formLeftBottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 0;
+    }
+
+    .btnDivMobile {
+        display: block;
+        width: 100%;
+        font-family: 'Inter', sans-serif;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        margin-top: 40px;
+    }
+
+}
+

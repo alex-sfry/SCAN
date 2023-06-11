@@ -3,13 +3,14 @@ import css from './HomeTop.module.css';
 import Button from '../../Button';
 import { shallowEqual, useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { persistor } from '../../../store/store.js';
 
 
 const HomeTop = () => {
     const selectedData = useSelector((state) => state, shallowEqual);
     const dispatch = useDispatch();
+    
     console.log(selectedData)
+
     useEffect(() => {
         dispatch({ type: 'CLEAR_QUERY_REDUCER' })
         dispatch({ type: 'CLEAR_RESULT_REDUCER' })
@@ -21,7 +22,6 @@ const HomeTop = () => {
                 return <div className={css.btnDiv}>
                     <Link to="search">
                         <Button
-                            btnClass='btn22'
                             bgColor='bgBlue'
                             fontColor='white'
                             type='button'

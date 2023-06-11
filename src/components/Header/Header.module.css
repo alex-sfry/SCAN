@@ -16,7 +16,6 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
-    sadawidth: 100%;
 }
 
 .container {
@@ -129,12 +128,13 @@
     font-size: 10px;
     line-height: 12px;
     text-align: right;
+    opacity: 0.4;
 }
 
 .headerStatsText {
     justify-content: center;
     gap: 7px;
-    opacity: 0.4;
+    
 }
 
 .headerStatsQty {
@@ -186,6 +186,12 @@
     margin: 0 auto;
 }
 
+.logoImgMobile,
+.qtyMobile,
+.burger {
+    display: none;
+}
+
 @keyframes spin {
   0% {
    transform: rotate(0deg);
@@ -194,7 +200,6 @@
     transform: rotate(360deg);
   }
 }
-
 
 
  @media all and (max-width: 1270px) {
@@ -215,4 +220,99 @@
     .headerRight {
         gap: 32px;
     }
+}
+
+@media all and (max-width: 768px) {
+    .logoImg,
+    .headerStatsQty,
+    .headerMain nav,
+    .user,
+    .account {
+        display: none;
+    }
+
+    .logoImgMobile,
+    .qtyMobile,
+    .burger {
+        display: block;
+    }
+
+    .container {
+        max-width: 335px;
+        padding: 0;
+        margin: 0 auto;
+        height: 93px;
+        justify-content: space-between;
+    }
+
+    .burger {
+        height: 25px;
+        width: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .burger > span {
+        display: inline-block;
+        width: 100%;
+        height: 5px;
+        background-color: var(--teal);
+    }
+
+    .headerMain {
+        justify-content: flex-start;
+        gap: 0px;
+    }
+
+    .headerRight {
+        justify-content: space-between;
+        gap: 31px;
+    }
+
+    .headerStats {
+        min-width: 120px;  
+        width: 132px;
+        height: 75px;
+        padding: 5px 5px 5px 10px;
+        gap: 0px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+ 
+    }
+
+    .headerStatsText {
+        position: relative;
+        gap: 0px;
+        padding: 0;
+        width: 100%;
+
+    }
+
+    .qtyMobile:nth-child(2) {
+        padding-bottom: 7px;
+    }
+
+    .qtyMobile:nth-child(4) {
+        color: #8AC540;
+    }
+
+    .qtyMobile {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        z-index: 20;
+        top: 10px;
+    }
+
+    .headerStats .label {
+        font-size: 8px;
+        line-height: 10px;
+        text-align: left;
+    }
 } 
+
+    
+    
+    

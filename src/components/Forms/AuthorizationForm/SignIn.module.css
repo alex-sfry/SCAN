@@ -72,9 +72,30 @@
     height: calc(59px + 30px);
     padding-top: 30px;
     letter-spacing: 0.02em;
+    font-family: 'Inter' sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27px;
 }
 
 .imgIcons {
     cursor: pointer;
 }
 
+
+@media all and (max-width: 768px) {
+    .btnDiv {
+        padding-top: 34px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .loginIcons {
+        display: flex;
+        gap: 8px;
+    }
+
+    .formBottom {
+        padding-bottom: 0px;
+    }
+}
