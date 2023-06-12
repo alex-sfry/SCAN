@@ -1,0 +1,36 @@
+.text {
+    margin-left: 16px;
+    opacity: 0.4;
+}
+
+.label {
+    cursor: pointer;
+}
+
+.checkbox {
+    display: none;
+}
+
+.fake {
+    display: inline-flex;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    color: #000;
+    justify-content: center;
+    border: 1px solid #000;
+    opacity: 0.4;
+}
+
+.fake::before {
+    content: url('../../assets/images/check-mark.svg');
+    opacity: 0;
+    transition: .2s;
+}
+
+.checkbox:checked+.fake::before,
+.checkbox:checked+.fake,
+.checkbox:checked~.text {
+    opacity: 1;
+}
+

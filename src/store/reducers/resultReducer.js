@@ -1,5 +1,4 @@
 const resultReducer = (state = {}, action) => {
-    console.log('resultReducer', action)
     switch (action.type) {
         case 'ADD_SLIDES':
           return {

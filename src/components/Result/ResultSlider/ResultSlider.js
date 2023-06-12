@@ -16,7 +16,7 @@ const ResultSlider = ({ slides, slidesToShow }) => {
             }
         }
     }, [selectedData.query])
-    console.log('varQty', varQty)
+
     return (
         <>
             <div className={css.sliderTitle}>

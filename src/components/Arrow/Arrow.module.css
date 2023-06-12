@@ -35,12 +35,27 @@
     left: -164px
 }
 
+@media all and (max-width: 864px) {
+    .resultSlider.arrowRight {
+        top: 26%;
+        right: -35px;
+    }
+    
+    .resultSlider.arrowLeft {
+        top: 26%;
+        left: -164px
+    }
+    
+}
+
 @media all and (max-width: 768px) {
     .resultSlider.arrowRight {
+        top: 49%;
         right: -32px;
     }
     
     .resultSlider.arrowLeft {
+        top:49%;
         left: -29px
     }
 

@@ -8,8 +8,6 @@ import { Link } from 'react-router-dom';
 const HomeTop = () => {
     const selectedData = useSelector((state) => state, shallowEqual);
     const dispatch = useDispatch();
-    
-    console.log(selectedData)
 
     useEffect(() => {
         dispatch({ type: 'CLEAR_QUERY_REDUCER' })

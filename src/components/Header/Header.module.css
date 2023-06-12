@@ -11,7 +11,7 @@
 }
 
 .header {
-	background-color: var(--white);
+    background-color: var(--white);
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -24,6 +24,7 @@
     margin: 0 auto;
     height: 93px;
     justify-content: space-between;
+    position: relative;
 }
 
 .headerMain {
@@ -69,7 +70,7 @@
 
 .signUpBtn,
 .loginBtn {
-    border-radius: 5px;   
+    border-radius: 5px;
     padding: 4px 10px 4px 12px;
     letter-spacing: 0.01em;
     cursor: pointer;
@@ -134,7 +135,7 @@
 .headerStatsText {
     justify-content: center;
     gap: 7px;
-    
+
 }
 
 .headerStatsQty {
@@ -163,7 +164,7 @@
     gap: 3px;
 }
 
-.userText > span {
+.userText>span {
     color: var(--black);
     opacity: 0.7;
 }
@@ -174,6 +175,10 @@
     opacity: 0.4;
     text-transform: capitalize;
     text-align: right;
+}
+
+.userBtnMobile {
+    display: none;
 }
 
 .userImg {
@@ -192,21 +197,28 @@
     display: none;
 }
 
-@keyframes spin {
-  0% {
-   transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+.accountMobile {
+    display: none;
 }
 
 
- @media all and (max-width: 1270px) {
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+@media all and (max-width: 1270px) {
     .headerMain {
         gap: 64px;
     }
-    
+
     .headerRight {
         gap: 64px;
     }
@@ -216,7 +228,7 @@
     .headerMain {
         gap: 32px;
     }
-    
+
     .headerRight {
         gap: 32px;
     }
@@ -225,7 +237,6 @@
 @media all and (max-width: 768px) {
     .logoImg,
     .headerStatsQty,
-    .headerMain nav,
     .user,
     .account {
         display: none;
@@ -233,8 +244,86 @@
 
     .logoImgMobile,
     .qtyMobile,
-    .burger {
+    .burger,
+    .userBtnMobile {
         display: block;
+    }
+
+    .logoImgMobile {
+        position: absolute;
+        z-index: 101;
+        top: 8px;
+        left: 0;
+    }
+
+    .menu {
+        position: fixed;
+        top: 0;
+        right: -155vw;
+        padding-top: 145px;
+        z-index: 100;
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+        background: var(--teal);
+        transition: right 0.2s;
+        text-align: center;
+        justify-content: flex-start;
+        gap: 26px;
+        color: var(--white);
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.01em;
+    }
+
+    .menu.menuShow{
+        right: 0px;
+    }
+
+    .accountMobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .accountMobile > .login {
+        padding-left: 0px;
+    }
+
+    .accountMobile > .login div {
+        background-color: var(--aqua);
+        padding: 14px;
+        border-radius: 5px;
+        width: 295px;
+        height: 52px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.01em;
+        color: var(--black);
+    }
+
+    .accountMobile > .signUp > .signUpBtn {
+        margin: 75px 0 21px 0;
+        width: 100%;
+        padding: 3px 10px 1px 10px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.01em;
+    }
+
+    
+    .burgerSignedIn  > .login div,
+    .burgerSignedIn > .signUp > .signUpBtn {
+        display: none;
+    }
+
+    .headerMain {
+        justify-content: flex-start;
+        gap: 0px;
+        margin-left: 137px;
+        
     }
 
     .container {
@@ -242,7 +331,7 @@
         padding: 0;
         margin: 0 auto;
         height: 93px;
-        justify-content: space-between;
+        justify-content: flex-start;
     }
 
     .burger {
@@ -251,18 +340,66 @@
         display: flex;
         flex-direction: column;
         gap: 5px;
+        position: absolute;
+        z-index: 100;
+        top: 34;
+        right: 0;      
     }
 
-    .burger > span {
+
+    .burger>span {
         display: inline-block;
         width: 100%;
         height: 5px;
         background-color: var(--teal);
+        position: absolute;
+        left: 0;
+	    transition: all 0.2s;
     }
 
-    .headerMain {
-        justify-content: flex-start;
-        gap: 0px;
+    .burger > span:first-child {
+        top: 0;
+    }
+
+    .burger > span:nth-child(2) {
+        top: 10px;
+    }
+
+    .burger > span:last-child {
+        top: 20px;
+    }
+
+    .burgerClose {
+        color: black;
+    }
+
+    .burgerClose span:first-child {
+        background-color: var(--white);
+        transform: rotate(45deg);
+        top: 10px;
+    }
+
+    .burgerClose span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burgerClose span:last-child {
+        background-color: var(--white);
+        transform: rotate(135deg);
+        top: 10px;
+    }
+
+
+    .userBtnMobile {
+        margin-top: 30px;
+        font-size: 14px;
+        
+    }
+
+    .userBtnMobile > button {
+        padding: 5px;
+        background-color: var(--aqua);
+        border-radius: 5px;
     }
 
     .headerRight {
@@ -271,7 +408,7 @@
     }
 
     .headerStats {
-        min-width: 120px;  
+        min-width: 120px;
         width: 132px;
         height: 75px;
         padding: 5px 5px 5px 10px;
@@ -279,7 +416,7 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
- 
+
     }
 
     .headerStatsText {
@@ -287,6 +424,7 @@
         gap: 0px;
         padding: 0;
         width: 100%;
+        min-width: 132px;
 
     }
 
@@ -311,8 +449,4 @@
         line-height: 10px;
         text-align: left;
     }
-} 
-
-    
-    
-    
+}

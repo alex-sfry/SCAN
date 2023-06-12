@@ -82,7 +82,6 @@
     cursor: pointer;
 }
 
-
 @media all and (max-width: 768px) {
     .btnDiv {
         padding-top: 34px;

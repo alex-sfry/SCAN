@@ -44,6 +44,12 @@
     color: var(--black);
 }
 
+@media all and (max-width: 1330px) {
+    .homeSliderBottom {
+        background-size: contain;
+    }
+}
+
 @media all and (max-width: 768px) {
     .cardContainer{
         width: 100%;

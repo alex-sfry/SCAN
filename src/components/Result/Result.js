@@ -19,7 +19,6 @@ const Result = () => {
 
     const req = { ids: [] };
 
-    console.log(selectedData)
     useEffect(() => {
         if (Object.hasOwn(selectedData.query, 'docIDs')) {
             selectedData.query.docIDs.length > 10 ? setDocsToShow(10) : setDocsToShow(selectedData.query.docIDs.length)
@@ -48,10 +47,7 @@ const Result = () => {
         }
     }, [docsToShow])
 
-    console.log('docsToShow', docsToShow)
-
     const handleResult = () => {
-        console.log('handleResult')
         if (Object.hasOwn(selectedData.query.histogram, 'totalDocuments')) {
             const totalDocsQty = selectedData.query.histogram.totalDocuments;
             const riskFactorsQty = selectedData.query.histogram.riskFactors;
@@ -59,7 +55,6 @@ const Result = () => {
             //sort by date
             const sortedTotalDocsQty = totalDocsQty.sort((b, a) => moment(a.date).diff(b.date))
             const sortedRiskFactorsQty = riskFactorsQty.sort((b, a) => moment(a.date).diff(b.date))
-            console.log('sortedTotalDocsQty', sortedTotalDocsQty)
             setSlidesToShow(sortedTotalDocsQty.length >= 8 ? 8 : sortedTotalDocsQty.length)
 
             const formatDate = (date) => {
@@ -80,7 +75,6 @@ const Result = () => {
     }
 
     const handleClick = () => {
-        console.log('loadedQty', selectedData.query.loadedDocsQty)
         let toLoadQty;
 
         if (selectedData.query.loadedDocsQty >= selectedData.query.docIDs.length) return
@@ -107,7 +101,7 @@ const Result = () => {
             {
                 !selectedData.query.histIsLoading && selectedData.query.docIDs ?
                     <ResultDocuments handleClick={handleClick} /> :
-                    null
+                    <div className={css.stub}></div>
             }
         </div>
     )

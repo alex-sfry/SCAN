@@ -41,7 +41,8 @@
     line-height: 31px;
     letter-spacing: 0.02em;
     color: var(--black);
-    padding-top: 24px;
+    margin-top: 24px;
+    min-height: 64px;
 }
 
 .cardBadge {
@@ -76,7 +77,7 @@
     color: var(--black);
     opacity: 0.5;
     overflow: hidden;
-    padding: 20px 0 32px 0;
+    margin: 20px 0 32px 0;
 }
 
 .cardBtn {
@@ -92,6 +93,11 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+}
+
+.cardImg {
+    height: 158px;
+    object-fit: contain;
 }
 
 
@@ -115,7 +121,8 @@
         font-size: 19px;
         line-height: 23px;
         letter-spacing: 0.01em;
-        padding-top: 21px;
+        margin-top: 21px;
+        min-height: 69px;
     }
 
     .cardBadge {
@@ -127,6 +134,7 @@
         letter-spacing: 0.01em;
         padding: 4px 5px 4px 5px;
     }
+
 
     .cardStats {
         letter-spacing: normal;
@@ -146,6 +154,7 @@
         line-height: 15px;
         letter-spacing: 0.01em;
         padding: 18px 0 25px 0;
+        overflow: hidden;
     }
 
     .cardBtn {

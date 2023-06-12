@@ -10,9 +10,9 @@
 }
 
 .title {
-    width: 738px;
+    width: 100%;
+    max-width: 738px;
     height: 569px;
-    max-width: 100%;
     margin-top: 69px;
     max-height: 100%;
 }
@@ -37,7 +37,8 @@
 }
 
 .formContainer {
-    width: 429px;
+    width: 100%;
+    max-width: 429px;
     height: calc(523px + 17px + 17px + 6px + 6px);
     min-height: fit-content;
     padding: 25px 25px 39px 25px;
@@ -78,6 +79,13 @@
     display: none;
 }
 
+@media all and (max-width: 840px) {
+    .container {
+        flex-wrap: wrap;
+        min-height: calc(569px - 69px + 342px - 14px - 104px + 523px + 17px + 17px + 6px + 6px);
+        justify-content: center;
+    }
+}
 
 @media all and (max-width: 768px) {
     .container {
@@ -142,5 +150,4 @@
         background-size: contain;
         margin: 49px 0 80px 0;
     }
-
 }

@@ -12,28 +12,3 @@
     right: -40px;
 }
 
-
-
-
-@media all and (max-width: 768px) {  
-    /* .resultSlider {
-        max-width: 298px;
-    }
-    
-	.resultSlider .slick-slide > div {
-        max-width: 298px;
-        width: 100%;
-    }
-
-    .resultSlider .slick-slide {
-        max-width: 298px;
-        width: 100%;
-    } */
-
-    /* .slick-slide {
-        max-width: 298px;
-        width: 100%;
-        min-width: 298px;
-    } */
-
-} 

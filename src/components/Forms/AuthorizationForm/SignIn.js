@@ -26,7 +26,6 @@ const SingIn = () => {
     
     useEffect(() => {
         if (Object.hasOwn(selectedData.login, 'token') && !Object.hasOwn(selectedData.login, 'info')) {
-            console.log('fetch info')
             dispatch({ type: 'ADD_LOADING_STATUS', payload: true })
             fetch('/api/v1/account/info', null, selectedData.login.token.accessToken, 'queryInstance')
         }

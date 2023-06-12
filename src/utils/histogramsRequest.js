@@ -64,7 +64,7 @@ const histogrReq = (config) => {
         "similarMode": "duplicates",
         "limit": +config.qty,
         "sortType": "issueDate",
-        "sortDirectionType": "asc",
+        "sortDirectionType": "desc",
         "intervalType": "month",
         "histogramTypes": [
             "totalDocuments",

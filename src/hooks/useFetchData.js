@@ -66,7 +66,6 @@ const useFetchData = (url, req, token) => {
         );
 
         searchInstance.interceptors.response.use(function (response) {
-            console.log('response', response)
             type === 'histoGram' && 
                 dispatch({ type: 'ADD_HISTOGRAM', payload: [response.data.data, isLoading] })
             type === 'idList' && 

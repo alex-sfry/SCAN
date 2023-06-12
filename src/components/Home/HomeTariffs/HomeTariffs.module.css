@@ -22,6 +22,18 @@
     flex-wrap: wrap
 }
 
+@media all and (max-width: 1340px) {
+    .cards > ul {
+        justify-content: center;
+        
+        
+    }
+
+    .title {
+        text-align: center;
+    }
+
+}
 
 @media all and (max-width: 768px) {
     .homeTariffs {

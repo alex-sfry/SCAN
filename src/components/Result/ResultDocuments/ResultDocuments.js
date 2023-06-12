@@ -5,7 +5,7 @@ import uniqid from 'uniqid';
 import Button from '../../Button';
 import DocCard from '../DocCard';
 
-const ResultDocuments = ({ /* loadedQty, */ handleClick }) => {
+const ResultDocuments = ({ handleClick }) => {
     const selectedData = useSelector((state) => state, shallowEqual);
     
     return (
@@ -15,7 +15,7 @@ const ResultDocuments = ({ /* loadedQty, */ handleClick }) => {
                 {
                     Object.hasOwn(selectedData.query, 'docs') &&
                     selectedData.query.docs.map(item => {
-                        return <li key={uniqid()}><DocCard content={item.ok.id} /></li>
+                        return <li key={uniqid()}><DocCard content={item.ok} /></li>
                     })
                 }
             </div>
@@ -25,7 +25,6 @@ const ResultDocuments = ({ /* loadedQty, */ handleClick }) => {
                         <Button
                             type={'button'}
                             disabled={''}
-                            btnClass={'btn22'}
                             fontColor={'white'}
                             bgColor={'bgBlue'}
                             handleClick={handleClick}

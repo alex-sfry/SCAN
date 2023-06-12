@@ -94,5 +94,11 @@
         max-width: 297px;
     }
 
+    .searchLeft {
+        background-image: url('../../assets/images/search-bg-top-mobile.svg');
+        background-repeat: no-repeat;
+        background-position: 90% 14%;
+    }
+
 }
 

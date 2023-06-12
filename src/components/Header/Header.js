@@ -1,33 +1,53 @@
-import { React } from 'react';
+import { React, useState, useEffect } from 'react';
 import css from './Header.module.css';
 import { useDispatch, shallowEqual, useSelector } from 'react-redux';
 import { Link, useLocation } from 'react-router-dom';
 import logo from '../../assets/images/headerLogo.png';
 import logoMobile from '../../assets/images/headerLogo-mobile.png';
+import logoMobileBurger from '../../assets/images/headerLogo-mobile-burger.png';
 import user from '../../assets/images/user.png';
 import spinner from '../../assets/images/spinnerHeader.svg';
 import { persistor } from '../../store/store.js';
 
 const Header = () => {
-    console.log('header')
+    const [isActive, setIsActive] = useState(false)
+
     const location = useLocation();
     const selectedData = useSelector((state) => state, shallowEqual);
     const dispatch = useDispatch();
     const date = new Date();
 
+    useEffect(() => {
+        setIsActive(false);
+    }, [location])
+
     const logOut = () => {
         dispatch({ type: 'CLEAR_LOGIN_STATE' });
         persistor.purge();
     }
-    
-    const renderConditions = () => {
+
+    const handleClick = () => {
+        setIsActive(!isActive);
+    }
+
+    const isLoggedIn = () => {
         if (Object.hasOwn(selectedData.login, 'token')) {
+            if (Object.hasOwn(selectedData.login.token, 'accessToken')) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    const renderConditions = () => {
+        //check if token is expired
+        if (isLoggedIn()) {
             if (Date.parse(selectedData.login.token.expire) - Date.parse(date) < 0){
                 logOut();
             } 
         }
-        if (Object.hasOwn(selectedData.login, 'token')) {
-            if (Object.hasOwn(selectedData.login.token, 'accessToken')) {
+        
+        if (isLoggedIn()) {
                 return (
                     <>
                         <div className={`${css.headerStats} ${css.flexAlignCenter}`}>
@@ -55,10 +75,13 @@ const Header = () => {
                                 : (<img className={css.spinner} src={spinner} alt="loading..." />)}
 
                         </div>
-                        <div className={css.burger}>
-                            <span></span>
-                            <span></span>
-                            <span></span>
+                        <div 
+                            onClick={handleClick} 
+                            className={isActive ? `${css.burger} ${css.burgerClose}`: css.burger}
+                        >
+                            <span onClick={handleClick}></span>
+                            <span onClick={handleClick}></span>
+                            <span onClick={handleClick}></span>
                         </div>
                         <div className={`${css.user} ${css.flexAlignCenter}`}>
                             <div className={`${css.userText} ${css.flexCol}`}>
@@ -70,8 +93,7 @@ const Header = () => {
                             <img src={user} alt="фотография" className={css.userImg} width={32} height={32} />
                         </div>
                     </>
-                )
-            }
+                )          
         } else {
             return (
                 <>
@@ -89,7 +111,7 @@ const Header = () => {
                             </div></Link>
                         </div>
                     </div>
-                    <div className={css.burger}>
+                    <div onClick={handleClick} className={isActive ? `${css.burger} ${css.burgerClose}`: css.burger}>
                         <span></span>
                         <span></span>
                         <span></span>
@@ -98,19 +120,42 @@ const Header = () => {
             )
         }
     }
+
     return (
         <header className={css.header}>
             <div className={`${css.container} ${css.flexAlignCenter}`}>
                 <div className={css.headerLogo}>
                     <img src={logo} alt="логотип" className={css.logoImg} width={141} height={91} />
-                    <img src={logoMobile} alt="логотип" className={css.logoImgMobile} width={111} height={93} />
+                    <img 
+                        src={isActive ? logoMobileBurger : logoMobile} alt="логотип" className={css.logoImgMobile} 
+                        width={111} 
+                        height={93}
+                     />
                 </div>
                 <div className={`${css.headerMain} ${css.flexAlignCenter}`}>
                     <nav>
-                        <ul className={css.menu}>
+                        <ul className={isActive ? `${css.menu} ${css.menuShow}` : css.menu}>
                             <li className={css.menuItem}><Link to="/" >Главная</Link></li>
                             <li className={css.menuItem}><a href="/">Тарифы</a></li>
                             <li className={css.menuItem}><a href="/">FAQ</a></li>
+
+                            {!isLoggedIn() ? (<div className={`${css.accountMobile} ${css.flexAlignCenter}`}>
+                                <div className={css.signUp}>
+                                    <div className={css.signUpBtn} >
+                                        <Link to="#" >Зарегистрироваться</Link>
+                                    </div>
+                                </div>
+                                <div className={css.login}>
+                                    <Link to="authorization"><div
+                                        className={location.pathname === '/authorization' ? `${css.loginBtn} ${css.isActive}` :
+                                            `${css.loginBtn}`}>
+                                        Войти
+                                    </div></Link>
+                                </div>
+                            </div>)
+                                : <div className={css.userBtnMobile}>
+                                    <button onClick={logOut}>Выйти</button>
+                                </div>}
                         </ul>
                     </nav>
                     <div className={`${css.headerRight} ${css.flexAlignCenter}`}>
