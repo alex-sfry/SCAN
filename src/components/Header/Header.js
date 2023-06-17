@@ -21,6 +21,10 @@ const Header = () => {
         setIsActive(false);
     }, [location])
 
+    useEffect(() => {
+        document.body.style.overflowY = isActive ? 'hidden' : 'auto';
+    }, [isActive])
+
     const logOut = () => {
         dispatch({ type: 'CLEAR_LOGIN_STATE' });
         persistor.purge();

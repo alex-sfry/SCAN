@@ -23,7 +23,10 @@ const DatePick = ({ control, name, placeholder }) => {
                                     height: 43
                                 },
                                 '& .css-nxo287-MuiInputBase-input-MuiOutlinedInput-input': {
-                                    paddingLeft: 5
+                                    paddingLeft: '37px',
+                                    fontSize: '14px',
+                                    lineHeight: '17px',
+                                    letterSpacing: '0.03em'
                                 },
                                 '& .css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root': {
                                     height: 43
