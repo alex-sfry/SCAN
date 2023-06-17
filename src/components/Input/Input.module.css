@@ -8,7 +8,8 @@
     outline: none;
     font-family: 'Inter', sans-serif;
     font-weight: inherit;
-    font-size: inherit; 
+    font-size: inherit;
+    padding:  0 17px;
 }
 
 .input::placeholder {
