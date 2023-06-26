@@ -1,27 +1,27 @@
 @font-face {
     font-family: 'Ferry';
-    src: url('./assets/fonts/ferry_black.otf');
+    src: url('./assets/fonts/ferry_black.woff');
     font-display: swap;
     font-weight: 900;
     font-style: normal;
 }
 @font-face {
     font-family: 'Inter';
-    src: url('./assets/fonts/Inter-Regular.ttf');
+    src: url('./assets/fonts/Inter-Regular.woff');
     font-display: swap;
     font-weight: 400;
     font-style: normal;
 }
 @font-face {
     font-family: 'Inter';
-    src: url('./assets/fonts/Inter-Medium.ttf');
+    src: url('./assets/fonts/Inter-Medium.woff');
     font-display: swap;
     font-weight: 500;
     font-style: normal;
 }
 @font-face {
     font-family: 'Inter';
-    src: url('./assets/fonts/Inter-Bold.ttf');
+    src: url('./assets/fonts/Inter-Bold.woff');
     font-display: swap;
     font-weight: 700;
     font-style: normal;
