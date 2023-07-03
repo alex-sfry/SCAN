@@ -1,9 +1,11 @@
 import icon1 from '../assets/images/tariffIcon1.svg';
 import icon2 from '../assets/images/tariffIcon2.svg';
 import icon3 from '../assets/images/tariffIcon3.svg';
+import uniqid from 'uniqid';
 
 const tariffCards = [
-    {
+    {   
+        id: uniqid(),
         title: 'Beginner',
         titleDescr: 'Для небольшого исследования',
         icon: icon1,
@@ -21,7 +23,8 @@ const tariffCards = [
         bgColor: 'orange',
         headerFontColor: 'fontBlack'
     },
-    {
+    {   
+        id: uniqid(),
         title: 'Pro',
         titleDescr: 'Для HR и фрилансеров',
         icon: icon2,
@@ -39,7 +42,8 @@ const tariffCards = [
         bgColor: 'aqua',
         headerFontColor: 'fontBlack'
     },
-    {
+    {   
+        id: uniqid(),
         title: 'Business',
         titleDescr: 'Для корпоративных клиентов',
         icon: icon3,

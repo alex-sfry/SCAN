@@ -1,13 +1,11 @@
 import React from 'react';
 import css from './ResultDocuments.module.css';
 import { useSelector, shallowEqual } from 'react-redux';
-import uniqid from 'uniqid';
 import Button from '../../Button';
 import DocCard from '../DocCard';
 
 const ResultDocuments = ({ handleClick }) => {
     const selectedData = useSelector((state) => state, shallowEqual);
-    
     return (
         <div className={css.resDocConatiner}>
             <h2 className={css.resDocCHeading}>Список документов</h2>
@@ -15,7 +13,7 @@ const ResultDocuments = ({ handleClick }) => {
                 {
                     Object.hasOwn(selectedData.query, 'docs') &&
                     selectedData.query.docs.map(item => {
-                        return <li key={uniqid()}><DocCard content={item.ok} /></li>
+                        return <li key={item.ok.id}><DocCard content={item.ok} /></li>
                     })
                 }
             </div>

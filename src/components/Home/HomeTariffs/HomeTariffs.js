@@ -2,7 +2,6 @@ import React from 'react';
 import { shallowEqual, useSelector } from 'react-redux';
 import css from './HomeTariffs.module.css';
 import TariffCard from '../TariffCard';
-import uniqid from 'uniqid';
 import tariffCards from '../../../data/tariffCards';
 
 const HomeTariffs = () => {
@@ -23,7 +22,7 @@ const HomeTariffs = () => {
                 <ul>
                     {
                         tariffCards.map((item, index) => {
-                            return <li key={uniqid()}>
+                            return <li key={item.id}>
                                 <TariffCard
                                     content={item}
                                     icon={item.icon}

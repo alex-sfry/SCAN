@@ -1,5 +1,4 @@
 const queryReducer = (state = {loadedDocsQty: 0}, action) => {
-    //console.log('queryReducer', action.payload)
     switch (action.type) {
         case 'ADD_HISTOGRAM':
             if (action.payload[0].length === 0) {
