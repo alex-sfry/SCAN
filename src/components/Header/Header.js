@@ -128,14 +128,16 @@ const Header = () => {
     return (
         <header className={css.header}>
             <div className={`${css.container} ${css.flexAlignCenter}`}>
-                <div className={css.headerLogo}>
-                    <img src={logo} alt="логотип" className={css.logoImg} width={141} height={91} />
-                    <img 
-                        src={isActive ? logoMobileBurger : logoMobile} alt="логотип" className={css.logoImgMobile} 
-                        width={111} 
-                        height={93}
-                     />
-                </div>
+                <Link to="/" >
+                    <div className={css.headerLogo}>
+                        <img src={logo} alt="логотип" className={css.logoImg} width={141} height={91} />
+                        <img 
+                            src={isActive ? logoMobileBurger : logoMobile} alt="логотип" className={css.logoImgMobile} 
+                            width={111} 
+                            height={93}
+                        />
+                    </div>
+                </Link>               
                 <div className={`${css.headerMain} ${css.flexAlignCenter}`}>
                     <nav>
                         <ul className={isActive ? `${css.menu} ${css.menuShow}` : css.menu}>

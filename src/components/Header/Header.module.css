@@ -234,6 +234,26 @@
     .headerRight {
         gap: 32px;
     }
+
+    .headerMain {
+        /* margin-right: 37px; */
+        
+    }
+}
+
+@media all and (max-width: 850px) {
+    .headerMain {
+        gap: 18px;
+    }
+
+    .headerRight {
+        gap: 18px;
+    }
+
+    .account {
+        justify-content: flex-end;
+        margin-left: 41px;
+    }
 }
 
 @media all and (max-width: 768px) {
