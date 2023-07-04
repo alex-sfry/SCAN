@@ -4,8 +4,20 @@
 <br>
 Training project.<br>
 <br>
-
-Redux Persist is used to preserve state.
+Technologies and libraries:<br>
+- HTML<br>
+- CSS Modules<br>
+- <b>React</b><br>
+- <b>Redux</b><br>
+- <b>React Router</b><br>
+- Redux Persist<br>
+- React Hook forms<br>
+- React Slick Slider (all sliders)<br>
+- MUI (Datepicker)<br>
+- Axios<br>
+<br>
+etc.<br>
+<br>
 
 ![image](https://github.com/alex-sfry/SCAN/assets/114966627/4b8dad72-ceed-477b-935a-707a3006db84)
 
