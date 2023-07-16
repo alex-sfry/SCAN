@@ -22,7 +22,7 @@ const HomeTariffs = () => {
                 <ul>
                     {
                         tariffCards.map((item, index) => {
-                            return <li key={item.id}>
+                            return <li key={item.id} className={css.liItem}>
                                 <TariffCard
                                     content={item}
                                     icon={item.icon}

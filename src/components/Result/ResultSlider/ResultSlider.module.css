@@ -78,6 +78,18 @@
     gap: 26px;
 }
 
+@media all and (max-width: 1024px) {
+    .slider {
+        max-width: 78%;
+    }
+}
+
+@media all and (max-width: 864px) {
+    .slider {
+        max-width: 75%;
+    }
+}
+
 @media all and (max-width: 768px) {
 	.slider {
         margin-top: 75px;

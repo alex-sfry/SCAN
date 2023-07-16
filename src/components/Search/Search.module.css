@@ -51,9 +51,32 @@
 
 @media all and (max-width: 1359px) {
     .searchRight {
-        background-position: 11px bottom;
-        width: 100%;
-        
+        background-position: 0px bottom;
+        background-size: contain;
+    }
+
+    .searchLeft {
+        padding-left: 14px;
+    }
+}
+
+@media all and (max-width: 1200px) {
+    .searchRight {
+        max-width: 252px;
+        max-height: 695px;
+        background-position: 0px 300px;
+        background-size: contain;
+    }
+}
+
+@media all and (max-width: 992px) {
+    .searchRight {
+        display: none;      
+    }
+
+    .searchLeft {
+        padding-left: 14px;
+        margin: 0 auto;
     }
 }
 

@@ -77,7 +77,7 @@ const SingIn = () => {
                     <div className={css.btnDiv}>
                         <Button
                             type={'submit'}
-                            disabled={!isValid}
+                            disabled={!isValid || !status.isLoading}
                             fontColor={'white'}
                             bgColor={'bgBlue'}
                         >

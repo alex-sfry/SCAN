@@ -6,6 +6,7 @@
     height: 35px;
     top: 50%;
     transform: translateY(-50%);
+    z-index: 10;
 }
 
 .arrow svg{
@@ -35,15 +36,29 @@
     left: -164px
 }
 
+@media all and (max-width: 1360px) {
+    .homeSlider.arrowRight {
+        right: -24px;
+    }
+}
+
 @media all and (max-width: 864px) {
     .resultSlider.arrowRight {
-        top: 26%;
+        top: 50%;
         right: -35px;
     }
     
     .resultSlider.arrowLeft {
-        top: 26%;
+        top: 50%;
         left: -164px
+    }
+
+    .homeSlider.arrowRight {
+        right: -18px;
+    }
+
+    .homeSlider.arrowLeft {
+        left: 8px
     }
     
 }
@@ -60,10 +75,10 @@
     }
 
     .homeSlider.arrowRight {
-        right: -12px;
+        right: -18px;
     }
 
     .homeSlider.arrowLeft {
-        left: -10px
+        left: -10px;
     }
 }

@@ -24,6 +24,12 @@
     max-width: 141px;
 }
 
+@media all and (max-width: 1360px) {
+    .homeSlider {
+        width: 98%;
+    }
+}
+
 @media all and (max-width: 1290px) {
     .homeSlider .intSlide {
         max-width: 377px;

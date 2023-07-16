@@ -2,7 +2,7 @@
     width: 100%;
     display: flex;
     gap: 210px;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .resultHeading {
@@ -35,6 +35,24 @@
     background-repeat: no-repeat;
     background-position: 0 0px;
     margin-top: 18px;
+}
+
+@media all and (max-width: 1295px) {
+    .resultTop {
+        gap: 20px;
+    }
+
+    .resultTopRight {
+        background-size: contain;
+        background-position: center center;
+    }
+}
+
+@media all and (max-width: 992px) {
+    .resultTop {
+        gap: 0;
+    }
+
 }
 
 @media all and (max-width: 768px) {

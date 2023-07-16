@@ -16,23 +16,32 @@
 }
 
 .cards > ul {
-    display: flex;
-    justify-content: space-between;
-    gap: 37px;
-    flex-wrap: wrap
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
 }
 
 @media all and (max-width: 1340px) {
     .cards > ul {
-        justify-content: center;
-        
-        
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        justify-items: center;
+        gap: 50px;
     }
 
     .title {
         text-align: center;
     }
+}
 
+@media all and (max-width: 940px) {
+    .cards > ul {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        gap: 20px;
+    }
 }
 
 @media all and (max-width: 768px) {
@@ -44,9 +53,5 @@
 	.title {
         font-size: 28px;
         line-height: 34px;
-    }
-
-    .cards > ul {
-        gap: 43px;
     }
 }
