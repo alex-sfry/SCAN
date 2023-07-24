@@ -2,8 +2,7 @@
 <br>
 Сервис по поиску публикаций в СМИ о компании по ИНН.<br>
 <br>
-Training project.<br>
-<br>
+
 Technologies and libraries:<br>
 - HTML<br>
 - CSS Modules<br>
