@@ -36,15 +36,15 @@ const TariffCard = ({ content, border, btnBgColor, fontColor, text, display }) =
                         <h4 className={css.subtitle}>{content.descrHeading}</h4>
                         <ul>
                             <li>
-                                <img src={checkMark} alt="галочка" className={css.checkMark} />
+                                <img src={checkMark} alt="галочка" className={css.checkMark} width="20" height="20" />
                                 {content.list[0]}
                             </li>
                             <li>
-                                <img src={checkMark} alt="галочка" className={css.checkMark} />
+                                <img src={checkMark} alt="галочка" className={css.checkMark} width="20" height="20" />
                                 {content.list[1]}
                             </li>
                             <li>
-                                <img src={checkMark} alt="галочка" className={css.checkMark} />
+                                <img src={checkMark} alt="галочка" className={css.checkMark} width="20" height="20" />
                                 {content.list[2]}
                             </li>
                         </ul>
